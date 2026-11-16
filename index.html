@@ -1,0 +1,2792 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS MEDIA — Digital Marketing &amp; Growth Agency</title>
+  <link rel="icon" type="image/png" href="assets/img/Favicon.png" />
+
+  <!-- Primary SEO Meta Tags -->
+  <meta name="description" content="JS MEDIA is a premier digital marketing & growth agency. We engineer search visibility, paid acquisition, social media management, content production, and digital strategy to turn attention into measurable business growth." />
+  <meta name="keywords" content="JS MEDIA, digital marketing agency, growth marketing, SEO, search engine optimisation, paid ads, Meta ads, Google ads, social media management, content copywriting, digital content production, marketing consultancy" />
+  <meta name="author" content="JS MEDIA" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="theme-color" content="#09090B" />
+  <link rel="canonical" href="https://jsmedia.agency/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jsmedia.agency/" />
+  <meta property="og:site_name" content="JS MEDIA" />
+  <meta property="og:title" content="JS MEDIA — Digital Marketing & Growth Agency" />
+  <meta property="og:description" content="Helping businesses build their online presence, reach the right audiences, and turn attention into customers through practical, measurable digital marketing." />
+  <meta property="og:image" content="assets/img/Logo.png" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://jsmedia.agency/" />
+  <meta name="twitter:title" content="JS MEDIA — Digital Marketing & Growth Agency" />
+  <meta name="twitter:description" content="Strategy, search visibility, content, and paid acquisition engineered around measurable business growth." />
+  <meta name="twitter:image" content="assets/img/Logo.png" />
+
+  <!-- JSON-LD Structured Data (Schema.org / Google Knowledge Graph) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "JS MEDIA",
+    "alternateName": "JS Media Digital Marketing & Growth Agency",
+    "url": "https://jsmedia.agency/",
+    "logo": "https://jsmedia.agency/assets/img/Logo.png",
+    "image": "https://jsmedia.agency/assets/img/Logo.png",
+    "description": "Digital marketing and growth agency focused on helping businesses build visibility, reach audiences, create engagement, and turn attention into customers.",
+    "email": "jaysensmedia@gmail.com",
+    "priceRange": "$$",
+    "areaServed": [
+      {
+        "@type": "Country",
+        "name": "Global"
+      }
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Digital Marketing Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Social Media Management",
+            "description": "Account management, content scheduling, community engagement, and performance reporting."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Digital Advertising & Marketing",
+            "description": "Meta and Google Ads management, lead generation, retargeting, and campaign optimisation."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Search Engine Optimisation (SEO)",
+            "description": "Audits, on-page SEO, technical SEO, keyword research, local SEO, and ranking monitoring."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Content Development & Copywriting",
+            "description": "Website copy, articles, advertising copy, sales copy, social captions, and email marketing."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Digital Content Production",
+            "description": "Short-form video editing, reels, TikTok content, product promotional videos, and graphics."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Digital Strategy & Consultancy",
+            "description": "Audits, competitor analysis, market research, brand positioning, and performance analysis."
+          }
+        }
+      ]
+    }
+  }
+  </script>
+
+
+  <!-- Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            obsidian: '#09090B',
+            charcoal: '#18181B',
+            slateText: '#52525B',
+            mutedGrey: '#A1A1AA',
+            hairline: '#E4E4E7',
+            alabaster: '#FAFAFA',
+          },
+          letterSpacing: {
+            editorial: '-0.035em',
+            widest: '0.18em',
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    body {
+      background-color: #FFFFFF;
+      color: #09090B;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+    }
+
+    /* Editorial Monochrome Photography Treatment */
+    .bw-editorial {
+      filter: grayscale(100%) contrast(1.16);
+      transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1), filter 0.6s ease;
+    }
+    .bw-frame:hover .bw-editorial {
+      transform: scale(1.035);
+      filter: grayscale(100%) contrast(1.22);
+    }
+
+    /* Bidirectional Scroll Reveal: Ease In & Ease Out */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: opacity, transform;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal.visible.reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal.visible.reveal-delay-2 { transition-delay: 0.2s; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .reveal {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+      }
+    }
+
+    /* 3D Casino Card Deck Stacking & Hover */
+    .cap-card {
+      transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.5s ease, box-shadow 0.65s ease;
+      transform-origin: center bottom;
+      will-change: transform, opacity, box-shadow;
+    }
+    .cap-card.is-active:hover {
+      transform: rotate(-1.5deg) scale(1.025) !important;
+      box-shadow: 0 35px 70px -15px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.22) !important;
+    }
+    .cap-card:hover .cap-card-img {
+      transform: scale(1.08);
+    }
+    .cap-card-img {
+      transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /* Enhanced Interactive Micro-Animations & Hovers */
+    .nav-link {
+      position: relative;
+      transition: color 0.3s cubic-bezier(0.16, 1, 0.3, 1), transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 100%;
+      height: 1.5px;
+      background-color: #09090B;
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .nav-link:hover {
+      transform: translateY(-1.5px);
+    }
+    .nav-link:hover::after {
+      transform: scaleX(1);
+    }
+
+    /* Smooth Hover Lift Card Utility (Light & Dark) */
+    .hover-lift {
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease;
+      will-change: transform, box-shadow;
+    }
+    .hover-lift:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 35px -10px rgba(9, 9, 11, 0.12), 0 0 0 1px rgba(9, 9, 11, 0.08);
+      border-color: #09090B;
+    }
+
+    .hover-lift-dark {
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease, background-color 0.35s ease;
+      will-change: transform, box-shadow;
+    }
+    .hover-lift-dark:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(255, 255, 255, 0.2);
+      border-color: rgba(255, 255, 255, 0.35);
+      background-color: #27272A;
+    }
+
+    /* Button Magnetic Lift & Arrow Glide */
+    .btn-magnetic {
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s ease, border-color 0.3s ease;
+      will-change: transform, box-shadow;
+    }
+    .btn-magnetic:hover {
+      transform: translateY(-3px);
+    }
+    .btn-magnetic:active {
+      transform: translateY(0) scale(0.97);
+    }
+    .btn-magnetic .btn-arrow {
+      display: inline-block;
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .btn-magnetic:hover .btn-arrow {
+      transform: translateX(4px);
+    }
+
+    /* Service Tags Hover Micro-Pills */
+    .service-tag {
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .service-tag:hover {
+      background-color: #09090B !important;
+      color: #FFFFFF !important;
+      border-color: #09090B !important;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 14px -3px rgba(9, 9, 11, 0.22);
+    }
+
+    /* Accordion Row Dynamic Hover Feedback */
+    .dept-row {
+      transition: background-color 0.35s ease;
+    }
+    .dept-row:hover .dept-num {
+      color: #09090B;
+      transform: scale(1.15);
+    }
+    .dept-row:hover .dept-title {
+      transform: translateX(8px);
+      color: #09090B;
+    }
+    .dept-row:hover .dept-plus {
+      transform: scale(1.25);
+    }
+    .dept-row.is-open:hover .dept-plus {
+      transform: rotate(45deg) scale(1.25);
+    }
+
+    /* Subtle Kinetic Marquee */
+    @keyframes marqueeScroll {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-50%); }
+    }
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      animation: marqueeScroll 34s linear infinite;
+    }
+    .marquee-track:hover {
+      animation-play-state: paused;
+    }
+    /* Moving Train Logo Marquee */
+    @keyframes logoTrainScroll {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-50%); }
+    }
+    .logo-train-track {
+      display: flex;
+      align-items: center;
+      width: max-content;
+      animation: logoTrainScroll 38s linear infinite;
+    }
+    .logo-train-track:hover {
+      animation-play-state: paused;
+    }
+
+
+    /* Accordion Smooth Grid Transition */
+    .dept-body {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .dept-row.is-open .dept-body {
+      grid-template-rows: 1fr;
+    }
+    .dept-inner {
+      overflow: hidden;
+    }
+    .dept-plus {
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .dept-row.is-open .dept-plus {
+      transform: rotate(45deg);
+    }
+
+    
+    /* FAQ Accordion */
+    .faq-body {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .faq-item.is-open .faq-body {
+      grid-template-rows: 1fr;
+    }
+    .faq-inner {
+      overflow: hidden;
+      min-height: 0;
+    }
+    .faq-icon {
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .faq-item.is-open .faq-icon {
+      transform: rotate(45deg);
+    }
+
+    /* Monochrome Scrollbar */
+    ::-webkit-scrollbar { width: 5px; }
+    ::-webkit-scrollbar-track { background: #FFFFFF; }
+    ::-webkit-scrollbar-thumb { background: #A1A1AA; }
+    ::-webkit-scrollbar-thumb:hover { background: #09090B; }
+  </style>
+</head>
+<body class="selection:bg-obsidian selection:text-white">
+
+  <!-- ===================================================================== -->
+  <!-- 00 // MINIMALIST NAVIGATION                                           -->
+  <!-- ===================================================================== -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-hairline">
+    <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center group" aria-label="JS MEDIA Home">
+        <img src="assets/img/Logo.png" alt="JS MEDIA" class="h-10 sm:h-11 w-auto object-contain transition-all duration-300 group-hover:scale-105 group-hover:opacity-90" />
+      </a>
+
+      <nav class="hidden md:flex items-center gap-10 text-xs font-mono uppercase tracking-widest text-slateText">
+        <a href="#capabilities" data-i18n="nav.capabilities" class="nav-link py-1 hover:text-obsidian transition-colors">Capabilities</a>
+        <a href="#services" data-i18n="nav.services" class="nav-link py-1 hover:text-obsidian transition-colors">Services</a>
+        <a href="#approach" data-i18n="nav.approach" class="nav-link py-1 hover:text-obsidian transition-colors">Approach</a>
+        <a href="#engagement" data-i18n="nav.engagement" class="nav-link py-1 hover:text-obsidian transition-colors">Engagement</a>
+        <a href="#faq" data-i18n="nav.faq" class="nav-link py-1 hover:text-obsidian transition-colors">FAQ</a>
+      </nav>
+
+      <div class="flex items-center gap-3 sm:gap-4">
+        <!-- Bilingual Toggle (EN / FR) -->
+        <div role="group" aria-label="Language switcher" class="inline-flex items-center border border-hairline rounded-sm overflow-hidden font-mono text-[11px] shadow-sm">
+          <button type="button" data-lang-btn="en" class="lang-btn px-2.5 py-2 bg-obsidian text-white transition-all cursor-pointer hover:opacity-90">EN</button>
+          <button type="button" data-lang-btn="fr" class="lang-btn px-2.5 py-2 bg-white text-slateText hover:text-obsidian hover:bg-alabaster transition-all cursor-pointer">FR</button>
+        </div>
+
+        <a href="#contact" class="hidden sm:inline-flex items-center gap-2 bg-obsidian text-white text-xs font-mono uppercase tracking-wider px-5 py-3 rounded-sm hover:bg-charcoal btn-magnetic">
+          <span data-i18n="nav.inquire">Inquire</span>
+          <span class="btn-arrow">&rarr;</span>
+        </a>
+
+        <button id="mobile-btn" type="button" aria-label="Menu" class="md:hidden p-2.5 border border-hairline rounded-sm text-obsidian">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-hairline px-6 py-6 space-y-4">
+      <div class="flex flex-col space-y-3 font-mono text-xs uppercase tracking-widest text-obsidian">
+        <a href="#capabilities" data-i18n="mob.capabilities" class="mobile-link py-2 border-b border-hairline">01 / Capabilities</a>
+        <a href="#services" data-i18n="mob.services" class="mobile-link py-2 border-b border-hairline">02 / Services</a>
+        <a href="#approach" data-i18n="mob.approach" class="mobile-link py-2 border-b border-hairline">03 / Approach</a>
+        <a href="#engagement" data-i18n="mob.engagement" class="mobile-link py-2 border-b border-hairline">04 / Engagement</a>
+        <a href="#faq" data-i18n="mob.faq" class="mobile-link py-2 border-b border-hairline">04b / FAQ</a>
+        <a href="#contact" data-i18n="mob.contact" class="mobile-link py-2 font-semibold">05 / Start a Conversation &rarr;</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================================================================== -->
+    <!-- HERO // EDITORIAL POSITIONING WITH FULL ARCHITECTURAL BACKGROUND      -->
+    <!-- ===================================================================== -->
+    <section id="hero" class="relative border-b border-hairline bg-obsidian text-white overflow-hidden min-h-[580px] lg:min-h-[660px] flex items-center">
+      
+      <!-- Full Background Architectural Image with Editorial Dark Overlay -->
+      <div class="absolute inset-0 z-0">
+        <img
+          src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2400&q=85"
+          alt="Architectural city buildings"
+          class="w-full h-full object-cover grayscale contrast-125 brightness-[0.80]"
+        />
+        <!-- Editorial obsidian gradients for pristine contrast on typography while revealing architectural sky -->
+        <div class="absolute inset-0 bg-gradient-to-r from-obsidian/95 via-obsidian/85 to-obsidian/45 sm:via-obsidian/80"></div>
+        <div class="absolute inset-0 bg-obsidian/20"></div>
+      </div>
+
+      <div class="relative z-10 max-w-7xl w-full mx-auto px-6 sm:px-10 lg:px-14 py-20 lg:py-28">
+        <div class="max-w-2xl lg:max-w-3xl space-y-8 reveal">
+          
+          <div class="flex flex-wrap items-center gap-3">
+            <span data-i18n="hero.badge" class="font-mono text-[10px] uppercase tracking-widest text-white/90 bg-white/10 backdrop-blur-md px-3 py-1 rounded-sm border border-white/15">
+              00 // GROWTH SYSTEM
+            </span>
+            <span class="text-white/40 font-mono text-xs hidden sm:inline">&bull;</span>
+            <div data-i18n="hero.kicker" class="font-mono text-[11px] uppercase tracking-widest text-mutedGrey">
+              JS MEDIA — DIGITAL MARKETING &amp; GROWTH AGENCY
+            </div>
+          </div>
+
+          <h1 data-i18n="hero.title" class="text-4xl sm:text-6xl lg:text-[68px] font-semibold tracking-editorial text-white leading-[1.03]">
+            Turning attention into customers.
+          </h1>
+
+          <p data-i18n="hero.subtitle" class="text-base sm:text-lg lg:text-xl text-white/80 font-normal leading-relaxed max-w-xl">
+            Strategy, search visibility, content, and paid acquisition engineered around measurable business growth.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <a href="#services" class="bg-white text-obsidian font-semibold text-xs font-mono uppercase tracking-wider px-8 py-4 rounded-sm hover:bg-alabaster btn-magnetic hover:shadow-[0_14px_30px_-6px_rgba(255,255,255,0.35)] flex items-center gap-2.5">
+              <span data-i18n="hero.ctaPrimary">Explore Services</span>
+              <span class="btn-arrow">&rarr;</span>
+            </a>
+            <a href="#contact" class="border border-white/30 hover:border-white hover:bg-white/10 text-white text-xs font-mono uppercase tracking-wider px-8 py-4 rounded-sm btn-magnetic hover:shadow-[0_14px_30px_-6px_rgba(0,0,0,0.6)] flex items-center gap-2.5">
+              <span data-i18n="hero.ctaSecondary">Start a Conversation</span>
+              <span class="btn-arrow">&rarr;</span>
+            </a>
+          </div>
+
+          <div class="pt-8 border-t border-white/15 flex flex-wrap items-center justify-between gap-4 text-white/60 font-mono text-[11px] tracking-widest uppercase">
+            <span data-i18n="hero.stripLeft">VISIBILITY &bull; CONTENT &bull; ACQUISITION</span>
+            <span data-i18n="hero.stripRight">06 CORE SERVICES</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- KINETIC MONOCHROME STRIP                                              -->
+    <!-- ===================================================================== -->
+    <div class="border-b border-hairline bg-alabaster py-4 overflow-hidden select-none reveal">
+      <div class="marquee-track font-mono text-[11px] uppercase tracking-widest text-slateText">
+        <span data-i18n="marquee.s1" class="mx-8">01 SOCIAL MEDIA MANAGEMENT</span>
+        <span class="text-mutedGrey">&bull;</span>
+        <span data-i18n="marquee.s2" class="mx-8">02 DIGITAL ADVERTISING</span>
+        <span class="text-mutedGrey">&bull;</span>
+        <span data-i18n="marquee.s3" class="mx-8">03 SEARCH ENGINE OPTIMISATION</span>
+        <span class="text-mutedGrey">&bull;</span>
+        <span data-i18n="marquee.s4" class="mx-8">04 CONTENT &amp; COPYWRITING</span>
+        <span class="text-mutedGrey">&bull;</span>
+        <span data-i18n="marquee.s5" class="mx-8">05 DIGITAL PRODUCTION</span>
+        <span class="text-mutedGrey">&bull;</span>
+        <span data-i18n="marquee.s6" class="mx-8">06 STRATEGY &amp; CONSULTANCY</span>
+        <span class="text-mutedGrey">&bull;</span>
+        <!-- Duplicate for seamless loop -->
+        <span data-i18n="marquee.s1" class="mx-8">01 SOCIAL MEDIA MANAGEMENT</span>
+        <span class="text-mutedGrey">&bull;</span>
+        <span data-i18n="marquee.s2" class="mx-8">02 DIGITAL ADVERTISING</span>
+        <span class="text-mutedGrey">&bull;</span>
+        <span data-i18n="marquee.s3" class="mx-8">03 SEARCH ENGINE OPTIMISATION</span>
+        <span class="text-mutedGrey">&bull;</span>
+        <span data-i18n="marquee.s4" class="mx-8">04 CONTENT &amp; COPYWRITING</span>
+        <span class="text-mutedGrey">&bull;</span>
+        <span data-i18n="marquee.s5" class="mx-8">05 DIGITAL PRODUCTION</span>
+        <span class="text-mutedGrey">&bull;</span>
+        <span data-i18n="marquee.s6" class="mx-8">06 STRATEGY &amp; CONSULTANCY</span>
+        <span class="text-mutedGrey">&bull;</span>
+      </div>
+    </div>
+
+    <!-- ===================================================================== -->
+    <!-- 00b // STATS COUNTER — TRUST SIGNALS                                  -->
+    <!-- ===================================================================== -->
+    <section class="bg-obsidian border-b border-white/10 py-14 lg:py-16 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-8">
+
+          <!-- Stat 1 -->
+          <div class="stats-item reveal text-center lg:text-left lg:border-r lg:border-white/10 lg:pr-8">
+            <div class="flex items-end justify-center lg:justify-start gap-1">
+              <span class="stat-number text-5xl sm:text-6xl font-semibold text-white tracking-tight leading-none" data-target="6" data-suffix="">0</span>
+            </div>
+            <div class="mt-3 font-mono text-[11px] uppercase tracking-widest text-white/40" data-i18n="stats.l1">Core Services</div>
+          </div>
+
+          <!-- Stat 2 -->
+          <div class="stats-item reveal text-center lg:text-left lg:border-r lg:border-white/10 lg:pr-8" style="transition-delay:0.1s">
+            <div class="flex items-end justify-center lg:justify-start gap-1">
+              <span class="stat-number text-5xl sm:text-6xl font-semibold text-white tracking-tight leading-none" data-target="24" data-suffix="h">0</span>
+            </div>
+            <div class="mt-3 font-mono text-[11px] uppercase tracking-widest text-white/40" data-i18n="stats.l2">Response Time</div>
+          </div>
+
+          <!-- Stat 3 -->
+          <div class="stats-item reveal text-center lg:text-left lg:border-r lg:border-white/10 lg:pr-8" style="transition-delay:0.2s">
+            <div class="flex items-end justify-center lg:justify-start gap-1">
+              <span class="stat-number text-5xl sm:text-6xl font-semibold text-white tracking-tight leading-none" data-target="100" data-suffix="%">0</span>
+            </div>
+            <div class="mt-3 font-mono text-[11px] uppercase tracking-widest text-white/40" data-i18n="stats.l3">Digital-Only Agency</div>
+          </div>
+
+          <!-- Stat 4 -->
+          <div class="stats-item reveal text-center lg:text-left" style="transition-delay:0.3s">
+            <div class="flex items-end justify-center lg:justify-start gap-1">
+              <span class="stat-number text-5xl sm:text-6xl font-semibold text-white tracking-tight leading-none" data-target="12" data-suffix="mo">0</span>
+            </div>
+            <div class="mt-3 font-mono text-[11px] uppercase tracking-widest text-white/40" data-i18n="stats.l4">Avg. Engagement</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- 00c // CLIENT LOGO TRAIN MARQUEE (ALL 8 BRANDS)                        -->
+    <!-- ===================================================================== -->
+    <section class="py-4 sm:py-5 bg-white border-b border-hairline overflow-hidden relative select-none">
+      
+      <!-- Gradient Edge Fade Masks -->
+      <div class="pointer-events-none absolute left-0 top-0 bottom-0 w-16 sm:w-28 bg-gradient-to-r from-white to-transparent z-10"></div>
+      <div class="pointer-events-none absolute right-0 top-0 bottom-0 w-16 sm:w-28 bg-gradient-to-l from-white to-transparent z-10"></div>
+
+      <div class="logo-train-track flex items-center">
+        <!-- FIRST SET -->
+        <!-- 1: TraderBook -->
+        <a href="https://traderbook.africa" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-3 text-obsidian/60 hover:text-obsidian transition-all duration-300 cursor-pointer" title="TraderBook — Business Management App">
+          <img src="assets/img/traderbook-logo.png" alt="TraderBook" class="w-8 h-8 sm:w-9 sm:h-9 object-contain rounded-md filter grayscale group-hover:grayscale-0 transition-all duration-300" />
+          <span class="font-sans font-bold text-sm sm:text-base tracking-tight whitespace-nowrap">TraderBook</span>
+        </a>
+
+        <span class="text-hairline font-mono text-base sm:text-lg mx-6 sm:mx-10 select-none">&bull;</span>
+
+        <!-- 2: EZTEC SYSTEMS -->
+        <a href="https://eztecsystems.com" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-3 text-obsidian/60 hover:text-obsidian transition-all duration-300 cursor-pointer" title="EZTEC SYSTEMS">
+          <img src="assets/img/eztec-logo.png" alt="EZTEC SYSTEMS" class="w-8 h-8 sm:w-9 sm:h-9 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300" />
+          <span class="font-sans font-bold text-xs sm:text-sm tracking-wider uppercase whitespace-nowrap">EZTEC SYSTEMS</span>
+        </a>
+
+        <span class="text-hairline font-mono text-base sm:text-lg mx-6 sm:mx-10 select-none">&bull;</span>
+
+        <!-- 3: VERTEX -->
+        <div class="group flex items-center gap-2.5 text-obsidian/60 hover:text-obsidian transition-all duration-300 cursor-pointer hover:scale-105">
+          <svg class="w-6 h-6 sm:w-7 sm:h-7 transition-transform duration-300 group-hover:rotate-45" viewBox="0 0 24 24" fill="currentColor">
+            <polygon points="12,2 22,12 12,22 2,12" fill="none" stroke="currentColor" stroke-width="2.5" />
+            <circle cx="12" cy="12" r="3" fill="currentColor" />
+          </svg>
+          <span class="font-sans font-bold text-sm sm:text-base tracking-wider uppercase whitespace-nowrap">VERTEX</span>
+        </div>
+
+        <span class="text-hairline font-mono text-base sm:text-lg mx-6 sm:mx-10 select-none">&bull;</span>
+
+        <!-- 4: KINETIC -->
+        <div class="group flex items-center gap-2.5 text-obsidian/60 hover:text-obsidian transition-all duration-300 cursor-pointer hover:scale-105">
+          <svg class="w-6 h-6 sm:w-7 sm:h-7" viewBox="0 0 24 24" fill="currentColor">
+            <rect x="3" y="5" width="4" height="14" rx="1" />
+            <rect x="10" y="8" width="4" height="11" rx="1" />
+            <rect x="17" y="11" width="4" height="8" rx="1" />
+          </svg>
+          <span class="font-mono font-semibold text-xs sm:text-sm tracking-widest uppercase whitespace-nowrap">KINETIC</span>
+        </div>
+
+        <span class="text-hairline font-mono text-base sm:text-lg mx-6 sm:mx-10 select-none">&bull;</span>
+
+        <!-- 5: AURA -->
+        <div class="group flex items-center gap-2.5 text-obsidian/60 hover:text-obsidian transition-all duration-300 cursor-pointer hover:scale-105">
+          <svg class="w-6 h-6 sm:w-7 sm:h-7 transition-transform duration-500 group-hover:scale-110" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="9" />
+            <circle cx="12" cy="12" r="5" fill="currentColor" opacity="0.3" />
+          </svg>
+          <span class="font-serif font-bold text-sm sm:text-base tracking-wider uppercase whitespace-nowrap">AURA</span>
+        </div>
+
+        <span class="text-hairline font-mono text-base sm:text-lg mx-6 sm:mx-10 select-none">&bull;</span>
+
+        <!-- 6: NOVA LABS -->
+        <div class="group flex items-center gap-2.5 text-obsidian/60 hover:text-obsidian transition-all duration-300 cursor-pointer hover:scale-105">
+          <svg class="w-6 h-6 sm:w-7 sm:h-7 transition-transform duration-500 group-hover:rotate-90" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" />
+          </svg>
+          <span class="font-sans font-semibold text-xs sm:text-sm tracking-widest uppercase whitespace-nowrap">NOVA LABS</span>
+        </div>
+
+        <span class="text-hairline font-mono text-base sm:text-lg mx-6 sm:mx-10 select-none">&bull;</span>
+
+        <!-- 7: STRATA -->
+        <div class="group flex items-center gap-2.5 text-obsidian/60 hover:text-obsidian transition-all duration-300 cursor-pointer hover:scale-105">
+          <svg class="w-6 h-6 sm:w-7 sm:h-7" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M4 6H20V8H4V6ZM4 11H16V13H4V11ZM4 16H20V18H4V16Z" />
+          </svg>
+          <span class="font-mono font-bold text-xs sm:text-sm tracking-widest uppercase whitespace-nowrap">STRATA</span>
+        </div>
+
+        <span class="text-hairline font-mono text-base sm:text-lg mx-6 sm:mx-10 select-none">&bull;</span>
+
+        <!-- 8: LUMEN -->
+        <div class="group flex items-center gap-2.5 text-obsidian/60 hover:text-obsidian transition-all duration-300 cursor-pointer hover:scale-105">
+          <svg class="w-6 h-6 sm:w-7 sm:h-7 transition-transform duration-500 group-hover:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <circle cx="12" cy="12" r="7" />
+            <line x1="12" y1="1" x2="12" y2="4" stroke-linecap="round" />
+            <line x1="12" y1="20" x2="12" y2="23" stroke-linecap="round" />
+            <line x1="1" y1="12" x2="4" y2="12" stroke-linecap="round" />
+            <line x1="20" y1="12" x2="23" y2="12" stroke-linecap="round" />
+          </svg>
+          <span class="font-sans font-bold text-sm sm:text-base tracking-wider uppercase whitespace-nowrap">LUMEN</span>
+        </div>
+
+        <span class="text-hairline font-mono text-base sm:text-lg mx-6 sm:mx-10 select-none">&bull;</span>
+        <!-- SECOND SET (Duplicate for seamless continuous loop) -->
+        <!-- 1: TraderBook -->
+        <a href="https://traderbook.africa" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-3 text-obsidian/60 hover:text-obsidian transition-all duration-300 cursor-pointer" title="TraderBook — Business Management App">
+          <img src="assets/img/traderbook-logo.png" alt="TraderBook" class="w-8 h-8 sm:w-9 sm:h-9 object-contain rounded-md filter grayscale group-hover:grayscale-0 transition-all duration-300" />
+          <span class="font-sans font-bold text-sm sm:text-base tracking-tight whitespace-nowrap">TraderBook</span>
+        </a>
+
+        <span class="text-hairline font-mono text-base sm:text-lg mx-6 sm:mx-10 select-none">&bull;</span>
+
+        <!-- 2: EZTEC SYSTEMS -->
+        <a href="https://eztecsystems.com" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-3 text-obsidian/60 hover:text-obsidian transition-all duration-300 cursor-pointer" title="EZTEC SYSTEMS">
+          <img src="assets/img/eztec-logo.png" alt="EZTEC SYSTEMS" class="w-8 h-8 sm:w-9 sm:h-9 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300" />
+          <span class="font-sans font-bold text-xs sm:text-sm tracking-wider uppercase whitespace-nowrap">EZTEC SYSTEMS</span>
+        </a>
+
+        <span class="text-hairline font-mono text-base sm:text-lg mx-6 sm:mx-10 select-none">&bull;</span>
+
+        <!-- 3: VERTEX -->
+        <div class="group flex items-center gap-2.5 text-obsidian/60 hover:text-obsidian transition-all duration-300 cursor-pointer hover:scale-105">
+          <svg class="w-6 h-6 sm:w-7 sm:h-7 transition-transform duration-300 group-hover:rotate-45" viewBox="0 0 24 24" fill="currentColor">
+            <polygon points="12,2 22,12 12,22 2,12" fill="none" stroke="currentColor" stroke-width="2.5" />
+            <circle cx="12" cy="12" r="3" fill="currentColor" />
+          </svg>
+          <span class="font-sans font-bold text-sm sm:text-base tracking-wider uppercase whitespace-nowrap">VERTEX</span>
+        </div>
+
+        <span class="text-hairline font-mono text-base sm:text-lg mx-6 sm:mx-10 select-none">&bull;</span>
+
+        <!-- 4: KINETIC -->
+        <div class="group flex items-center gap-2.5 text-obsidian/60 hover:text-obsidian transition-all duration-300 cursor-pointer hover:scale-105">
+          <svg class="w-6 h-6 sm:w-7 sm:h-7" viewBox="0 0 24 24" fill="currentColor">
+            <rect x="3" y="5" width="4" height="14" rx="1" />
+            <rect x="10" y="8" width="4" height="11" rx="1" />
+            <rect x="17" y="11" width="4" height="8" rx="1" />
+          </svg>
+          <span class="font-mono font-semibold text-xs sm:text-sm tracking-widest uppercase whitespace-nowrap">KINETIC</span>
+        </div>
+
+        <span class="text-hairline font-mono text-base sm:text-lg mx-6 sm:mx-10 select-none">&bull;</span>
+
+        <!-- 5: AURA -->
+        <div class="group flex items-center gap-2.5 text-obsidian/60 hover:text-obsidian transition-all duration-300 cursor-pointer hover:scale-105">
+          <svg class="w-6 h-6 sm:w-7 sm:h-7 transition-transform duration-500 group-hover:scale-110" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="9" />
+            <circle cx="12" cy="12" r="5" fill="currentColor" opacity="0.3" />
+          </svg>
+          <span class="font-serif font-bold text-sm sm:text-base tracking-wider uppercase whitespace-nowrap">AURA</span>
+        </div>
+
+        <span class="text-hairline font-mono text-base sm:text-lg mx-6 sm:mx-10 select-none">&bull;</span>
+
+        <!-- 6: NOVA LABS -->
+        <div class="group flex items-center gap-2.5 text-obsidian/60 hover:text-obsidian transition-all duration-300 cursor-pointer hover:scale-105">
+          <svg class="w-6 h-6 sm:w-7 sm:h-7 transition-transform duration-500 group-hover:rotate-90" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" />
+          </svg>
+          <span class="font-sans font-semibold text-xs sm:text-sm tracking-widest uppercase whitespace-nowrap">NOVA LABS</span>
+        </div>
+
+        <span class="text-hairline font-mono text-base sm:text-lg mx-6 sm:mx-10 select-none">&bull;</span>
+
+        <!-- 7: STRATA -->
+        <div class="group flex items-center gap-2.5 text-obsidian/60 hover:text-obsidian transition-all duration-300 cursor-pointer hover:scale-105">
+          <svg class="w-6 h-6 sm:w-7 sm:h-7" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M4 6H20V8H4V6ZM4 11H16V13H4V11ZM4 16H20V18H4V16Z" />
+          </svg>
+          <span class="font-mono font-bold text-xs sm:text-sm tracking-widest uppercase whitespace-nowrap">STRATA</span>
+        </div>
+
+        <span class="text-hairline font-mono text-base sm:text-lg mx-6 sm:mx-10 select-none">&bull;</span>
+
+        <!-- 8: LUMEN -->
+        <div class="group flex items-center gap-2.5 text-obsidian/60 hover:text-obsidian transition-all duration-300 cursor-pointer hover:scale-105">
+          <svg class="w-6 h-6 sm:w-7 sm:h-7 transition-transform duration-500 group-hover:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <circle cx="12" cy="12" r="7" />
+            <line x1="12" y1="1" x2="12" y2="4" stroke-linecap="round" />
+            <line x1="12" y1="20" x2="12" y2="23" stroke-linecap="round" />
+            <line x1="1" y1="12" x2="4" y2="12" stroke-linecap="round" />
+            <line x1="20" y1="12" x2="23" y2="12" stroke-linecap="round" />
+          </svg>
+          <span class="font-sans font-bold text-sm sm:text-base tracking-wider uppercase whitespace-nowrap">LUMEN</span>
+        </div>
+
+        <span class="text-hairline font-mono text-base sm:text-lg mx-6 sm:mx-10 select-none">&bull;</span>
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- 01 // CAPABILITIES (CASINO CARD STACK DECK WITH TOGGLE)                -->
+    <!-- ===================================================================== -->
+    <section id="capabilities" class="relative py-24 lg:py-32 bg-white border-b border-hairline overflow-hidden">
+      
+      <!-- Ambient architectural background glow matching mockup -->
+      <div class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-alabaster pointer-events-none -z-0 blur-3xl opacity-80"></div>
+
+      <div class="relative z-10 max-w-7xl mx-auto px-6 sm:px-10 lg:px-14">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-start">
+          
+          <!-- Left Column: Kicker, Headline, Subtitle, and Timeline Indicator -->
+          <div class="lg:col-span-5 space-y-8 reveal">
+            <div>
+              <div class="flex items-center gap-3 mb-4">
+                <span data-i18n="cap.kicker" class="font-mono text-xs uppercase tracking-widest text-slateText font-medium">01 — OUR CAPABILITIES</span>
+                <span class="w-12 h-[1px] bg-hairline inline-block"></span>
+              </div>
+              <h2 class="text-3xl sm:text-5xl lg:text-[50px] font-semibold tracking-editorial text-obsidian leading-[1.08]">
+                <span data-i18n="cap.title1">Built for visibility.</span><br />
+                <span data-i18n="cap.title2">Designed for growth.</span>
+              </h2>
+            </div>
+
+            <p data-i18n="cap.subtitle" class="text-base sm:text-lg text-slateText font-normal leading-relaxed max-w-md">
+              We bring strategy, creativity and digital execution together to build stronger brands and measurable business outcomes.
+            </p>
+
+            <!-- Vertical Timeline Indicator (Casino Card Index List) -->
+            <div class="pt-4">
+              <div class="relative pl-6 space-y-3.5" id="cap-list">
+                <!-- Vertical connecting line -->
+                <div class="absolute left-[7px] top-2 bottom-2 w-[1px] bg-hairline"></div>
+
+                <button type="button" data-cap-idx="0" class="cap-nav-item flex items-center gap-3.5 text-left group w-full transition-all cursor-pointer">
+                  <span class="cap-dot relative z-10 w-3.5 h-3.5 rounded-full border-2 border-obsidian bg-obsidian transition-all"></span>
+                  <span data-i18n="cap.t1" class="cap-label text-sm font-semibold text-obsidian tracking-tight transition-all duration-300 group-hover:translate-x-1.5">Build Visibility</span>
+                </button>
+
+                <button type="button" data-cap-idx="1" class="cap-nav-item flex items-center gap-3.5 text-left group w-full transition-all cursor-pointer py-1">
+                  <span class="cap-dot relative z-10 w-3.5 h-3.5 rounded-full border-2 border-hairline bg-white group-hover:border-obsidian group-hover:scale-125 transition-all duration-300"></span>
+                  <span data-i18n="cap.t2" class="cap-label text-sm font-normal text-slateText group-hover:text-obsidian group-hover:translate-x-1.5 tracking-tight transition-all duration-300">Reach Audiences</span>
+                </button>
+
+                <button type="button" data-cap-idx="2" class="cap-nav-item flex items-center gap-3.5 text-left group w-full transition-all cursor-pointer py-1">
+                  <span class="cap-dot relative z-10 w-3.5 h-3.5 rounded-full border-2 border-hairline bg-white group-hover:border-obsidian group-hover:scale-125 transition-all duration-300"></span>
+                  <span data-i18n="cap.t3" class="cap-label text-sm font-normal text-slateText group-hover:text-obsidian group-hover:translate-x-1.5 tracking-tight transition-all duration-300">Create Engagement</span>
+                </button>
+
+                <button type="button" data-cap-idx="3" class="cap-nav-item flex items-center gap-3.5 text-left group w-full transition-all cursor-pointer py-1">
+                  <span class="cap-dot relative z-10 w-3.5 h-3.5 rounded-full border-2 border-hairline bg-white group-hover:border-obsidian group-hover:scale-125 transition-all duration-300"></span>
+                  <span data-i18n="cap.t4" class="cap-label text-sm font-normal text-slateText group-hover:text-obsidian group-hover:translate-x-1.5 tracking-tight transition-all duration-300">Generate Opportunities</span>
+                </button>
+
+                <button type="button" data-cap-idx="4" class="cap-nav-item flex items-center gap-3.5 text-left group w-full transition-all cursor-pointer py-1">
+                  <span class="cap-dot relative z-10 w-3.5 h-3.5 rounded-full border-2 border-hairline bg-white group-hover:border-obsidian group-hover:scale-125 transition-all duration-300"></span>
+                  <span data-i18n="cap.t5" class="cap-label text-sm font-normal text-slateText group-hover:text-obsidian group-hover:translate-x-1.5 tracking-tight transition-all duration-300">Measure Performance</span>
+                </button>
+
+                <button type="button" data-cap-idx="5" class="cap-nav-item flex items-center gap-3.5 text-left group w-full transition-all cursor-pointer py-1">
+                  <span class="cap-dot relative z-10 w-3.5 h-3.5 rounded-full border-2 border-hairline bg-white group-hover:border-obsidian group-hover:scale-125 transition-all duration-300"></span>
+                  <span data-i18n="cap.t6" class="cap-label text-sm font-normal text-slateText group-hover:text-obsidian group-hover:translate-x-1.5 tracking-tight transition-all duration-300">Improve Marketing</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Toggle Controls & Stacked Casino Cards Deck -->
+          <div class="lg:col-span-7 flex flex-col items-end reveal">
+            
+            <!-- Top Controls: Prev / Next Buttons & Counter -->
+            <div class="flex items-center gap-4 mb-8 sm:mb-10">
+              <div class="inline-flex items-center bg-white p-1 rounded-full border border-hairline shadow-sm">
+                <button
+                  id="cap-prev"
+                  type="button"
+                  aria-label="Previous card"
+                  class="w-10 h-10 rounded-full flex items-center justify-center bg-white hover:bg-alabaster hover:border-obsidian text-obsidian border border-hairline hover:scale-110 hover:shadow-md transition-all duration-300 active:scale-95 cursor-pointer"
+                >
+                  <svg class="w-4 h-4 transition-transform duration-300 group-hover:-translate-x-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+                <button
+                  id="cap-next"
+                  type="button"
+                  aria-label="Next card"
+                  class="w-10 h-10 rounded-full flex items-center justify-center bg-obsidian hover:bg-charcoal text-white hover:scale-110 hover:shadow-lg transition-all duration-300 active:scale-95 ml-1 cursor-pointer"
+                >
+                  <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+              <span id="cap-counter" class="font-mono text-sm tracking-wider text-slateText font-medium select-none">
+                1 / 6
+              </span>
+            </div>
+
+            <!-- The Casino Stacked Card Deck Container -->
+            <div class="relative w-full max-w-[560px] h-[360px] sm:h-[400px] mb-8 select-none">
+              <div id="cap-deck" class="relative w-full h-full">
+
+                <!-- Card 01: Build Visibility -->
+                <div
+                  data-card-idx="0"
+                  class="cap-card absolute inset-0 rounded-[26px] sm:rounded-[30px] overflow-hidden bg-obsidian text-white border border-white/10 shadow-2xl cursor-pointer"
+                >
+                  <!-- Full-card background image -->
+                  <img
+                    src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80"
+                    alt="Build Visibility"
+                    onerror="this.src='https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80'"
+                    class="cap-card-img absolute inset-0 w-full h-full object-cover grayscale contrast-125 brightness-95"
+                  />
+                  <!-- Single gradient overlay — left solid, right transparent -->
+                  <div class="absolute inset-0 bg-gradient-to-r from-obsidian via-obsidian/85 to-obsidian/20"></div>
+                  <!-- Content -->
+                  <div class="relative z-10 p-7 sm:p-9 h-full flex flex-col justify-between max-w-[65%] sm:max-w-[60%]">
+                    <div>
+                      <div class="font-mono text-xs text-white/50 tracking-widest uppercase mb-4 sm:mb-6">01 / 06</div>
+                      <h3 data-i18n="cap.t1" class="text-2xl sm:text-3xl font-semibold tracking-tight text-white mb-3">Build Visibility</h3>
+                      <p data-i18n="cap.d1" class="text-xs sm:text-sm text-white/70 leading-relaxed">Make your brand easier to find, recognise and remember across digital channels.</p>
+                    </div>
+                    <a href="#services" class="inline-flex items-center gap-3 text-xs font-mono uppercase tracking-widest text-white group/btn pt-4">
+                      <span class="w-9 h-9 rounded-full border border-white/30 flex items-center justify-center group-hover/btn:bg-white group-hover/btn:text-obsidian transition-colors">
+                        <svg class="w-3.5 h-3.5 transition-transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17" /></svg>
+                      </span>
+                      <span data-i18n="cap.learnMore" class="group-hover/btn:underline">Learn More</span>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Card 02: Reach Audiences -->
+                <div
+                  data-card-idx="1"
+                  class="cap-card absolute inset-0 rounded-[26px] sm:rounded-[30px] overflow-hidden bg-obsidian text-white border border-white/10 shadow-2xl cursor-pointer"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?auto=format&fit=crop&w=1200&q=80"
+                    alt="Reach Audiences"
+                    onerror="this.src='https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80'"
+                    class="cap-card-img absolute inset-0 w-full h-full object-cover grayscale contrast-125 brightness-95"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-r from-obsidian via-obsidian/85 to-obsidian/20"></div>
+                  <div class="relative z-10 p-7 sm:p-9 h-full flex flex-col justify-between max-w-[65%] sm:max-w-[60%]">
+                    <div>
+                      <div class="font-mono text-xs text-white/50 tracking-widest uppercase mb-4 sm:mb-6">02 / 06</div>
+                      <h3 data-i18n="cap.t2" class="text-2xl sm:text-3xl font-semibold tracking-tight text-white mb-3">Reach Audiences</h3>
+                      <p data-i18n="cap.d2" class="text-xs sm:text-sm text-white/70 leading-relaxed">Connect products and services with relevant people through targeted discovery.</p>
+                    </div>
+                    <a href="#services" class="inline-flex items-center gap-3 text-xs font-mono uppercase tracking-widest text-white group/btn pt-4">
+                      <span class="w-9 h-9 rounded-full border border-white/30 flex items-center justify-center group-hover/btn:bg-white group-hover/btn:text-obsidian transition-colors">
+                        <svg class="w-3.5 h-3.5 transition-transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17" /></svg>
+                      </span>
+                      <span data-i18n="cap.learnMore" class="group-hover/btn:underline">Learn More</span>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Card 03: Create Engagement -->
+                <div
+                  data-card-idx="2"
+                  class="cap-card absolute inset-0 rounded-[26px] sm:rounded-[30px] overflow-hidden bg-obsidian text-white border border-white/10 shadow-2xl cursor-pointer"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=1200&q=80"
+                    alt="Create Engagement"
+                    onerror="this.src='https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80'"
+                    class="cap-card-img absolute inset-0 w-full h-full object-cover grayscale contrast-125 brightness-95"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-r from-obsidian via-obsidian/85 to-obsidian/20"></div>
+                  <div class="relative z-10 p-7 sm:p-9 h-full flex flex-col justify-between max-w-[65%] sm:max-w-[60%]">
+                    <div>
+                      <div class="font-mono text-xs text-white/50 tracking-widest uppercase mb-4 sm:mb-6">03 / 06</div>
+                      <h3 data-i18n="cap.t3" class="text-2xl sm:text-3xl font-semibold tracking-tight text-white mb-3">Create Engagement</h3>
+                      <p data-i18n="cap.d3" class="text-xs sm:text-sm text-white/70 leading-relaxed">Publish useful content and design brand experiences that build lasting trust.</p>
+                    </div>
+                    <a href="#services" class="inline-flex items-center gap-3 text-xs font-mono uppercase tracking-widest text-white group/btn pt-4">
+                      <span class="w-9 h-9 rounded-full border border-white/30 flex items-center justify-center group-hover/btn:bg-white group-hover/btn:text-obsidian transition-colors">
+                        <svg class="w-3.5 h-3.5 transition-transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17" /></svg>
+                      </span>
+                      <span data-i18n="cap.learnMore" class="group-hover/btn:underline">Learn More</span>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Card 04: Generate Opportunities -->
+                <div
+                  data-card-idx="3"
+                  class="cap-card absolute inset-0 rounded-[26px] sm:rounded-[30px] overflow-hidden bg-obsidian text-white border border-white/10 shadow-2xl cursor-pointer"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80"
+                    alt="Generate Opportunities"
+                    onerror="this.src='https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80'"
+                    class="cap-card-img absolute inset-0 w-full h-full object-cover grayscale contrast-125 brightness-95"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-r from-obsidian via-obsidian/85 to-obsidian/20"></div>
+                  <div class="relative z-10 p-7 sm:p-9 h-full flex flex-col justify-between max-w-[65%] sm:max-w-[60%]">
+                    <div>
+                      <div class="font-mono text-xs text-white/50 tracking-widest uppercase mb-4 sm:mb-6">04 / 06</div>
+                      <h3 data-i18n="cap.t4" class="text-2xl sm:text-3xl font-semibold tracking-tight text-white mb-3">Generate Opportunities</h3>
+                      <p data-i18n="cap.d4" class="text-xs sm:text-sm text-white/70 leading-relaxed">Attract qualified commercial enquiries and high-intent buyer interest.</p>
+                    </div>
+                    <a href="#contact" class="inline-flex items-center gap-3 text-xs font-mono uppercase tracking-widest text-white group/btn pt-4">
+                      <span class="w-9 h-9 rounded-full border border-white/30 flex items-center justify-center group-hover/btn:bg-white group-hover/btn:text-obsidian transition-colors">
+                        <svg class="w-3.5 h-3.5 transition-transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17" /></svg>
+                      </span>
+                      <span data-i18n="cap.learnMore" class="group-hover/btn:underline">Learn More</span>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Card 05: Measure Performance -->
+                <div
+                  data-card-idx="4"
+                  class="cap-card absolute inset-0 rounded-[26px] sm:rounded-[30px] overflow-hidden bg-obsidian text-white border border-white/10 shadow-2xl cursor-pointer"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=1200&q=80"
+                    alt="Measure Performance"
+                    onerror="this.src='https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80'"
+                    class="cap-card-img absolute inset-0 w-full h-full object-cover grayscale contrast-125 brightness-95"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-r from-obsidian via-obsidian/85 to-obsidian/20"></div>
+                  <div class="relative z-10 p-7 sm:p-9 h-full flex flex-col justify-between max-w-[65%] sm:max-w-[60%]">
+                    <div>
+                      <div class="font-mono text-xs text-white/50 tracking-widest uppercase mb-4 sm:mb-6">05 / 06</div>
+                      <h3 data-i18n="cap.t5" class="text-2xl sm:text-3xl font-semibold tracking-tight text-white mb-3">Measure Performance</h3>
+                      <p data-i18n="cap.d5" class="text-xs sm:text-sm text-white/70 leading-relaxed">Track transparent commercial metrics and uncover actionable growth levers.</p>
+                    </div>
+                    <a href="#services" class="inline-flex items-center gap-3 text-xs font-mono uppercase tracking-widest text-white group/btn pt-4">
+                      <span class="w-9 h-9 rounded-full border border-white/30 flex items-center justify-center group-hover/btn:bg-white group-hover/btn:text-obsidian transition-colors">
+                        <svg class="w-3.5 h-3.5 transition-transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17" /></svg>
+                      </span>
+                      <span data-i18n="cap.learnMore" class="group-hover/btn:underline">Learn More</span>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Card 06: Improve Marketing -->
+                <div
+                  data-card-idx="5"
+                  class="cap-card absolute inset-0 rounded-[26px] sm:rounded-[30px] overflow-hidden bg-obsidian text-white border border-white/10 shadow-2xl cursor-pointer"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?auto=format&fit=crop&w=1200&q=80"
+                    alt="Improve Marketing"
+                    onerror="this.src='https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80'"
+                    class="cap-card-img absolute inset-0 w-full h-full object-cover grayscale contrast-125 brightness-95"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-r from-obsidian via-obsidian/85 to-obsidian/20"></div>
+                  <div class="relative z-10 p-7 sm:p-9 h-full flex flex-col justify-between max-w-[65%] sm:max-w-[60%]">
+                    <div>
+                      <div class="font-mono text-xs text-white/50 tracking-widest uppercase mb-4 sm:mb-6">06 / 06</div>
+                      <h3 data-i18n="cap.t6" class="text-2xl sm:text-3xl font-semibold tracking-tight text-white mb-3">Improve Marketing</h3>
+                      <p data-i18n="cap.d6" class="text-xs sm:text-sm text-white/70 leading-relaxed">Refine campaigns and creative execution continuously around verified data.</p>
+                    </div>
+                    <a href="#contact" class="inline-flex items-center gap-3 text-xs font-mono uppercase tracking-widest text-white group/btn pt-4">
+                      <span class="w-9 h-9 rounded-full border border-white/30 flex items-center justify-center group-hover/btn:bg-white group-hover/btn:text-obsidian transition-colors">
+                        <svg class="w-3.5 h-3.5 transition-transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17" /></svg>
+                      </span>
+                      <span data-i18n="cap.learnMore" class="group-hover/btn:underline">Learn More</span>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Bottom Right Brand Signature (Matching mockup) -->
+            <div class="flex items-center justify-end w-full pt-4 pr-2 opacity-80">
+              <img src="assets/img/Logo.png" alt="JS MEDIA" class="h-6 w-auto object-contain" />
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- 02 // SIX CORE SERVICES (CLEAN INTERACTIVE INDEX + PREVIEW)           -->
+    <!-- ===================================================================== -->
+    <section id="services" class="py-24 lg:py-32 bg-alabaster border-b border-hairline">
+      <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14 reveal">
+          <div>
+            <div data-i18n="srv.kicker" class="font-mono text-xs uppercase tracking-widest text-mutedGrey mb-3">02 // SERVICES</div>
+            <h2 data-i18n="srv.title" class="text-3xl sm:text-5xl font-semibold tracking-editorial text-obsidian">
+              Six Core Services.
+            </h2>
+          </div>
+          <p data-i18n="srv.subtitle" class="text-sm text-slateText max-w-xs">
+            Engage independently or combine into a unified growth programme.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start reveal">
+          
+          <!-- Interactive Services List (8 Cols) -->
+          <div class="lg:col-span-8 bg-white border-t border-hairline">
+            
+            <!-- 01 -->
+            <div class="dept-row is-open border-b border-hairline transition-colors" data-service-idx="0" data-img="assets/img/Social Media Managements.png">
+              <button type="button" class="dept-trigger w-full py-7 px-5 sm:px-7 flex items-center justify-between text-left hover:bg-alabaster transition-colors cursor-pointer group">
+                <div class="flex items-center gap-6">
+                  <span class="dept-num font-mono text-xs text-mutedGrey transition-all duration-300">01</span>
+                  <h3 data-i18n="srv.s1.title" class="dept-title text-xl sm:text-2xl font-semibold tracking-tight text-obsidian transition-transform duration-300">Social Media Management</h3>
+                </div>
+                <span class="dept-plus font-mono text-lg text-obsidian transition-transform duration-300 inline-block">+</span>
+              </button>
+              <div class="dept-body">
+                <div class="dept-inner">
+                  <div class="px-5 sm:px-7 pb-7 pt-1 pl-14 sm:pl-16 flex flex-wrap items-center justify-between gap-4">
+                    <div class="flex flex-wrap gap-2">
+                      <span data-i18n="srv.s1.t1" class="service-tag px-3.5 py-1.5 bg-alabaster border border-hairline text-xs text-obsidian rounded-sm cursor-pointer">Account Management</span>
+                      <span data-i18n="srv.s1.t2" class="service-tag px-3.5 py-1.5 bg-alabaster border border-hairline text-xs text-obsidian rounded-sm cursor-pointer">Content Scheduling</span>
+                      <span data-i18n="srv.s1.t3" class="service-tag px-3.5 py-1.5 bg-alabaster border border-hairline text-xs text-obsidian rounded-sm cursor-pointer">Community Management</span>
+                      <span data-i18n="srv.s1.t4" class="service-tag px-3.5 py-1.5 bg-alabaster border border-hairline text-xs text-obsidian rounded-sm cursor-pointer">Strategy &amp; Reporting</span>
+                    </div>
+                    <button type="button" onclick="quickInquire('smm')" class="font-mono text-[11px] uppercase tracking-wider text-obsidian border-b border-obsidian pb-0.5 btn-magnetic inline-flex items-center gap-1.5 hover:opacity-80">
+                      <span data-i18n="srv.inquireBtn">Inquire About This Service</span>
+                      <span class="btn-arrow">&rarr;</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 02 -->
+            <div class="dept-row border-b border-hairline transition-colors" data-service-idx="1" data-img="assets/img/Digital Advertising &amp; Marketing.jpg">
+              <button type="button" class="dept-trigger w-full py-7 px-5 sm:px-7 flex items-center justify-between text-left hover:bg-alabaster transition-colors cursor-pointer group">
+                <div class="flex items-center gap-6">
+                  <span class="dept-num font-mono text-xs text-mutedGrey transition-all duration-300">02</span>
+                  <h3 data-i18n="srv.s2.title" class="dept-title text-xl sm:text-2xl font-semibold tracking-tight text-obsidian transition-transform duration-300">Digital Advertising &amp; Marketing</h3>
+                </div>
+                <span class="dept-plus font-mono text-lg text-obsidian transition-transform duration-300 inline-block">+</span>
+              </button>
+              <div class="dept-body">
+                <div class="dept-inner">
+                  <div class="px-5 sm:px-7 pb-7 pt-1 pl-14 sm:pl-16 flex flex-wrap items-center justify-between gap-4">
+                    <div class="flex flex-wrap gap-2">
+                      <span data-i18n="srv.s2.t1" class="service-tag px-3.5 py-1.5 bg-alabaster border border-hairline text-xs text-obsidian rounded-sm cursor-pointer">Meta Ads</span>
+                      <span data-i18n="srv.s2.t2" class="service-tag px-3.5 py-1.5 bg-alabaster border border-hairline text-xs text-obsidian rounded-sm cursor-pointer">Google Ads</span>
+                      <span data-i18n="srv.s2.t3" class="service-tag px-3.5 py-1.5 bg-alabaster border border-hairline text-xs text-obsidian rounded-sm cursor-pointer">Lead Generation</span>
+                      <span data-i18n="srv.s2.t4" class="service-tag px-3.5 py-1.5 bg-alabaster border border-hairline text-xs text-obsidian rounded-sm cursor-pointer">Retargeting &amp; Optimisation</span>
+                    </div>
+                    <button type="button" onclick="quickInquire('ads')" class="font-mono text-[11px] uppercase tracking-wider text-obsidian border-b border-obsidian pb-0.5 btn-magnetic inline-flex items-center gap-1.5 hover:opacity-80">
+                      <span data-i18n="srv.inquireBtn">Inquire About This Service</span>
+                      <span class="btn-arrow">&rarr;</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 03 -->
+            <div class="dept-row border-b border-hairline transition-colors" data-service-idx="2" data-img="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80">
+              <button type="button" class="dept-trigger w-full py-7 px-5 sm:px-7 flex items-center justify-between text-left hover:bg-alabaster transition-colors cursor-pointer group">
+                <div class="flex items-center gap-6">
+                  <span class="dept-num font-mono text-xs text-mutedGrey transition-all duration-300">03</span>
+                  <h3 data-i18n="srv.s3.title" class="dept-title text-xl sm:text-2xl font-semibold tracking-tight text-obsidian transition-transform duration-300">Search Engine Optimisation</h3>
+                </div>
+                <span class="dept-plus font-mono text-lg text-obsidian transition-transform duration-300 inline-block">+</span>
+              </button>
+              <div class="dept-body">
+                <div class="dept-inner">
+                  <div class="px-5 sm:px-7 pb-7 pt-1 pl-14 sm:pl-16 flex flex-wrap items-center justify-between gap-4">
+                    <div class="flex flex-wrap gap-2">
+                      <span data-i18n="srv.s3.t1" class="service-tag px-3.5 py-1.5 bg-alabaster border border-hairline text-xs text-obsidian rounded-sm cursor-pointer">Website Audits</span>
+                      <span data-i18n="srv.s3.t2" class="service-tag px-3.5 py-1.5 bg-alabaster border border-hairline text-xs text-obsidian rounded-sm cursor-pointer">On-Page &amp; Technical SEO</span>
+                      <span data-i18n="srv.s3.t3" class="service-tag px-3.5 py-1.5 bg-alabaster border border-hairline text-xs text-obsidian rounded-sm cursor-pointer">Keyword Research</span>
+                      <span data-i18n="srv.s3.t4" class="service-tag px-3.5 py-1.5 bg-alabaster border border-hairline text-xs text-obsidian rounded-sm cursor-pointer">Local SEO</span>
+                    </div>
+                    <button type="button" onclick="quickInquire('seo')" class="font-mono text-[11px] uppercase tracking-wider text-obsidian border-b border-obsidian pb-0.5 btn-magnetic inline-flex items-center gap-1.5 hover:opacity-80">
+                      <span data-i18n="srv.inquireBtn">Inquire About This Service</span>
+                      <span class="btn-arrow">&rarr;</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 04 -->
+            <div class="dept-row border-b border-hairline transition-colors" data-service-idx="3" data-img="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=900&q=80">
+              <button type="button" class="dept-trigger w-full py-7 px-5 sm:px-7 flex items-center justify-between text-left hover:bg-alabaster transition-colors cursor-pointer group">
+                <div class="flex items-center gap-6">
+                  <span class="dept-num font-mono text-xs text-mutedGrey transition-all duration-300">04</span>
+                  <h3 data-i18n="srv.s4.title" class="dept-title text-xl sm:text-2xl font-semibold tracking-tight text-obsidian transition-transform duration-300">Content Development &amp; Copywriting</h3>
+                </div>
+                <span class="dept-plus font-mono text-lg text-obsidian transition-transform duration-300 inline-block">+</span>
+              </button>
+              <div class="dept-body">
+                <div class="dept-inner">
+                  <div class="px-5 sm:px-7 pb-7 pt-1 pl-14 sm:pl-16 flex flex-wrap items-center justify-between gap-4">
+                    <div class="flex flex-wrap gap-2">
+                      <span data-i18n="srv.s4.t1" class="service-tag px-3.5 py-1.5 bg-alabaster border border-hairline text-xs text-obsidian rounded-sm cursor-pointer">Website &amp; Blog Copy</span>
+                      <span data-i18n="srv.s4.t2" class="service-tag px-3.5 py-1.5 bg-alabaster border border-hairline text-xs text-obsidian rounded-sm cursor-pointer">Ad &amp; Sales Copy</span>
+                      <span data-i18n="srv.s4.t3" class="service-tag px-3.5 py-1.5 bg-alabaster border border-hairline text-xs text-obsidian rounded-sm cursor-pointer">Email &amp; Social Captions</span>
+                    </div>
+                    <button type="button" onclick="quickInquire('copy')" class="font-mono text-[11px] uppercase tracking-wider text-obsidian border-b border-obsidian pb-0.5 btn-magnetic inline-flex items-center gap-1.5 hover:opacity-80">
+                      <span data-i18n="srv.inquireBtn">Inquire About This Service</span>
+                      <span class="btn-arrow">&rarr;</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 05 -->
+            <div class="dept-row border-b border-hairline transition-colors" data-service-idx="4" data-img="assets/img/Digital Content Production.jpg">
+              <button type="button" class="dept-trigger w-full py-7 px-5 sm:px-7 flex items-center justify-between text-left hover:bg-alabaster transition-colors cursor-pointer group">
+                <div class="flex items-center gap-6">
+                  <span class="dept-num font-mono text-xs text-mutedGrey transition-all duration-300">05</span>
+                  <h3 data-i18n="srv.s5.title" class="dept-title text-xl sm:text-2xl font-semibold tracking-tight text-obsidian transition-transform duration-300">Digital Content Production</h3>
+                </div>
+                <span class="dept-plus font-mono text-lg text-obsidian transition-transform duration-300 inline-block">+</span>
+              </button>
+              <div class="dept-body">
+                <div class="dept-inner">
+                  <div class="px-5 sm:px-7 pb-7 pt-1 pl-14 sm:pl-16 flex flex-wrap items-center justify-between gap-4">
+                    <div class="flex flex-wrap gap-2">
+                      <span data-i18n="srv.s5.t1" class="service-tag px-3.5 py-1.5 bg-alabaster border border-hairline text-xs text-obsidian rounded-sm cursor-pointer">Short-Form Video</span>
+                      <span data-i18n="srv.s5.t2" class="service-tag px-3.5 py-1.5 bg-alabaster border border-hairline text-xs text-obsidian rounded-sm cursor-pointer">Reels &amp; TikTok</span>
+                      <span data-i18n="srv.s5.t3" class="service-tag px-3.5 py-1.5 bg-alabaster border border-hairline text-xs text-obsidian rounded-sm cursor-pointer">Product Promo</span>
+                      <span data-i18n="srv.s5.t4" class="service-tag px-3.5 py-1.5 bg-alabaster border border-hairline text-xs text-obsidian rounded-sm cursor-pointer">Social Graphics</span>
+                    </div>
+                    <button type="button" onclick="quickInquire('prod')" class="font-mono text-[11px] uppercase tracking-wider text-obsidian border-b border-obsidian pb-0.5 btn-magnetic inline-flex items-center gap-1.5 hover:opacity-80">
+                      <span data-i18n="srv.inquireBtn">Inquire About This Service</span>
+                      <span class="btn-arrow">&rarr;</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 06 -->
+            <div class="dept-row border-b border-hairline transition-colors" data-service-idx="5" data-img="assets/img/Digital Strategy and Consultancy.jpg">
+              <button type="button" class="dept-trigger w-full py-7 px-5 sm:px-7 flex items-center justify-between text-left hover:bg-alabaster transition-colors cursor-pointer group">
+                <div class="flex items-center gap-6">
+                  <span class="dept-num font-mono text-xs text-mutedGrey transition-all duration-300">06</span>
+                  <h3 data-i18n="srv.s6.title" class="dept-title text-xl sm:text-2xl font-semibold tracking-tight text-obsidian transition-transform duration-300">Digital Strategy &amp; Consultancy</h3>
+                </div>
+                <span class="dept-plus font-mono text-lg text-obsidian transition-transform duration-300 inline-block">+</span>
+              </button>
+              <div class="dept-body">
+                <div class="dept-inner">
+                  <div class="px-5 sm:px-7 pb-7 pt-1 pl-14 sm:pl-16 flex flex-wrap items-center justify-between gap-4">
+                    <div class="flex flex-wrap gap-2">
+                      <span data-i18n="srv.s6.t1" class="service-tag px-3.5 py-1.5 bg-alabaster border border-hairline text-xs text-obsidian rounded-sm cursor-pointer">Marketing Audits</span>
+                      <span data-i18n="srv.s6.t2" class="service-tag px-3.5 py-1.5 bg-alabaster border border-hairline text-xs text-obsidian rounded-sm cursor-pointer">Competitor &amp; Market Research</span>
+                      <span data-i18n="srv.s6.t3" class="service-tag px-3.5 py-1.5 bg-alabaster border border-hairline text-xs text-obsidian rounded-sm cursor-pointer">Brand Positioning</span>
+                      <span data-i18n="srv.s6.t4" class="service-tag px-3.5 py-1.5 bg-alabaster border border-hairline text-xs text-obsidian rounded-sm cursor-pointer">Performance Analysis</span>
+                    </div>
+                    <button type="button" onclick="quickInquire('strat')" class="font-mono text-[11px] uppercase tracking-wider text-obsidian border-b border-obsidian pb-0.5 btn-magnetic inline-flex items-center gap-1.5 hover:opacity-80">
+                      <span data-i18n="srv.inquireBtn">Inquire About This Service</span>
+                      <span class="btn-arrow">&rarr;</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Dynamic B&W Service Preview Frame (4 Cols) -->
+          <div class="lg:col-span-4 lg:sticky lg:top-28">
+            <div class="bw-frame relative aspect-[4/5] rounded-sm overflow-hidden border border-hairline bg-obsidian">
+              <img
+                id="dept-preview-img"
+                src="assets/img/Social Media Managements.png"
+                alt="Service visual preview"
+                onerror="this.src='https://placehold.co/800x1000/09090B/FFFFFF?text=JS+MEDIA'"
+                class="bw-editorial w-full h-full object-cover"
+              />
+              <div class="absolute bottom-4 left-4 bg-white/95 px-3 py-1.5 rounded-sm font-mono text-[10px] uppercase tracking-widest text-obsidian">
+                <span id="dept-preview-caption">01 // SOCIAL MEDIA</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- 02b // CASE STUDIES                                                   -->
+    <!-- ===================================================================== -->
+    <section id="case-studies" class="py-24 lg:py-32 bg-white border-b border-hairline">
+      <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14">
+
+        <!-- Section Header -->
+        <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 mb-16 reveal">
+          <div>
+            <div data-i18n="cs.kicker" class="font-mono text-xs uppercase tracking-widest text-mutedGrey mb-4">02b // Case Studies</div>
+            <h2 data-i18n="cs.title" class="text-4xl sm:text-5xl font-semibold tracking-editorial text-obsidian leading-[1.08]">Work that speaks.</h2>
+          </div>
+          <p data-i18n="cs.subtitle" class="text-sm text-slateText leading-relaxed max-w-xs sm:text-right">
+            Strategies built around real objectives. Results measured against real benchmarks.
+          </p>
+        </div>
+
+        <!-- Case Study Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          <!-- Card 01 -->
+          <article class="cs-card group relative bg-obsidian text-white rounded-sm overflow-hidden cursor-pointer reveal hover-lift-dark" style="min-height:420px;">
+            <div class="absolute inset-0 z-0">
+              <img src="assets/img/Social Media Managements.png" alt="Social Media Case Study" class="w-full h-full object-cover opacity-30 group-hover:opacity-45 group-hover:scale-105 transition-all duration-700" onerror="this.style.display='none'" />
+              <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/70 to-obsidian/20"></div>
+            </div>
+            <div class="relative z-10 p-8 flex flex-col h-full" style="min-height:420px;">
+              <div class="flex items-center justify-between mb-auto">
+                <span class="font-mono text-[11px] uppercase tracking-widest text-white/40">01 / Case Study</span>
+                <span class="font-mono text-[11px] px-2.5 py-1 border border-white/20 text-white/60 rounded-sm" data-i18n="cs.tag1">Social Media</span>
+              </div>
+              <div class="mt-auto">
+                <div class="text-[52px] font-semibold leading-none text-white/10 select-none mb-4">01</div>
+                <h3 data-i18n="cs.c1.title" class="text-xl font-semibold text-white mb-2 leading-snug">Fashion Brand — Social Growth</h3>
+                <p data-i18n="cs.c1.desc" class="text-sm text-white/60 leading-relaxed mb-6">Built a consistent content presence across Instagram & TikTok, turning a new brand into a recognisable digital voice within 90 days.</p>
+                <div class="grid grid-cols-2 gap-4 mb-6 pt-4 border-t border-white/10">
+                  <div>
+                    <div class="text-2xl font-semibold text-white">+340%</div>
+                    <div data-i18n="cs.c1.m1" class="font-mono text-[10px] uppercase tracking-widest text-white/40 mt-1">Organic Reach</div>
+                  </div>
+                  <div>
+                    <div class="text-2xl font-semibold text-white">12k</div>
+                    <div data-i18n="cs.c1.m2" class="font-mono text-[10px] uppercase tracking-widest text-white/40 mt-1">New Followers</div>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2 font-mono text-[11px] uppercase tracking-wider text-white/50 group-hover:text-white transition-colors duration-300">
+                  <span data-i18n="cs.readMore">Read Study</span>
+                  <span class="group-hover:translate-x-1 transition-transform duration-300">&rarr;</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 02 -->
+          <article class="cs-card group relative bg-obsidian text-white rounded-sm overflow-hidden cursor-pointer reveal hover-lift-dark" style="min-height:420px; transition-delay:0.1s">
+            <div class="absolute inset-0 z-0">
+              <img src="assets/img/Digital Advertising & Marketing.jpg" alt="Advertising Case Study" class="w-full h-full object-cover opacity-30 group-hover:opacity-45 group-hover:scale-105 transition-all duration-700" onerror="this.style.display='none'" />
+              <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/70 to-obsidian/20"></div>
+            </div>
+            <div class="relative z-10 p-8 flex flex-col h-full" style="min-height:420px;">
+              <div class="flex items-center justify-between mb-auto">
+                <span class="font-mono text-[11px] uppercase tracking-widest text-white/40">02 / Case Study</span>
+                <span class="font-mono text-[11px] px-2.5 py-1 border border-white/20 text-white/60 rounded-sm" data-i18n="cs.tag2">Paid Ads</span>
+              </div>
+              <div class="mt-auto">
+                <div class="text-[52px] font-semibold leading-none text-white/10 select-none mb-4">02</div>
+                <h3 data-i18n="cs.c2.title" class="text-xl font-semibold text-white mb-2 leading-snug">Tech Startup — Lead Generation</h3>
+                <p data-i18n="cs.c2.desc" class="text-sm text-white/60 leading-relaxed mb-6">Designed and managed a performance ad campaign on Meta & Google that drove qualified B2B leads at a sustainable acquisition cost.</p>
+                <div class="grid grid-cols-2 gap-4 mb-6 pt-4 border-t border-white/10">
+                  <div>
+                    <div class="text-2xl font-semibold text-white">3.8x</div>
+                    <div data-i18n="cs.c2.m1" class="font-mono text-[10px] uppercase tracking-widest text-white/40 mt-1">Return on Ad Spend</div>
+                  </div>
+                  <div>
+                    <div class="text-2xl font-semibold text-white">-42%</div>
+                    <div data-i18n="cs.c2.m2" class="font-mono text-[10px] uppercase tracking-widest text-white/40 mt-1">Cost Per Lead</div>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2 font-mono text-[11px] uppercase tracking-wider text-white/50 group-hover:text-white transition-colors duration-300">
+                  <span data-i18n="cs.readMore">Read Study</span>
+                  <span class="group-hover:translate-x-1 transition-transform duration-300">&rarr;</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 03 -->
+          <article class="cs-card group relative bg-obsidian text-white rounded-sm overflow-hidden cursor-pointer reveal hover-lift-dark" style="min-height:420px; transition-delay:0.2s">
+            <div class="absolute inset-0 z-0">
+              <img src="assets/img/Digital Strategy and Consultancy.jpg" alt="Strategy Case Study" class="w-full h-full object-cover opacity-30 group-hover:opacity-45 group-hover:scale-105 transition-all duration-700" onerror="this.style.display='none'" />
+              <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/70 to-obsidian/20"></div>
+            </div>
+            <div class="relative z-10 p-8 flex flex-col h-full" style="min-height:420px;">
+              <div class="flex items-center justify-between mb-auto">
+                <span class="font-mono text-[11px] uppercase tracking-widest text-white/40">03 / Case Study</span>
+                <span class="font-mono text-[11px] px-2.5 py-1 border border-white/20 text-white/60 rounded-sm" data-i18n="cs.tag3">Strategy</span>
+              </div>
+              <div class="mt-auto">
+                <div class="text-[52px] font-semibold leading-none text-white/10 select-none mb-4">03</div>
+                <h3 data-i18n="cs.c3.title" class="text-xl font-semibold text-white mb-2 leading-snug">F&amp;B Brand — Full Digital Strategy</h3>
+                <p data-i18n="cs.c3.desc" class="text-sm text-white/60 leading-relaxed mb-6">Developed a 6-month go-to-market strategy covering SEO, content and paid channels, giving a local brand a clear digital roadmap.</p>
+                <div class="grid grid-cols-2 gap-4 mb-6 pt-4 border-t border-white/10">
+                  <div>
+                    <div class="text-2xl font-semibold text-white">+180%</div>
+                    <div data-i18n="cs.c3.m1" class="font-mono text-[10px] uppercase tracking-widest text-white/40 mt-1">Web Traffic</div>
+                  </div>
+                  <div>
+                    <div class="text-2xl font-semibold text-white">6mo</div>
+                    <div data-i18n="cs.c3.m2" class="font-mono text-[10px] uppercase tracking-widest text-white/40 mt-1">Time to Results</div>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2 font-mono text-[11px] uppercase tracking-wider text-white/50 group-hover:text-white transition-colors duration-300">
+                  <span data-i18n="cs.readMore">Read Study</span>
+                  <span class="group-hover:translate-x-1 transition-transform duration-300">&rarr;</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 04 -->
+          <article class="cs-card group relative bg-obsidian text-white rounded-sm overflow-hidden cursor-pointer reveal hover-lift-dark" style="min-height:420px; transition-delay:0.3s">
+            <div class="absolute inset-0 z-0">
+              <img src="assets/img/Digital Content Production.jpg" alt="B2B Case Study" class="w-full h-full object-cover opacity-30 group-hover:opacity-45 group-hover:scale-105 transition-all duration-700" onerror="this.style.display='none'" />
+              <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/70 to-obsidian/20"></div>
+            </div>
+            <div class="relative z-10 p-8 flex flex-col h-full" style="min-height:420px;">
+              <div class="flex items-center justify-between mb-auto">
+                <span class="font-mono text-[11px] uppercase tracking-widest text-white/40">04 / Case Study</span>
+                <span class="font-mono text-[11px] px-2.5 py-1 border border-white/20 text-white/60 rounded-sm" data-i18n="cs.tag4">B2B</span>
+              </div>
+              <div class="mt-auto">
+                <div class="text-[52px] font-semibold leading-none text-white/10 select-none mb-4">04</div>
+                <h3 data-i18n="cs.c4.title" class="text-xl font-semibold text-white mb-2 leading-snug">B2B SaaS — SEO & Content</h3>
+                <p data-i18n="cs.c4.desc" class="text-sm text-white/60 leading-relaxed mb-6">Built a content and SEO engine for a B2B software company, targeting decision-makers with authoritative long-form articles and landing pages.</p>
+                <div class="grid grid-cols-2 gap-4 mb-6 pt-4 border-t border-white/10">
+                  <div>
+                    <div class="text-2xl font-semibold text-white">+220%</div>
+                    <div data-i18n="cs.c4.m1" class="font-mono text-[10px] uppercase tracking-widest text-white/40 mt-1">Organic Sessions</div>
+                  </div>
+                  <div>
+                    <div class="text-2xl font-semibold text-white">Top 3</div>
+                    <div data-i18n="cs.c4.m2" class="font-mono text-[10px] uppercase tracking-widest text-white/40 mt-1">Keyword Rankings</div>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2 font-mono text-[11px] uppercase tracking-wider text-white/50 group-hover:text-white transition-colors duration-300">
+                  <span data-i18n="cs.readMore">Read Study</span>
+                  <span class="group-hover:translate-x-1 transition-transform duration-300">&rarr;</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Footer note -->
+        <p data-i18n="cs.note" class="mt-10 font-mono text-xs text-mutedGrey text-center reveal">
+          * Client details are anonymised. Results reflect actual campaign benchmarks.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- 03 // WORKING APPROACH (4-STEP HORIZONTAL MINIMALIST BAR)             -->
+    <!-- ===================================================================== -->
+    <section id="approach" class="py-24 lg:py-32 bg-obsidian text-white border-b border-charcoal">
+      <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14">
+        
+        <div class="mb-16 reveal">
+          <div data-i18n="app.kicker" class="font-mono text-xs uppercase tracking-widest text-mutedGrey mb-3">03 // WORKING APPROACH</div>
+          <h2 data-i18n="app.title" class="text-3xl sm:text-5xl font-semibold tracking-editorial text-white">
+            Four-Stage Execution.
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-t border-l border-charcoal reveal">
+          
+          <div class="p-8 sm:p-10 border-r border-b border-charcoal hover-lift-dark group cursor-default">
+            <div class="font-mono text-xs text-mutedGrey group-hover:text-white group-hover:scale-115 transition-all duration-300 mb-10 inline-block">01</div>
+            <h3 data-i18n="app.s1.title" class="text-2xl font-semibold text-white mb-2 group-hover:translate-x-1.5 transition-transform duration-300">Understand</h3>
+            <p data-i18n="app.s1.desc" class="text-xs text-mutedGrey group-hover:text-zinc-300 transition-colors">Clarify goals, audience, and position.</p>
+          </div>
+
+          <div class="p-8 sm:p-10 border-r border-b border-charcoal hover-lift-dark group cursor-default">
+            <div class="font-mono text-xs text-mutedGrey group-hover:text-white group-hover:scale-115 transition-all duration-300 mb-10 inline-block">02</div>
+            <h3 data-i18n="app.s2.title" class="text-2xl font-semibold text-white mb-2 group-hover:translate-x-1.5 transition-transform duration-300">Plan</h3>
+            <p data-i18n="app.s2.desc" class="text-xs text-mutedGrey group-hover:text-zinc-300 transition-colors">Define scope, deliverables, and KPIs.</p>
+          </div>
+
+          <div class="p-8 sm:p-10 border-r border-b border-charcoal hover-lift-dark group cursor-default">
+            <div class="font-mono text-xs text-mutedGrey group-hover:text-white group-hover:scale-115 transition-all duration-300 mb-10 inline-block">03</div>
+            <h3 data-i18n="app.s3.title" class="text-2xl font-semibold text-white mb-2 group-hover:translate-x-1.5 transition-transform duration-300">Execute</h3>
+            <p data-i18n="app.s3.desc" class="text-xs text-mutedGrey group-hover:text-zinc-300 transition-colors">Deliver campaigns with clear reporting.</p>
+          </div>
+
+          <div class="p-8 sm:p-10 border-r border-b border-charcoal hover-lift-dark group cursor-default">
+            <div class="font-mono text-xs text-mutedGrey group-hover:text-white group-hover:scale-115 transition-all duration-300 mb-10 inline-block">04</div>
+            <h3 data-i18n="app.s4.title" class="text-2xl font-semibold text-white mb-2 group-hover:translate-x-1.5 transition-transform duration-300">Review</h3>
+            <p data-i18n="app.s4.desc" class="text-xs text-mutedGrey group-hover:text-zinc-300 transition-colors">Measure outcomes and refine strategy.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- 04 // ENGAGEMENT MODELS (3 MINIMAL MONOCHROME COLUMNS)                -->
+    <!-- ===================================================================== -->
+    <section id="engagement" class="py-24 lg:py-32 bg-white border-b border-hairline">
+      <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14">
+        
+        <div class="mb-16 reveal">
+          <div data-i18n="eng.kicker" class="font-mono text-xs uppercase tracking-widest text-mutedGrey mb-3">04 // ENGAGEMENT</div>
+          <h2 data-i18n="eng.title" class="text-3xl sm:text-5xl font-semibold tracking-editorial text-obsidian">
+            How We Work Together.
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal">
+          
+          <!-- Model 01 -->
+          <div class="border border-hairline hover-lift group p-8 sm:p-10 rounded-sm flex flex-col justify-between bg-white">
+            <div>
+              <div data-i18n="eng.m1.kicker" class="font-mono text-xs text-mutedGrey group-hover:text-obsidian transition-colors mb-6">01 // DEFINED SCOPE</div>
+              <h3 data-i18n="eng.m1.title" class="text-2xl font-semibold text-obsidian mb-3 group-hover:translate-x-1 transition-transform duration-300">Project-Based</h3>
+              <p data-i18n="eng.m1.desc" class="text-sm text-slateText leading-relaxed">
+                Audits, campaign setups, content sprints, and one-off deliverables.
+              </p>
+            </div>
+            <button type="button" onclick="selectModel('project')" class="mt-10 w-full py-3.5 border border-obsidian text-obsidian hover:bg-obsidian hover:text-white font-mono text-xs uppercase tracking-wider rounded-sm btn-magnetic flex items-center justify-center gap-2 cursor-pointer">
+              <span data-i18n="eng.selectBtn">Select</span>
+              <span class="btn-arrow">&rarr;</span>
+            </button>
+          </div>
+
+          <!-- Model 02 (Featured Obsidian) -->
+          <div class="border border-obsidian bg-obsidian text-white hover-lift-dark group p-8 sm:p-10 rounded-sm flex flex-col justify-between">
+            <div>
+              <div data-i18n="eng.m2.kicker" class="font-mono text-xs text-mutedGrey group-hover:text-zinc-300 transition-colors mb-6">02 // ONGOING GROWTH</div>
+              <h3 data-i18n="eng.m2.title" class="text-2xl font-semibold text-white mb-3 group-hover:translate-x-1 transition-transform duration-300">Monthly Retainers</h3>
+              <p data-i18n="eng.m2.desc" class="text-sm text-zinc-300 leading-relaxed">
+                Continuous social management, SEO, content, and active ad optimisation.
+              </p>
+            </div>
+            <button type="button" onclick="selectModel('retainer')" class="mt-10 w-full py-3.5 bg-white text-obsidian hover:bg-zinc-200 font-mono text-xs uppercase tracking-wider font-medium rounded-sm btn-magnetic flex items-center justify-center gap-2 cursor-pointer hover:shadow-lg">
+              <span data-i18n="eng.selectBtn">Select</span>
+              <span class="btn-arrow">&rarr;</span>
+            </button>
+          </div>
+
+          <!-- Model 03 -->
+          <div class="border border-hairline hover-lift group p-8 sm:p-10 rounded-sm flex flex-col justify-between bg-white">
+            <div>
+              <div data-i18n="eng.m3.kicker" class="font-mono text-xs text-mutedGrey group-hover:text-obsidian transition-colors mb-6">03 // ADVISORY</div>
+              <h3 data-i18n="eng.m3.title" class="text-2xl font-semibold text-obsidian mb-3 group-hover:translate-x-1 transition-transform duration-300">Consultancy</h3>
+              <p data-i18n="eng.m3.desc" class="text-sm text-slateText leading-relaxed">
+                Independent marketing assessments, market research, and brand positioning.
+              </p>
+            </div>
+            <button type="button" onclick="selectModel('consultancy')" class="mt-10 w-full py-3.5 border border-obsidian text-obsidian hover:bg-obsidian hover:text-white font-mono text-xs uppercase tracking-wider rounded-sm btn-magnetic flex items-center justify-center gap-2 cursor-pointer">
+              <span data-i18n="eng.selectBtn">Select</span>
+              <span class="btn-arrow">&rarr;</span>
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Single Discreet 1-Line Scope Footnote -->
+        <p data-i18n="eng.footnote" class="mt-10 font-mono text-xs text-slateText reveal">
+          * Scope &amp; Boundaries: Focused exclusively on digital marketing, content, advertising, SEO, and strategy. AI/automation, software development, and IT infrastructure remain separate.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- 04b // FREQUENTLY ASKED QUESTIONS (FAQ)                               -->
+    <!-- ===================================================================== -->
+    <section id="faq" class="py-24 lg:py-32 bg-white border-b border-hairline">
+      <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+          
+          <!-- Left Header Column (4 cols) -->
+          <div class="lg:col-span-4 space-y-6 reveal">
+            <div data-i18n="faq.kicker" class="font-mono text-xs uppercase tracking-widest text-mutedGrey">04b // FAQ</div>
+            <h2 data-i18n="faq.title" class="text-4xl sm:text-5xl font-semibold tracking-editorial text-obsidian leading-[1.08]">
+              Frequently Asked Questions.
+            </h2>
+            <p data-i18n="faq.subtitle" class="text-sm text-slateText leading-relaxed">
+              Clear answers on how we structure our services, contracts, and working arrangements.
+            </p>
+
+            <div class="pt-6 border-t border-hairline space-y-4">
+              <div data-i18n="faq.ctaPrompt" class="text-xs font-mono text-slateText">Have a specific question about your project?</div>
+              <a href="#contact" class="inline-flex items-center gap-2 bg-obsidian text-white text-xs font-mono uppercase tracking-wider px-5 py-3 rounded-sm hover:bg-charcoal btn-magnetic">
+                <span data-i18n="faq.ctaBtn">Start a Conversation</span>
+                <span class="btn-arrow">&rarr;</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Accordion List (8 cols) -->
+          <div class="lg:col-span-8 space-y-3 reveal">
+
+            <!-- FAQ Item 01 (Open by default) -->
+            <div class="faq-item border border-hairline rounded-sm bg-alabaster/30 transition-colors">
+              <button type="button" class="faq-trigger w-full px-6 py-5 flex items-center justify-between text-left gap-4 cursor-pointer">
+                <div class="flex items-center gap-4">
+                  <span class="font-mono text-xs text-mutedGrey">01</span>
+                  <span data-i18n="faq.q1" class="text-base sm:text-lg font-semibold text-obsidian">Can we hire JS Media for a single service, or must we book a full package?</span>
+                </div>
+                <span class="faq-icon text-xl text-obsidian font-mono leading-none select-none">+</span>
+              </button>
+              <div class="faq-body">
+                <div class="faq-inner">
+                  <div class="px-6 pb-6 pt-3 text-sm text-slateText leading-relaxed border-t border-hairline/60">
+                    <p data-i18n="faq.a1">
+                      Each of our six services can be engaged independently (e.g. solely SEO, paid advertising, or social media management) or combined into a unified growth programme tailored to your business objectives.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ Item 02 -->
+            <div class="faq-item border border-hairline rounded-sm bg-alabaster/30 transition-colors">
+              <button type="button" class="faq-trigger w-full px-6 py-5 flex items-center justify-between text-left gap-4 cursor-pointer">
+                <div class="flex items-center gap-4">
+                  <span class="font-mono text-xs text-mutedGrey">02</span>
+                  <span data-i18n="faq.q2" class="text-base sm:text-lg font-semibold text-obsidian">How do your engagement models work (Projects vs. Retainers vs. Consultancy)?</span>
+                </div>
+                <span class="faq-icon text-xl text-obsidian font-mono leading-none select-none">+</span>
+              </button>
+              <div class="faq-body">
+                <div class="faq-inner">
+                  <div class="px-6 pb-6 pt-3 text-sm text-slateText leading-relaxed border-t border-hairline/60">
+                    <p data-i18n="faq.a2">
+                      We offer three clear models: Project-Based for defined one-off deliverables with set timelines (such as audits or campaign launches); Monthly Retainers for continuous management and ongoing growth; and Consultancy for high-level strategy reviews and market assessments.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ Item 03 -->
+            <div class="faq-item border border-hairline rounded-sm bg-alabaster/30 transition-colors">
+              <button type="button" class="faq-trigger w-full px-6 py-5 flex items-center justify-between text-left gap-4 cursor-pointer">
+                <div class="flex items-center gap-4">
+                  <span class="font-mono text-xs text-mutedGrey">03</span>
+                  <span data-i18n="faq.q3" class="text-base sm:text-lg font-semibold text-obsidian">What is your process once we begin working together?</span>
+                </div>
+                <span class="faq-icon text-xl text-obsidian font-mono leading-none select-none">+</span>
+              </button>
+              <div class="faq-body">
+                <div class="faq-inner">
+                  <div class="px-6 pb-6 pt-3 text-sm text-slateText leading-relaxed border-t border-hairline/60">
+                    <p data-i18n="faq.a3">
+                      We follow a four-stage framework: 01 Understand (clarify your goals, audience, and market position), 02 Plan (agree on scope, deliverables, and success metrics), 03 Execute (deliver campaigns with clear communication), and 04 Review (evaluate performance data and refine strategy).
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ Item 04 -->
+            <div class="faq-item border border-hairline rounded-sm bg-alabaster/30 transition-colors">
+              <button type="button" class="faq-trigger w-full px-6 py-5 flex items-center justify-between text-left gap-4 cursor-pointer">
+                <div class="flex items-center gap-4">
+                  <span class="font-mono text-xs text-mutedGrey">04</span>
+                  <span data-i18n="faq.q4" class="text-base sm:text-lg font-semibold text-obsidian">Do you build software, websites, or AI automation systems?</span>
+                </div>
+                <span class="faq-icon text-xl text-obsidian font-mono leading-none select-none">+</span>
+              </button>
+              <div class="faq-body">
+                <div class="faq-inner">
+                  <div class="px-6 pb-6 pt-3 text-sm text-slateText leading-relaxed border-t border-hairline/60">
+                    <p data-i18n="faq.a4">
+                      No. To ensure maximum expertise and performance, JS MEDIA focuses exclusively on digital marketing, content, advertising, SEO, and growth strategy. Software development, IT infrastructure, and AI/business automation remain separate and outside our scope.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ Item 05 -->
+            <div class="faq-item border border-hairline rounded-sm bg-alabaster/30 transition-colors">
+              <button type="button" class="faq-trigger w-full px-6 py-5 flex items-center justify-between text-left gap-4 cursor-pointer">
+                <div class="flex items-center gap-4">
+                  <span class="font-mono text-xs text-mutedGrey">05</span>
+                  <span data-i18n="faq.q5" class="text-base sm:text-lg font-semibold text-obsidian">How is campaign performance tracked and reported?</span>
+                </div>
+                <span class="faq-icon text-xl text-obsidian font-mono leading-none select-none">+</span>
+              </button>
+              <div class="faq-body">
+                <div class="faq-inner">
+                  <div class="px-6 pb-6 pt-3 text-sm text-slateText leading-relaxed border-t border-hairline/60">
+                    <p data-i18n="faq.a5">
+                      We provide regular, transparent reporting focused on actionable commercial metrics that impact your business—such as qualified leads, customer acquisition cost, organic reach, and return on ad spend—rather than superficial vanity numbers.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ Item 06 -->
+            <div class="faq-item border border-hairline rounded-sm bg-alabaster/30 transition-colors">
+              <button type="button" class="faq-trigger w-full px-6 py-5 flex items-center justify-between text-left gap-4 cursor-pointer">
+                <div class="flex items-center gap-4">
+                  <span class="font-mono text-xs text-mutedGrey">06</span>
+                  <span data-i18n="faq.q6" class="text-base sm:text-lg font-semibold text-obsidian">How quickly can an engagement start?</span>
+                </div>
+                <span class="faq-icon text-xl text-obsidian font-mono leading-none select-none">+</span>
+              </button>
+              <div class="faq-body">
+                <div class="faq-inner">
+                  <div class="px-6 pb-6 pt-3 text-sm text-slateText leading-relaxed border-t border-hairline/60">
+                    <p data-i18n="faq.a6">
+                      Following an initial discovery discussion and mutual sign-off on the scope and deliverables, onboarding and campaign setup typically commence within 48 to 72 hours.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- 05 // CONTACT & MINIMAL INQUIRY BUILDER                               -->
+    <!-- ===================================================================== -->
+    <section id="contact" class="py-24 lg:py-32 bg-alabaster">
+      <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-14 items-start">
+          
+          <!-- Left Editorial CTA (5 Cols) -->
+          <div class="lg:col-span-5 space-y-6 reveal">
+            <div data-i18n="cnt.kicker" class="font-mono text-xs uppercase tracking-widest text-mutedGrey">05 // CONTACT</div>
+            <h2 data-i18n="cnt.title" class="text-4xl sm:text-5xl font-semibold tracking-editorial text-obsidian leading-[1.08]">
+              Start a Conversation.
+            </h2>
+            <p data-i18n="cnt.subtitle" class="text-sm text-slateText leading-relaxed max-w-sm">
+              Select your engagement model and required services to request a tailored proposal.
+            </p>
+            <div class="pt-6 border-t border-hairline font-mono text-xs text-obsidian space-y-2">
+              <div><a href="mailto:jaysensmedia@gmail.com" class="hover:underline font-medium text-obsidian">jaysensmedia@gmail.com</a></div>
+              <div data-i18n="cnt.tagline" class="text-slateText">JS MEDIA — Digital Marketing &amp; Growth</div>
+            </div>
+          </div>
+
+          <!-- Right Minimal Form (7 Cols) -->
+          <div class="lg:col-span-7 reveal">
+            <div class="bg-white border border-hairline p-7 sm:p-10 rounded-sm">
+              
+              <!-- Hidden iframe so form submits seamlessly without leaving page or triggering CORS -->
+              <iframe name="form_target" id="form_target" class="hidden" style="display:none;"></iframe>
+
+              <form id="contact-form" action="https://formsubmit.co/jaysensmedia@gmail.com" method="POST" target="form_target" class="space-y-8" novalidate>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_subject" id="hidden-subject" value="New Client Enquiry: JS MEDIA">
+                <input type="hidden" name="Reference ID" id="hidden-ref" value="">
+                <input type="hidden" name="Engagement Model" id="hidden-model" value="Project-Based">
+                <input type="hidden" name="Selected Services" id="hidden-services" value="General Growth Inquiry">
+                
+                <!-- Model Pills -->
+                <div>
+                  <label data-i18n="form.modelLabel" class="block font-mono text-[11px] uppercase tracking-widest text-slateText mb-3">
+                    01 / Engagement Model
+                  </label>
+                  <div class="flex flex-wrap gap-2" id="model-pills">
+                    <button type="button" data-model="project" data-i18n="form.mProject" class="model-btn px-4 py-2.5 text-xs font-mono border border-obsidian bg-obsidian text-white rounded-sm transition-colors">
+                      Project-Based
+                    </button>
+                    <button type="button" data-model="retainer" data-i18n="form.mRetainer" class="model-btn px-4 py-2.5 text-xs font-mono border border-hairline bg-white text-slateText hover:border-obsidian rounded-sm transition-colors">
+                      Monthly Retainer
+                    </button>
+                    <button type="button" data-model="consultancy" data-i18n="form.mConsultancy" class="model-btn px-4 py-2.5 text-xs font-mono border border-hairline bg-white text-slateText hover:border-obsidian rounded-sm transition-colors">
+                      Consultancy
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Service Pills -->
+                <div>
+                  <label data-i18n="form.servicesLabel" class="block font-mono text-[11px] uppercase tracking-widest text-slateText mb-3">
+                    02 / Select Services
+                  </label>
+                  <div class="flex flex-wrap gap-2" id="dept-selector">
+                    <button type="button" data-dept="smm" data-i18n="form.sSmm" class="dept-btn px-3.5 py-2 text-xs border border-hairline bg-alabaster text-slateText hover:border-obsidian rounded-sm transition-colors">
+                      Social Media Management
+                    </button>
+                    <button type="button" data-dept="ads" data-i18n="form.sAds" class="dept-btn px-3.5 py-2 text-xs border border-hairline bg-alabaster text-slateText hover:border-obsidian rounded-sm transition-colors">
+                      Digital Advertising
+                    </button>
+                    <button type="button" data-dept="seo" data-i18n="form.sSeo" class="dept-btn px-3.5 py-2 text-xs border border-hairline bg-alabaster text-slateText hover:border-obsidian rounded-sm transition-colors">
+                      SEO
+                    </button>
+                    <button type="button" data-dept="copy" data-i18n="form.sCopy" class="dept-btn px-3.5 py-2 text-xs border border-hairline bg-alabaster text-slateText hover:border-obsidian rounded-sm transition-colors">
+                      Content &amp; Copywriting
+                    </button>
+                    <button type="button" data-dept="prod" data-i18n="form.sProd" class="dept-btn px-3.5 py-2 text-xs border border-hairline bg-alabaster text-slateText hover:border-obsidian rounded-sm transition-colors">
+                      Content Production
+                    </button>
+                    <button type="button" data-dept="strat" data-i18n="form.sStrat" class="dept-btn px-3.5 py-2 text-xs border border-hairline bg-alabaster text-slateText hover:border-obsidian rounded-sm transition-colors">
+                      Strategy &amp; Consultancy
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Inputs -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <input type="text" name="Client Name" id="input-name" data-i18n-placeholder="form.phName" required placeholder="Your Name *" class="w-full px-4 py-3.5 text-sm border border-hairline bg-alabaster/40 focus:bg-white focus:border-obsidian focus:outline-none rounded-sm transition-colors" />
+                  <input type="email" name="Work Email" id="input-email" data-i18n-placeholder="form.phEmail" required placeholder="Work Email *" class="w-full px-4 py-3.5 text-sm border border-hairline bg-alabaster/40 focus:bg-white focus:border-obsidian focus:outline-none rounded-sm transition-colors" />
+                </div>
+
+                <textarea name="Project Objectives" id="input-brief" rows="3" data-i18n-placeholder="form.phBrief" required placeholder="Project objectives *" class="w-full px-4 py-3.5 text-sm border border-hairline bg-alabaster/40 focus:bg-white focus:border-obsidian focus:outline-none rounded-sm transition-colors resize-none"></textarea>
+
+                <!-- Catalogue On-Demand Checkbox -->
+                <div class="flex items-start gap-3 pt-1">
+                  <input type="checkbox" id="input-catalogue" class="mt-0.5 w-4 h-4 rounded border-hairline text-obsidian focus:ring-obsidian cursor-pointer flex-shrink-0" />
+                  <label for="input-catalogue" data-i18n="form.catalogue" class="text-xs text-slateText leading-relaxed select-none cursor-pointer font-mono">
+                    Include the official JS MEDIA Service Catalogue with my proposal (On Demand)
+                  </label>
+                </div>
+                <input type="hidden" name="Service Catalogue Requested" id="hidden-catalogue" value="No">
+
+                <div id="form-notice" data-i18n="form.notice" class="hidden font-mono text-xs text-obsidian bg-alabaster border border-obsidian px-4 py-3 rounded-sm">
+                  Please enter your name, valid email, and brief.
+                </div>
+
+                <button type="submit" id="submit-btn" class="w-full bg-obsidian text-white hover:bg-charcoal font-mono text-xs uppercase tracking-widest py-4 rounded-sm btn-magnetic transition-all cursor-pointer flex items-center justify-center gap-2 shadow-sm hover:shadow-xl disabled:opacity-60 disabled:cursor-not-allowed">
+                  <span id="submit-btn-text" data-i18n="form.submit">Send Enquiry</span>
+                  <span id="submit-btn-arrow" class="btn-arrow">&rarr;</span>
+                </button>
+              </form>
+
+              <!-- Minimal Confirmation View -->
+              <div id="form-success" class="hidden py-8 space-y-6">
+                <div data-i18n="conf.kicker" class="font-mono text-xs uppercase tracking-widest text-mutedGrey">ENQUIRY RECEIVED</div>
+                <h3 class="text-2xl font-semibold text-obsidian">
+                  <span data-i18n="conf.thanks">Thank you,</span> <span id="out-name"></span>. <span data-i18n="conf.followup">We will be in touch shortly.</span>
+                </h3>
+                <div class="border-t border-b border-hairline py-4 font-mono text-xs text-slateText space-y-1.5">
+                  <div><span data-i18n="conf.refLabel">REF:</span> <span id="out-ref" class="text-obsidian"></span></div>
+                  <div><span data-i18n="conf.modelLabel">MODEL:</span> <span id="out-model" class="text-obsidian"></span></div>
+                  <div><span data-i18n="conf.servicesLabel">SERVICES:</span> <span id="out-depts" class="text-obsidian"></span></div>
+                  <div id="out-catalogue-row" class="hidden"><span data-i18n="conf.catalogueLabel">CATALOGUE:</span> <span class="text-obsidian" data-i18n="conf.catalogueVal">Included on demand (PDF)</span></div>
+                </div>
+                <button type="button" id="reset-btn" data-i18n="conf.reset" class="font-mono text-xs uppercase tracking-wider text-obsidian border-b border-obsidian pb-0.5">
+                  New Enquiry &rarr;
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================================================================== -->
+  <!-- MINIMAL FOOTER                                                        -->
+  <!-- ===================================================================== -->
+  <footer class="bg-white border-t border-hairline py-10">
+    <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14 flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-xs text-slateText reveal">
+      <a href="#" class="flex items-center group" aria-label="JS MEDIA Home">
+        <img src="assets/img/Logo.png" alt="JS MEDIA" class="h-14 sm:h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-95" />
+      </a>
+      <div>&copy; <span id="year">2026</span> JS MEDIA. <span data-i18n="footer.rights">DIGITAL MARKETING &amp; GROWTH AGENCY.</span></div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================== -->
+  <!-- VANILLA JS: BILINGUAL ENGINE, MOTION CANVAS, ACCORDION & FORM         -->
+  <!-- ===================================================================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      // 0. Bilingual Dictionary (English & French)
+      const translations = {
+        en: {
+          'nav.capabilities': 'Capabilities',
+          'nav.services': 'Services',
+          'nav.approach': 'Approach',
+          'nav.engagement': 'Engagement',
+          'nav.inquire': 'Inquire',
+          'mob.capabilities': '01 / Capabilities',
+          'mob.services': '02 / Services',
+          'mob.approach': '03 / Approach',
+          'mob.engagement': '04 / Engagement',
+          'mob.contact': '05 / Start a Conversation →',
+          'hero.kicker': 'JS MEDIA — DIGITAL MARKETING & GROWTH AGENCY',
+          'hero.title': 'Turning attention into customers.',
+          'hero.subtitle': 'Strategy, search visibility, content, and paid acquisition engineered around measurable business growth.',
+          'hero.ctaPrimary': 'Explore Services',
+          'hero.ctaSecondary': 'Start a Conversation',
+          'hero.badge': '00 // GROWTH SYSTEM',
+          'hero.stripLeft': 'VISIBILITY • CONTENT • ACQUISITION',
+          'hero.stripRight': '06 CORE SERVICES',
+          'video.pause': 'PAUSE',
+          'video.play': 'PLAY',
+          'marquee.s1': '01 SOCIAL MEDIA MANAGEMENT',
+          'marquee.s2': '02 DIGITAL ADVERTISING',
+          'marquee.s3': '03 SEARCH ENGINE OPTIMISATION',
+          'marquee.s4': '04 CONTENT & COPYWRITING',
+          'marquee.s5': '05 DIGITAL PRODUCTION',
+          'marquee.s6': '06 STRATEGY & CONSULTANCY',
+          'stats.l1': 'Core Services',
+          'stats.l2': 'Response Time',
+          'stats.l3': 'Digital-Only Agency',
+          'stats.l4': 'Avg. Engagement',
+          'logos.kicker': 'Trusted by our client partners',
+          'cap.kicker': '01 — OUR CAPABILITIES',
+          'cap.title1': 'Built for visibility.',
+          'cap.title2': 'Designed for growth.',
+          'cap.subtitle': 'We bring strategy, creativity and digital execution together to build stronger brands and measurable business outcomes.',
+          'cap.learnMore': 'Learn More',
+          'cap.t1': 'Build Visibility',
+          'cap.d1': 'Make your brand easier to find, recognise and remember across digital channels.',
+          'cap.t2': 'Reach Audiences',
+          'cap.d2': 'Connect products and services with relevant people through targeted discovery.',
+          'cap.t3': 'Create Engagement',
+          'cap.d3': 'Publish useful content and design brand experiences that build lasting trust.',
+          'cap.t4': 'Generate Opportunities',
+          'cap.d4': 'Attract qualified commercial enquiries and high-intent buyer interest.',
+          'cap.t5': 'Measure Performance',
+          'cap.d5': 'Track transparent commercial metrics and uncover actionable growth levers.',
+          'cap.t6': 'Improve Marketing',
+          'cap.d6': 'Refine campaigns and creative execution continuously around verified data.',
+          'cs.kicker': '02b // Case Studies',
+          'cs.title': 'Work that speaks.',
+          'cs.subtitle': 'Strategies built around real objectives. Results measured against real benchmarks.',
+          'cs.tag1': 'Social Media',
+          'cs.tag2': 'Paid Ads',
+          'cs.tag3': 'Strategy',
+          'cs.readMore': 'Read Study',
+          'cs.c1.title': 'Fashion Brand — Social Growth',
+          'cs.c1.desc': 'Built a consistent content presence across Instagram & TikTok, turning a new brand into a recognisable digital voice within 90 days.',
+          'cs.c1.m1': 'Organic Reach',
+          'cs.c1.m2': 'New Followers',
+          'cs.c2.title': 'Tech Startup — Lead Generation',
+          'cs.c2.desc': 'Designed and managed a performance ad campaign on Meta & Google that drove qualified B2B leads at a sustainable acquisition cost.',
+          'cs.c2.m1': 'Return on Ad Spend',
+          'cs.c2.m2': 'Cost Per Lead',
+          'cs.c3.title': 'F&B Brand — Full Digital Strategy',
+          'cs.c3.desc': 'Developed a 6-month go-to-market strategy covering SEO, content and paid channels, giving a local brand a clear digital roadmap.',
+          'cs.c3.m1': 'Web Traffic',
+          'cs.c3.m2': 'Time to Results',
+          'cs.note': '* Client details are anonymised. Results reflect actual campaign benchmarks.',
+          'cs.tag4': 'B2B',
+          'cs.c4.title': 'B2B SaaS — SEO & Content',
+          'cs.c4.desc': 'Built a content and SEO engine targeting decision-makers with authoritative long-form articles and landing pages.',
+          'cs.c4.m1': 'Organic Sessions',
+          'cs.c4.m2': 'Keyword Rankings',
+          'srv.kicker': '02 // SERVICES',
+          'srv.title': 'Six Core Services.',
+          'srv.subtitle': 'Engage independently or combine into a unified growth programme.',
+          'srv.inquireBtn': 'Inquire About This Service →',
+          'srv.s1.title': 'Social Media Management',
+          'srv.s1.t1': 'Account Management',
+          'srv.s1.t2': 'Content Scheduling',
+          'srv.s1.t3': 'Community Management',
+          'srv.s1.t4': 'Strategy & Reporting',
+          'srv.s2.title': 'Digital Advertising & Marketing',
+          'srv.s2.t1': 'Meta Ads',
+          'srv.s2.t2': 'Google Ads',
+          'srv.s2.t3': 'Lead Generation',
+          'srv.s2.t4': 'Retargeting & Optimisation',
+          'srv.s3.title': 'Search Engine Optimisation',
+          'srv.s3.t1': 'Website Audits',
+          'srv.s3.t2': 'On-Page & Technical SEO',
+          'srv.s3.t3': 'Keyword Research',
+          'srv.s3.t4': 'Local SEO',
+          'srv.s4.title': 'Content Development & Copywriting',
+          'srv.s4.t1': 'Website & Blog Copy',
+          'srv.s4.t2': 'Ad & Sales Copy',
+          'srv.s4.t3': 'Email & Social Captions',
+          'srv.s5.title': 'Digital Content Production',
+          'srv.s5.t1': 'Short-Form Video',
+          'srv.s5.t2': 'Reels & TikTok',
+          'srv.s5.t3': 'Product Promo',
+          'srv.s5.t4': 'Social Graphics',
+          'srv.s6.title': 'Digital Strategy & Consultancy',
+          'srv.s6.t1': 'Marketing Audits',
+          'srv.s6.t2': 'Competitor & Market Research',
+          'srv.s6.t3': 'Brand Positioning',
+          'srv.s6.t4': 'Performance Analysis',
+          'app.kicker': '03 // WORKING APPROACH',
+          'app.title': 'Four-Stage Execution.',
+          'app.s1.title': 'Understand',
+          'app.s1.desc': 'Clarify goals, audience, and position.',
+          'app.s2.title': 'Plan',
+          'app.s2.desc': 'Define scope, deliverables, and KPIs.',
+          'app.s3.title': 'Execute',
+          'app.s3.desc': 'Deliver campaigns with clear reporting.',
+          'app.s4.title': 'Review',
+          'app.s4.desc': 'Measure outcomes and refine strategy.',
+          'eng.kicker': '04 // ENGAGEMENT',
+          'eng.title': 'How We Work Together.',
+          'eng.m1.kicker': '01 // DEFINED SCOPE',
+          'eng.m1.title': 'Project-Based',
+          'eng.m1.desc': 'Audits, campaign setups, content sprints, and one-off deliverables.',
+          'eng.m2.kicker': '02 // ONGOING GROWTH',
+          'eng.m2.title': 'Monthly Retainers',
+          'eng.m2.desc': 'Continuous social management, SEO, content, and active ad optimisation.',
+          'eng.m3.kicker': '03 // ADVISORY',
+          'eng.m3.title': 'Consultancy',
+          'eng.m3.desc': 'Independent marketing assessments, market research, and brand positioning.',
+          'eng.selectBtn': 'Select →',
+          'eng.footnote': '* Scope & Boundaries: Focused exclusively on digital marketing, content, advertising, SEO, and strategy. AI/automation, software development, and IT infrastructure remain separate.',
+'nav.faq': 'FAQ',
+          'mob.faq': '04b / FAQ',
+          'faq.kicker': '04b // COMMON QUESTIONS',
+          'faq.title': 'Frequently Asked Questions.',
+          'faq.subtitle': 'Clear answers on how we structure our services, contracts, and working arrangements.',
+          'faq.ctaPrompt': 'Have a specific question about your project?',
+          'faq.ctaBtn': 'Start a Conversation',
+          'faq.q1': 'Can we hire JS Media for a single service, or must we book a full package?',
+          'faq.a1': 'Each of our six services can be engaged independently (e.g. solely SEO, paid advertising, or social media management) or combined into a unified growth programme tailored to your business objectives.',
+          'faq.q2': 'How do your engagement models work (Projects vs. Retainers vs. Consultancy)?',
+          'faq.a2': 'We offer three clear models: Project-Based for defined one-off deliverables with set timelines (such as audits or campaign launches); Monthly Retainers for continuous management and ongoing growth; and Consultancy for high-level strategy reviews and market assessments.',
+          'faq.q3': 'What is your process once we begin working together?',
+          'faq.a3': 'We follow a four-stage framework: 01 Understand (clarify your goals, audience, and market position), 02 Plan (agree on scope, deliverables, and success metrics), 03 Execute (deliver campaigns with clear communication), and 04 Review (evaluate performance data and refine strategy).',
+          'faq.q4': 'Do you build software, websites, or AI automation systems?',
+          'faq.a4': 'No. To ensure maximum expertise and performance, JS MEDIA focuses exclusively on digital marketing, content, advertising, SEO, and growth strategy. Software development, IT infrastructure, and AI/business automation remain separate and outside our scope.',
+          'faq.q5': 'How is campaign performance tracked and reported?',
+          'faq.a5': 'We provide regular, transparent reporting focused on actionable commercial metrics that impact your business—such as qualified leads, customer acquisition cost, organic reach, and return on ad spend—rather than superficial vanity numbers.',
+          'faq.q6': 'How quickly can an engagement start?',
+          'faq.a6': 'Following an initial discovery discussion and mutual sign-off on the scope and deliverables, onboarding and campaign setup typically commence within 48 to 72 hours.',
+'sticky.text': 'Ready to turn attention into customers?',
+          'sticky.btn': 'Start a Conversation',
+'cookie.kicker': 'Privacy & Cookies',
+          'cookie.text': 'We use cookies to ensure proper website functionality and to understand how visitors interact with our services.',
+          'cookie.accept': 'Accept',
+          'cookie.decline': 'Decline',
+          'cnt.kicker': '05 // CONTACT',
+          'cnt.title': 'Start a Conversation.',
+          'cnt.subtitle': 'Select your engagement model and required services to request a tailored proposal.',
+          'cnt.tagline': 'JS MEDIA — Digital Marketing & Growth',
+          'form.modelLabel': '01 / Engagement Model',
+          'form.mProject': 'Project-Based',
+          'form.mRetainer': 'Monthly Retainer',
+          'form.mConsultancy': 'Consultancy',
+          'form.servicesLabel': '02 / Select Services',
+          'form.sSmm': 'Social Media Management',
+          'form.sAds': 'Digital Advertising',
+          'form.sSeo': 'SEO',
+          'form.sCopy': 'Content & Copywriting',
+          'form.sProd': 'Content Production',
+          'form.sStrat': 'Strategy & Consultancy',
+          'form.phName': 'Your Name *',
+          'form.phEmail': 'Work Email *',
+          'form.phBrief': 'Project objectives *',
+          'form.notice': 'Please enter your name, valid email, and brief.',
+          'form.submit': 'Send Enquiry →',
+          'form.catalogue': 'Include the official JS MEDIA Service Catalogue with my proposal (On Demand)',
+          'conf.kicker': 'ENQUIRY RECEIVED',
+          'conf.thanks': 'Thank you,',
+          'conf.followup': 'We will be in touch shortly.',
+          'conf.refLabel': 'REF:',
+          'conf.modelLabel': 'MODEL:',
+          'conf.servicesLabel': 'SERVICES:',
+          'conf.catalogueLabel': 'CATALOGUE:',
+          'conf.catalogueVal': 'Included on demand (PDF)',
+          'conf.general': 'General Consultation',
+          'conf.reset': 'New Enquiry →',
+          'footer.rights': 'DIGITAL MARKETING & GROWTH AGENCY.'
+        },
+        fr: {
+          'nav.capabilities': 'Expertises',
+          'nav.services': 'Services',
+          'nav.approach': 'Approche',
+          'nav.engagement': 'Collaboration',
+          'nav.inquire': 'Contact',
+          'mob.capabilities': '01 / Expertises',
+          'mob.services': '02 / Services',
+          'mob.approach': '03 / Approche',
+          'mob.engagement': '04 / Collaboration',
+          'mob.contact': '05 / Démarrer un Projet →',
+          'hero.kicker': 'JS MEDIA — AGENCE DE MARKETING DIGITAL & CROISSANCE',
+          'hero.title': 'Convertir l’attention en clients.',
+          'hero.subtitle': 'Stratégie, visibilité SEO, contenu et acquisition payante conçus pour une croissance mesurable.',
+          'hero.ctaPrimary': 'Découvrir nos Services',
+          'hero.ctaSecondary': 'Démarrer un Projet',
+          'hero.badge': '00 // SYSTÈME DE CROISSANCE',
+          'hero.stripLeft': 'VISIBILITÉ • CONTENU • ACQUISITION',
+          'hero.stripRight': '06 SERVICES CLÉS',
+          'video.pause': 'PAUSE',
+          'video.play': 'LIRE',
+          'marquee.s1': '01 GESTION DES RÉSEAUX SOCIAUX',
+          'marquee.s2': '02 PUBLICITÉ DIGITALE',
+          'marquee.s3': '03 RÉFÉRENCEMENT NATUREL (SEO)',
+          'marquee.s4': '04 CONTENU & RÉDACTION',
+          'marquee.s5': '05 PRODUCTION DIGITALE',
+          'marquee.s6': '06 STRATÉGIE & CONSEIL',
+          'stats.l1': 'Services Proposés',
+          'stats.l2': 'Délai de Réponse',
+          'stats.l3': 'Agence 100% Digitale',
+          'stats.l4': 'Engagement Moyen',
+          'logos.kicker': 'La confiance de nos entreprises partenaires',
+          'cap.kicker': '01 — NOS EXPERTISES',
+          'cap.title1': 'Bâti pour la visibilité.',
+          'cap.title2': 'Conçu pour la croissance.',
+          'cap.subtitle': 'Nous combinons stratégie, créativité et exécution digitale pour bâtir des marques fortes et des résultats mesurables.',
+          'cap.learnMore': 'En savoir plus',
+          'cap.t1': 'Bâtir la Visibilité',
+          'cap.d1': 'Rendre votre marque plus facile à trouver, reconnaître et mémoriser sur tous les canaux.',
+          'cap.t2': 'Toucher les Audiences',
+          'cap.d2': 'Connecter vos offres et vos services aux bonnes personnes grâce à un ciblage précis.',
+          'cap.t3': 'Créer l\'Engagement',
+          'cap.d3': 'Publier du contenu pertinent et concevoir des expériences qui créent une confiance durable.',
+          'cap.t4': 'Générer des Opportunités',
+          'cap.d4': 'Attirer des demandes commerciales hautement qualifiées et des prospects engagés.',
+          'cap.t5': 'Mesurer la Performance',
+          'cap.d5': 'Mesurer des indicateurs transparents et identifier des leviers de croissance concrets.',
+          'cap.t6': 'Optimiser le Marketing',
+          'cap.d6': 'Affiner vos campagnes et créations en continu selon des données réelles.',
+          'cs.kicker': '02b // Études de Cas',
+          'cs.title': 'Des résultats concrets.',
+          'cs.subtitle': 'Des stratégies construites autour d\'objectifs réels. Des résultats mesurés sur des benchmarks réels.',
+          'cs.tag1': 'Réseaux Sociaux',
+          'cs.tag2': 'Publicité Payante',
+          'cs.tag3': 'Stratégie',
+          'cs.readMore': 'Lire l\'étude',
+          'cs.c1.title': 'Marque Mode — Croissance Sociale',
+          'cs.c1.desc': 'Mise en place d\'une présence contenus sur Instagram & TikTok, transformant une nouvelle marque en voix digitale en 90 jours.',
+          'cs.c1.m1': 'Portée Organique',
+          'cs.c1.m2': 'Nouveaux Abonnés',
+          'cs.c2.title': 'Startup Tech — Génération de Leads',
+          'cs.c2.desc': 'Conception et gestion d\'une campagne performance sur Meta & Google pour générer des leads B2B qualifiés à coût maîtrisé.',
+          'cs.c2.m1': 'Retour sur Investissement',
+          'cs.c2.m2': 'Coût par Lead',
+          'cs.c3.title': 'Marque F&B — Stratégie Digitale Complète',
+          'cs.c3.desc': 'Élaboration d\'une stratégie go-to-market sur 6 mois couvrant SEO, contenu et canaux payants pour une marque locale.',
+          'cs.c3.m1': 'Trafic Web',
+          'cs.c3.m2': 'Délai de Résultats',
+          'cs.note': '* Les détails clients sont anonymisés. Les résultats reflètent des benchmarks de campagnes réelles.',
+          'cs.tag4': 'B2B',
+          'cs.c4.title': 'B2B SaaS — SEO & Contenu',
+          'cs.c4.desc': 'Mise en place d\'un moteur SEO et contenu ciblant les décideurs avec des articles longs formats et des landing pages.',
+          'cs.c4.m1': 'Sessions Organiques',
+          'cs.c4.m2': 'Classements Mots-Clés',
+          'srv.kicker': '02 // SERVICES',
+          'srv.title': 'Six Services Clés.',
+          'srv.subtitle': 'Mobilisables séparément ou combinés dans un programme global.',
+          'srv.inquireBtn': 'Demander ce Service →',
+          'srv.s1.title': 'Gestion des Réseaux Sociaux',
+          'srv.s1.t1': 'Gestion de Comptes',
+          'srv.s1.t2': 'Planification Éditoriale',
+          'srv.s1.t3': 'Community Management',
+          'srv.s1.t4': 'Stratégie & Reporting',
+          'srv.s2.title': 'Publicité & Marketing Digital',
+          'srv.s2.t1': 'Meta Ads',
+          'srv.s2.t2': 'Google Ads',
+          'srv.s2.t3': 'Génération de Leads',
+          'srv.s2.t4': 'Retargeting & Optimisation',
+          'srv.s3.title': 'Référencement Naturel (SEO)',
+          'srv.s3.t1': 'Audits de Site',
+          'srv.s3.t2': 'SEO On-Page & Technique',
+          'srv.s3.t3': 'Recherche de Mots-Clés',
+          'srv.s3.t4': 'SEO Local',
+          'srv.s4.title': 'Création de Contenu & Copywriting',
+          'srv.s4.t1': 'Rédaction Web & Blog',
+          'srv.s4.t2': 'Copywriting Publicitaire & Vente',
+          'srv.s4.t3': 'Emailing & Légendes Social Media',
+          'srv.s5.title': 'Production de Contenu Digital',
+          'srv.s5.t1': 'Vidéo Format Court',
+          'srv.s5.t2': 'Reels & TikTok',
+          'srv.s5.t3': 'Vidéo Promotionnelle',
+          'srv.s5.t4': 'Visuels Réseaux Sociaux',
+          'srv.s6.title': 'Stratégie Digitale & Conseil',
+          'srv.s6.t1': 'Audits Marketing',
+          'srv.s6.t2': 'Étude de Marché & Concurrence',
+          'srv.s6.t3': 'Positionnement de Marque',
+          'srv.s6.t4': 'Analyse de Performance',
+          'app.kicker': '03 // APPROCHE DE TRAVAIL',
+          'app.title': 'Exécution en Quatre Étapes.',
+          'app.s1.title': 'Comprendre',
+          'app.s1.desc': 'Clarifier vos objectifs, votre audience et votre positionnement.',
+          'app.s2.title': 'Planifier',
+          'app.s2.desc': 'Définir le périmètre, les livrables et les KPIs.',
+          'app.s3.title': 'Exécuter',
+          'app.s3.desc': 'Déployer les campagnes avec un suivi transparent.',
+          'app.s4.title': 'Évaluer',
+          'app.s4.desc': 'Mesurer les résultats et affiner la stratégie.',
+          'eng.kicker': '04 // COLLABORATION',
+          'eng.title': 'Modes de Collaboration.',
+          'eng.m1.kicker': '01 // PÉRIMÈTRE DÉFINI',
+          'eng.m1.title': 'Au Projet',
+          'eng.m1.desc': 'Audits, lancement de campagnes, sprints de contenu et missions ponctuelles.',
+          'eng.m2.kicker': '02 // CROISSANCE CONTINUE',
+          'eng.m2.title': 'Accompagnement Mensuel',
+          'eng.m2.desc': 'Gestion sociale continue, SEO, contenu et optimisation active des campagnes.',
+          'eng.m3.kicker': '03 // CONSEIL',
+          'eng.m3.title': 'Consultance',
+          'eng.m3.desc': 'Évaluations marketing indépendantes, études de marché et positionnement.',
+          'eng.selectBtn': 'Choisir →',
+          'eng.footnote': '* Périmètre & Limites : Dédié exclusivement au marketing digital, contenu, publicité, SEO et stratégie. L’IA/automatisation, le développement logiciel et l’infrastructure IT restent distincts.',
+'nav.faq': 'FAQ',
+          'mob.faq': '04b / FAQ',
+          'faq.kicker': '04b // QUESTIONS FRÉQUENTES',
+          'faq.title': 'Foire Aux Questions.',
+          'faq.subtitle': 'Des réponses claires sur nos prestations, nos contrats et nos modalités de travail.',
+          'faq.ctaPrompt': 'Une question spécifique concernant votre projet ?',
+          'faq.ctaBtn': 'Démarrer un Projet',
+          'faq.q1': 'Pouvons-nous engager JS Media pour un seul service ou faut-il un pack complet ?',
+          'faq.a1': 'Chacun de nos six services peut être mobilisé indépendamment (par ex. uniquement le SEO, la publicité payante ou les réseaux sociaux) ou combiné au sein d\'un programme de croissance unifié selon vos objectifs.',
+          'faq.q2': 'Comment fonctionnent vos modes de collaboration (Projet, Retainer, Conseil) ?',
+          'faq.a2': 'Nous proposons trois formules flexibles : Au Projet pour des livrables ponctuels avec un calendrier précis (audits, lancements de campagnes) ; Retainer Mensuel pour un accompagnement continu ; et Conseil pour des études stratégiques et des analyses de positionnement.',
+          'faq.q3': 'Quelle est votre méthode de travail une fois le projet lancé ?',
+          'faq.a3': 'Nous appliquons une méthode en 4 étapes : 01 Comprendre (clarifier vos objectifs, cibles et positionnement), 02 Planifier (définir le périmètre et les critères de réussite), 03 Exécuter (déployer les actions avec une communication fluide), et 04 Analyser (mesurer les résultats et optimiser en continu).',
+          'faq.q4': 'Développez-vous des logiciels, des sites web ou des automatisations IA ?',
+          'faq.a4': 'Non. Pour garantir un niveau d\'exigence optimal, JS MEDIA se concentre exclusivement sur le marketing digital, le contenu, la publicité, le SEO et la stratégie de croissance. Le développement logiciel, l\'IT et l\'automatisation IA restent en dehors de notre périmètre.',
+          'faq.q5': 'Comment la performance des campagnes est-elle suivie et communiquée ?',
+          'faq.a5': 'Nous fournissons des rapports transparents et réguliers axés sur des indicateurs commerciaux réels (leads qualifiés, coût d\'acquisition, portée organique, retour sur investissement publicitaire) plutôt que sur des métriques superficielles.',
+          'faq.q6': 'Sous quel délai pouvons-nous démarrer ?',
+          'faq.a6': 'Après notre premier échange et la validation conjointe du périmètre et des livrables, le déploiement et la mise en place débutent généralement sous 48 à 72 heures.',
+'sticky.text': 'Prêt à transformer l\'attention en clients ?',
+          'sticky.btn': 'Démarrer un Projet',
+'cookie.kicker': 'Confidentialité & Cookies',
+          'cookie.text': 'Nous utilisons des cookies pour assurer le bon fonctionnement du site et analyser les interactions des visiteurs.',
+          'cookie.accept': 'Accepter',
+          'cookie.decline': 'Refuser',
+          'cnt.kicker': '05 // CONTACT',
+          'cnt.title': 'Démarrer un Projet.',
+          'cnt.subtitle': 'Sélectionnez votre mode de collaboration et les services souhaités pour recevoir une proposition sur mesure.',
+          'cnt.tagline': 'JS MEDIA — Marketing Digital & Croissance',
+          'form.modelLabel': '01 / Mode de Collaboration',
+          'form.mProject': 'Au Projet',
+          'form.mRetainer': 'Forfait Mensuel',
+          'form.mConsultancy': 'Consultance',
+          'form.servicesLabel': '02 / Sélectionner les Services',
+          'form.sSmm': 'Gestion Réseaux Sociaux',
+          'form.sAds': 'Publicité Digitale',
+          'form.sSeo': 'SEO',
+          'form.sCopy': 'Contenu & Copywriting',
+          'form.sProd': 'Production de Contenu',
+          'form.sStrat': 'Stratégie & Conseil',
+          'form.phName': 'Votre Nom *',
+          'form.phEmail': 'Email Professionnel *',
+          'form.phBrief': 'Objectifs du projet *',
+          'form.notice': 'Veuillez renseigner votre nom, un email valide et votre besoin.',
+          'form.submit': 'Envoyer la Demande →',
+          'form.catalogue': 'Inclure le catalogue de services officiel de JS MEDIA avec ma proposition (Sur Demande)',
+          'conf.kicker': 'DEMANDE REÇUE',
+          'conf.thanks': 'Merci,',
+          'conf.followup': 'Nous vous recontacterons très prochainement.',
+          'conf.refLabel': 'RÉF :',
+          'conf.modelLabel': 'MODÈLE :',
+          'conf.servicesLabel': 'SERVICES :',
+          'conf.catalogueLabel': 'CATALOGUE :',
+          'conf.catalogueVal': 'Inclus sur demande (PDF)',
+          'conf.general': 'Consultation Générale',
+          'conf.reset': 'Nouvelle Demande →',
+          'footer.rights': 'AGENCE DE MARKETING DIGITAL & CROISSANCE.'
+        }
+      };
+
+      const serviceCaptions = {
+        en: [
+          '01 // SOCIAL MEDIA',
+          '02 // PAID ACQUISITION',
+          '03 // ORGANIC SEARCH',
+          '04 // EDITORIAL COPY',
+          '05 // VISUAL PRODUCTION',
+          '06 // GROWTH STRATEGY'
+        ],
+        fr: [
+          '01 // RÉSEAUX SOCIAUX',
+          '02 // ACQUISITION PAYANTE',
+          '03 // RÉFÉRENCEMENT SEO',
+          '04 // RÉDACTION & CONTENU',
+          '05 // PRODUCTION VISUELLE',
+          '06 // STRATÉGIE CROISSANCE'
+        ]
+      };
+
+      const modelNames = {
+        en: { project: 'Project-Based', retainer: 'Monthly Retainer', consultancy: 'Consultancy' },
+        fr: { project: 'Au Projet', retainer: 'Forfait Mensuel', consultancy: 'Consultance' }
+      };
+
+      const serviceNames = {
+        en: {
+          smm: 'Social Media Management',
+          ads: 'Digital Advertising & Marketing',
+          seo: 'Search Engine Optimisation',
+          copy: 'Content Development & Copywriting',
+          prod: 'Digital Content Production',
+          strat: 'Digital Strategy & Consultancy'
+        },
+        fr: {
+          smm: 'Gestion des Réseaux Sociaux',
+          ads: 'Publicité & Marketing Digital',
+          seo: 'Référencement Naturel (SEO)',
+          copy: 'Création de Contenu & Copywriting',
+          prod: 'Production de Contenu Digital',
+          strat: 'Stratégie Digitale & Conseil'
+        }
+      };
+
+      let currentLang = 'en';
+      let activeServiceIdx = 0;
+      let isPlaying = true;
+      let activeModel = 'project';
+      const activeDepts = new Set();
+
+      function updateConfirmationSummary() {
+        document.getElementById('out-model').textContent = modelNames[currentLang][activeModel];
+        document.getElementById('out-depts').textContent =
+          activeDepts.size > 0
+            ? Array.from(activeDepts).map(key => serviceNames[currentLang][key]).join(', ')
+            : translations[currentLang]['conf.general'];
+      }
+
+      function applyLanguage(lang) {
+        currentLang = lang;
+        document.documentElement.lang = lang;
+        const dict = translations[lang];
+
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+          const key = el.getAttribute('data-i18n');
+          if (dict[key]) el.textContent = dict[key];
+        });
+
+        document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+          const key = el.getAttribute('data-i18n-placeholder');
+          if (dict[key]) el.setAttribute('placeholder', dict[key]);
+        });
+
+        // Update language toggle buttons
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+          const isActive = btn.dataset.langBtn === lang;
+          btn.classList.toggle('bg-obsidian', isActive);
+          btn.classList.toggle('text-white', isActive);
+          btn.classList.toggle('bg-white', !isActive);
+          btn.classList.toggle('text-slateText', !isActive);
+        });
+
+        // Update dynamic video toggle label & active service preview caption
+        const videoToggleBtn = document.getElementById('video-toggle-btn');
+        if (videoToggleBtn) {
+          videoToggleBtn.textContent = isPlaying ? dict['video.pause'] : dict['video.play'];
+        }
+        const previewCaption = document.getElementById('dept-preview-caption');
+        if (previewCaption) {
+          previewCaption.textContent = serviceCaptions[lang][activeServiceIdx];
+        }
+
+        updateConfirmationSummary();
+      }
+
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.addEventListener('click', () => applyLanguage(btn.dataset.langBtn));
+      });
+
+      // 1. Mobile Navigation Toggle
+      const mobileBtn = document.getElementById('mobile-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+      document.querySelectorAll('.mobile-link').forEach(link => {
+        link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+      });
+
+      // 2. Optional Hero Motion Fallback (Guarded)
+      const video = document.getElementById('hero-video');
+      const videoToggleBtn = document.getElementById('video-toggle-btn');
+      const canvas = document.getElementById('motion-fallback-canvas');
+      if (canvas) {
+        const ctx = canvas.getContext('2d');
+        let phase = 0;
+
+        function resizeCanvas() {
+          const rect = canvas.parentElement.getBoundingClientRect();
+          const dpr = window.devicePixelRatio || 1;
+          canvas.width = rect.width * dpr;
+          canvas.height = rect.height * dpr;
+          ctx.scale(dpr, dpr);
+        }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+
+        function renderMonochromeWaves() {
+          const w = canvas.parentElement.clientWidth;
+          const h = canvas.parentElement.clientHeight;
+          ctx.fillStyle = '#09090B';
+          ctx.fillRect(0, 0, w, h);
+
+          if (isPlaying) phase += 0.015;
+
+          const lines = 28;
+          for (let i = 0; i < lines; i++) {
+            const ratio = i / lines;
+            ctx.beginPath();
+            ctx.strokeStyle = `rgba(255, 255, 255, ${0.08 + ratio * 0.28})`;
+            ctx.lineWidth = 1;
+
+            for (let x = 0; x <= w; x += 8) {
+              const normX = x / w;
+              const y =
+                h * 0.5 +
+                Math.sin(normX * 4.5 + phase + i * 0.16) * (h * 0.18) +
+                Math.cos(normX * 2.2 - phase * 0.7 + i * 0.1) * (h * 0.12);
+              if (x === 0) ctx.moveTo(x, y);
+              else ctx.lineTo(x, y);
+            }
+            ctx.stroke();
+          }
+          requestAnimationFrame(renderMonochromeWaves);
+        }
+        renderMonochromeWaves();
+      }
+
+      if (video && videoToggleBtn) {
+        video.addEventListener('error', () => {
+          video.style.display = 'none';
+        });
+
+        videoToggleBtn.addEventListener('click', () => {
+          isPlaying = !isPlaying;
+          if (isPlaying) {
+            video.play().catch(() => {});
+            videoToggleBtn.textContent = translations[currentLang]['video.pause'];
+          } else {
+            video.pause();
+            videoToggleBtn.textContent = translations[currentLang]['video.play'];
+          }
+        });
+      }
+
+      // 2b. Casino Card Stack Deck Controller (Capabilities)
+      const capCards = document.querySelectorAll('.cap-card');
+      const capNavItems = document.querySelectorAll('.cap-nav-item');
+      const capCounter = document.getElementById('cap-counter');
+      const capPrevBtn = document.getElementById('cap-prev');
+      const capNextBtn = document.getElementById('cap-next');
+      let currentCapIdx = 0;
+      const totalCapCards = capCards.length;
+
+      function updateCapDeck(activeIdx) {
+        currentCapIdx = activeIdx;
+
+        // Update Counter (e.g. 1 / 6)
+        if (capCounter) {
+          capCounter.textContent = `${activeIdx + 1} / ${totalCapCards}`;
+        }
+
+        // Update Left Vertical Timeline Indicators
+        capNavItems.forEach((btn, idx) => {
+          const dot = btn.querySelector('.cap-dot');
+          const label = btn.querySelector('.cap-label');
+          const isActive = idx === activeIdx;
+
+          if (dot) {
+            dot.classList.toggle('border-obsidian', isActive);
+            dot.classList.toggle('bg-obsidian', isActive);
+            dot.classList.toggle('scale-110', isActive);
+            dot.classList.toggle('border-hairline', !isActive);
+            dot.classList.toggle('bg-white', !isActive);
+            dot.classList.toggle('scale-100', !isActive);
+          }
+          if (label) {
+            label.classList.toggle('font-semibold', isActive);
+            label.classList.toggle('text-obsidian', isActive);
+            label.classList.toggle('font-normal', !isActive);
+            label.classList.toggle('text-slateText', !isActive);
+          }
+        });
+
+        // Update 3D Casino Card Deck Layering & Transforms
+        capCards.forEach((card, idx) => {
+          const diff = (idx - activeIdx + totalCapCards) % totalCapCards;
+          card.classList.toggle('is-active', diff === 0);
+
+          if (diff === 0) {
+            // Active top card
+            card.style.zIndex = '30';
+            card.style.transform = 'translate3d(0, 0, 0) rotate(-1.5deg) scale(1)';
+            card.style.opacity = '1';
+            card.style.pointerEvents = 'auto';
+            card.style.boxShadow = '0 25px 50px -12px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.12)';
+          } else if (diff === 1) {
+            // Second card in stack
+            card.style.zIndex = '20';
+            card.style.transform = 'translate3d(14px, 0px, 0) rotate(2.5deg) scale(0.97)';
+            card.style.opacity = '0.94';
+            card.style.pointerEvents = 'auto';
+            card.style.boxShadow = '0 20px 40px -12px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(255, 255, 255, 0.08)';
+          } else if (diff === 2) {
+            // Third card in stack
+            card.style.zIndex = '10';
+            card.style.transform = 'translate3d(26px, 0px, 0) rotate(5.5deg) scale(0.94)';
+            card.style.opacity = '0.80';
+            card.style.pointerEvents = 'auto';
+            card.style.boxShadow = '0 16px 32px -10px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.06)';
+          } else if (diff === 3) {
+            // Fourth card in stack
+            card.style.zIndex = '5';
+            card.style.transform = 'translate3d(36px, 0px, 0) rotate(8deg) scale(0.91)';
+            card.style.opacity = '0.60';
+            card.style.pointerEvents = 'auto';
+            card.style.boxShadow = '0 12px 24px -8px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.04)';
+          } else {
+            // Deep cards tucked underneath
+            card.style.zIndex = '1';
+            card.style.transform = 'translate3d(42px, 0px, 0) rotate(10deg) scale(0.88)';
+            card.style.opacity = '0';
+            card.style.pointerEvents = 'none';
+          }
+        });
+      }
+
+      // ── Stats Counter Animation ──────────────────────────────────────────
+      (function() {
+        const statEls = document.querySelectorAll('.stat-number');
+        if (!statEls.length) return;
+
+        function easeOutExpo(t) {
+          return t === 1 ? 1 : 1 - Math.pow(2, -10 * t);
+        }
+
+        function animateCounter(el) {
+          if (el.dataset.animated) return;
+          el.dataset.animated = 'true';
+          const target = parseFloat(el.dataset.target);
+          const suffix = el.dataset.suffix || '';
+          const duration = 1800;
+          const startTime = performance.now();
+          const isDecimal = String(target).includes('.');
+          function step(now) {
+            const elapsed = now - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            const eased = easeOutExpo(progress);
+            const current = target * eased;
+            el.textContent = (isDecimal ? current.toFixed(1) : Math.floor(current)) + suffix;
+            if (progress < 1) requestAnimationFrame(step);
+          }
+          requestAnimationFrame(step);
+        }
+
+        const statsObserver = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const el = entry.target.querySelector('.stat-number');
+              if (el) animateCounter(el);
+            }
+          });
+        }, { threshold: 0.4 });
+
+        document.querySelectorAll('.stats-item').forEach(item => statsObserver.observe(item));
+      })();
+
+      // Initialize Capabilities Card Deck
+      if (capCards.length > 0) {
+        updateCapDeck(0);
+
+        if (capNextBtn) {
+          capNextBtn.addEventListener('click', () => {
+            const nextIdx = (currentCapIdx + 1) % totalCapCards;
+            updateCapDeck(nextIdx);
+          });
+        }
+
+        if (capPrevBtn) {
+          capPrevBtn.addEventListener('click', () => {
+            const prevIdx = (currentCapIdx - 1 + totalCapCards) % totalCapCards;
+            updateCapDeck(prevIdx);
+          });
+        }
+
+        capNavItems.forEach((btn, idx) => {
+          btn.addEventListener('click', () => updateCapDeck(idx));
+        });
+
+        // Clicking a card behind in the deck brings it to the top
+        capCards.forEach((card, idx) => {
+          card.addEventListener('click', (e) => {
+            if (e.target.closest('a')) return;
+            if (idx !== currentCapIdx) {
+              updateCapDeck(idx);
+            }
+          });
+        });
+      }
+
+      // 3. Service Accordion + Dynamic B&W Photography Switcher
+      const deptRows = document.querySelectorAll('.dept-row');
+      const previewImg = document.getElementById('dept-preview-img');
+      const previewCaption = document.getElementById('dept-preview-caption');
+
+      deptRows.forEach(row => {
+        const trigger = row.querySelector('.dept-trigger');
+        trigger.addEventListener('click', () => {
+          const wasOpen = row.classList.contains('is-open');
+          deptRows.forEach(r => r.classList.remove('is-open'));
+          if (!wasOpen) {
+            row.classList.add('is-open');
+            activeServiceIdx = parseInt(row.dataset.serviceIdx, 10) || 0;
+            previewImg.src = row.dataset.img;
+            previewCaption.textContent = serviceCaptions[currentLang][activeServiceIdx];
+          }
+        });
+      });
+
+            // 3b. FAQ Accordion Toggle
+      const faqItems = document.querySelectorAll('.faq-item');
+      faqItems.forEach(item => {
+        const trigger = item.querySelector('.faq-trigger');
+        if (trigger) {
+          trigger.addEventListener('click', () => {
+            const wasOpen = item.classList.contains('is-open');
+            faqItems.forEach(i => i.classList.remove('is-open'));
+            if (!wasOpen) item.classList.add('is-open');
+          });
+        }
+      });
+
+      // 4. Interactive Inquiry Builder State
+      const modelBtns = document.querySelectorAll('.model-btn');
+      const deptBtns = document.querySelectorAll('.dept-btn');
+
+      function setModel(val) {
+        activeModel = val;
+        modelBtns.forEach(btn => {
+          const match = btn.dataset.model === val;
+          btn.classList.toggle('bg-obsidian', match);
+          btn.classList.toggle('text-white', match);
+          btn.classList.toggle('border-obsidian', match);
+          btn.classList.toggle('bg-white', !match);
+          btn.classList.toggle('text-slateText', !match);
+          btn.classList.toggle('border-hairline', !match);
+        });
+      }
+
+      modelBtns.forEach(btn => btn.addEventListener('click', () => setModel(btn.dataset.model)));
+
+      function syncDeptBtns() {
+        deptBtns.forEach(btn => {
+          const selected = activeDepts.has(btn.dataset.dept);
+          btn.classList.toggle('bg-obsidian', selected);
+          btn.classList.toggle('text-white', selected);
+          btn.classList.toggle('border-obsidian', selected);
+          btn.classList.toggle('bg-alabaster', !selected);
+          btn.classList.toggle('text-slateText', !selected);
+          btn.classList.toggle('border-hairline', !selected);
+        });
+      }
+
+      deptBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const d = btn.dataset.dept;
+          activeDepts.has(d) ? activeDepts.delete(d) : activeDepts.add(d);
+          syncDeptBtns();
+        });
+      });
+
+      window.quickInquire = (serviceKey) => {
+        activeDepts.add(serviceKey);
+        syncDeptBtns();
+        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+      };
+
+      window.selectModel = (modelKey) => {
+        setModel(modelKey);
+        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+      };
+
+      // 5. Minimal Form Submission
+      const form = document.getElementById('contact-form');
+      const notice = document.getElementById('form-notice');
+      const success = document.getElementById('form-success');
+
+      form.addEventListener('submit', (e) => {
+        const name = document.getElementById('input-name').value.trim();
+        const email = document.getElementById('input-email').value.trim();
+        const brief = document.getElementById('input-brief').value.trim();
+
+        if (!name || !email || !email.includes('@') || !brief) {
+          e.preventDefault();
+          notice.classList.remove('hidden');
+          return;
+        }
+        notice.classList.add('hidden');
+
+        const refId = 'JSM-' + Math.floor(100000 + Math.random() * 900000);
+        const selectedModelLabel = modelNames[currentLang][activeModel] || activeModel;
+        const selectedDeptsLabel = activeDepts.size > 0
+          ? Array.from(activeDepts).map(key => serviceNames[currentLang][key]).join(', ')
+          : (translations[currentLang]['conf.general'] || 'Full Growth Consultation');
+
+        // Populate hidden fields for FormSubmit POST
+        const catalogueRequested = document.getElementById('input-catalogue').checked;
+        document.getElementById('hidden-catalogue').value = catalogueRequested ? 'YES - Please send PDF on demand' : 'No';
+        document.getElementById('hidden-ref').value = refId;
+        document.getElementById('hidden-model').value = selectedModelLabel;
+        document.getElementById('hidden-services').value = selectedDeptsLabel;
+        document.getElementById('hidden-subject').value = `New Client Enquiry [${refId}]: ${name} (${selectedModelLabel})`;
+
+        // Populate UI confirmation view
+        document.getElementById('out-ref').textContent = refId;
+        document.getElementById('out-name').textContent = name;
+        const catalogueRow = document.getElementById('out-catalogue-row');
+        if (catalogueRow) catalogueRow.classList.toggle('hidden', !catalogueRequested);
+        updateConfirmationSummary();
+
+        // Reveal confirmation receipt in UI immediately
+        setTimeout(() => {
+          form.classList.add('hidden');
+          success.classList.remove('hidden');
+        }, 150);
+
+        // Note: form submits naturally to form_target iframe, avoiding CORS restrictions completely
+      });
+
+      document.getElementById('reset-btn').addEventListener('click', () => {
+        form.reset();
+        const catInput = document.getElementById('input-catalogue');
+        if (catInput) catInput.checked = false;
+        const catRow = document.getElementById('out-catalogue-row');
+        if (catRow) catRow.classList.add('hidden');
+        activeDepts.clear();
+        syncDeptBtns();
+        setModel('project');
+        success.classList.add('hidden');
+        form.classList.remove('hidden');
+      });
+
+      // 6. Bidirectional Scroll Reveal Observer (Ease In & Ease Out)
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          } else {
+            entry.target.classList.remove('visible');
+          }
+        });
+      }, {
+        threshold: 0.08,
+        rootMargin: '0px 0px -40px 0px'
+      });
+
+      document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+      // 5. Sticky CTA Floating Pill & Cookie Banner Interaction
+      const stickyCta = document.getElementById('sticky-cta');
+      const heroSection = document.getElementById('hero');
+      const cookieBanner = document.getElementById('cookie-banner');
+      const cookieAccept = document.getElementById('cookie-accept');
+      const cookieDecline = document.getElementById('cookie-decline');
+
+      let isCookieBannerActive = !localStorage.getItem('jsm_cookie_consent');
+
+      const updateStickyVisibility = () => {
+        if (!stickyCta || !heroSection) return;
+        const heroRect = heroSection.getBoundingClientRect();
+        const pastHero = heroRect.bottom < 150;
+        
+        const contactSection = document.getElementById('contact');
+        let nearContact = false;
+        if (contactSection) {
+          const contactRect = contactSection.getBoundingClientRect();
+          nearContact = contactRect.top < window.innerHeight - 100;
+        }
+
+        // Prevent mobile overlap (< 640px): suppress floating pill while cookie banner is active
+        const isMobile = window.innerWidth < 640;
+        const blockedByCookie = isMobile && isCookieBannerActive;
+
+        if (pastHero && !nearContact && !blockedByCookie) {
+          stickyCta.classList.remove('translate-y-12', 'opacity-0', 'pointer-events-none');
+          stickyCta.classList.add('translate-y-0', 'opacity-100', 'pointer-events-auto');
+        } else {
+          stickyCta.classList.add('translate-y-12', 'opacity-0', 'pointer-events-none');
+          stickyCta.classList.remove('translate-y-0', 'opacity-100', 'pointer-events-auto');
+        }
+      };
+
+      if (stickyCta && heroSection) {
+        window.addEventListener('scroll', updateStickyVisibility, { passive: true });
+        window.addEventListener('resize', updateStickyVisibility, { passive: true });
+      }
+
+      // 6. Minimal Cookie Banner Controller (Remembers decision in localStorage)
+      if (cookieBanner) {
+        if (isCookieBannerActive) {
+          setTimeout(() => {
+            cookieBanner.classList.remove('opacity-0', 'translate-y-8', 'pointer-events-none');
+            cookieBanner.classList.add('opacity-100', 'translate-y-0', 'pointer-events-auto');
+          }, 1200);
+        }
+
+        const dismissCookie = (val) => {
+          localStorage.setItem('jsm_cookie_consent', val);
+          isCookieBannerActive = false;
+          cookieBanner.classList.add('opacity-0', 'translate-y-8', 'pointer-events-none');
+          cookieBanner.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto');
+          updateStickyVisibility();
+        };
+
+        if (cookieAccept) cookieAccept.addEventListener('click', () => dismissCookie('accepted'));
+        if (cookieDecline) cookieDecline.addEventListener('click', () => dismissCookie('declined'));
+      }
+    });
+  </script>
+  <!-- Floating Chat Bubble / Conversation Pill (Bottom Right) -->
+  <aside id="sticky-cta" class="fixed bottom-5 right-5 sm:bottom-6 sm:right-6 z-50 transition-all duration-500 ease-out transform translate-y-12 opacity-0 pointer-events-none" aria-label="Start a Conversation">
+    <a href="#contact" class="group flex items-center gap-3 bg-obsidian text-white border border-white/20 pl-3.5 pr-5 py-3 rounded-full shadow-[0_16px_36px_-6px_rgba(0,0,0,0.6)] hover:shadow-2xl hover:border-white/40 hover:scale-105 transition-all duration-300 btn-magnetic">
+      
+      <!-- Chat bubble icon with online indicator -->
+      <div class="relative w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-white flex-shrink-0 group-hover:bg-white group-hover:text-obsidian transition-colors">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+        </svg>
+        <span class="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 bg-emerald-400 rounded-full border-2 border-obsidian animate-pulse"></span>
+      </div>
+
+      <!-- Text Label -->
+      <div class="flex items-center gap-2 whitespace-nowrap">
+        <span data-i18n="sticky.btn" class="font-mono text-xs uppercase tracking-wider font-semibold text-white">Start a Conversation</span>
+        <span class="btn-arrow text-sm font-semibold">&rarr;</span>
+      </div>
+
+    </a>
+  </aside>
+
+  <!-- Minimal Discreet Cookie / Privacy Notice -->
+  <aside id="cookie-banner" class="fixed bottom-4 left-4 right-4 sm:right-auto sm:bottom-6 sm:left-6 z-50 transition-all duration-500 ease-out transform translate-y-8 opacity-0 pointer-events-none max-w-[340px] sm:max-w-[360px]" aria-label="Cookie Consent">
+    <div class="bg-obsidian/95 backdrop-blur-md text-white border border-white/15 p-4 sm:p-5 rounded-lg shadow-[0_20px_40px_-10px_rgba(0,0,0,0.6)] space-y-3">
+      <div class="flex items-center justify-between gap-2">
+        <span data-i18n="cookie.kicker" class="font-mono text-[10px] uppercase tracking-widest text-white/50">Privacy &amp; Cookies</span>
+        <span class="w-1.5 h-1.5 rounded-full bg-white/40"></span>
+      </div>
+      <p data-i18n="cookie.text" class="text-xs text-white/80 leading-relaxed font-normal">
+        We use cookies to ensure proper website functionality and to understand how visitors interact with our services.
+      </p>
+      <div class="flex items-center justify-end gap-3 pt-1">
+        <button type="button" id="cookie-decline" data-i18n="cookie.decline" class="font-mono text-[11px] uppercase tracking-wider text-white/60 hover:text-white px-2.5 py-1.5 transition-colors cursor-pointer">
+          Decline
+        </button>
+        <button type="button" id="cookie-accept" data-i18n="cookie.accept" class="bg-white text-obsidian font-mono text-[11px] uppercase tracking-wider px-4 py-1.5 rounded-sm hover:bg-alabaster btn-magnetic font-medium transition-all cursor-pointer shadow-sm">
+          Accept
+        </button>
+      </div>
+    </div>
+  </aside>
+
+</body>
+</html>
+
+
+
+
+
+
+

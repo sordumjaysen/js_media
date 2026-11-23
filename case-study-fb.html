@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>F&B Brand Case Study | JS MEDIA — Digital Marketing & Growth Agency</title>
+  <meta name="description" content="How JS MEDIA developed a comprehensive digital go-to-market strategy for a multi-location food & beverage brand, driving +65% traffic in 90 days." />
+  <link rel="icon" type="image/png" href="assets/img/Favicon.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            obsidian: '#09090B',
+            alabaster: '#F4F4F6',
+            hairline: '#E4E4E7',
+            charcoal: '#18181B',
+            mutedGrey: '#71717A',
+            slateText: '#52525B'
+          },
+          fontFamily: {
+            sans: ['Space Grotesk', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+            serif: ['Cormorant Garamond', 'serif']
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    .nav-link {
+      position: relative;
+      transition: color 0.3s cubic-bezier(0.16, 1, 0.3, 1), transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 100%;
+      height: 1.5px;
+      background-color: #09090B;
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .nav-link:hover {
+      transform: translateY(-1.5px);
+    }
+    .nav-link:hover::after {
+      transform: scaleX(1);
+    }
+  </style>
+</head>
+<body class="bg-white text-obsidian font-body antialiased selection:bg-obsidian selection:text-white">
+
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-hairline">
+    <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center group flex-shrink-0" aria-label="JS MEDIA Home">
+        <img src="assets/img/Logo.png" alt="JS MEDIA"
+          class="h-10 sm:h-11 w-auto object-contain transition-all duration-300 group-hover:scale-105 group-hover:opacity-90" />
+      </a>
+
+      <!-- Unified Desktop Navigation -->
+      <nav
+        class="hidden lg:flex items-center gap-4 xl:gap-7 2xl:gap-8 text-xs font-mono uppercase tracking-widest text-slateText">
+        <a href="index.html#hero" data-i18n="nav.home" class="nav-link py-1 hover:text-obsidian transition-colors whitespace-nowrap">Home</a>
+        <a href="index.html#about" data-i18n="nav.about" class="nav-link py-1 hover:text-obsidian transition-colors whitespace-nowrap">About</a>
+        <a href="index.html#capabilities" data-i18n="nav.capabilities"
+          class="nav-link py-1 hover:text-obsidian transition-colors whitespace-nowrap">Capabilities</a>
+        <a href="index.html#services" data-i18n="nav.services"
+          class="nav-link py-1 hover:text-obsidian transition-colors whitespace-nowrap">Services</a>
+        <a href="index.html#approach" data-i18n="nav.approach"
+          class="nav-link py-1 hover:text-obsidian transition-colors whitespace-nowrap">Approach</a>
+        <a href="index.html#engagement" data-i18n="nav.engagement"
+          class="nav-link py-1 hover:text-obsidian transition-colors whitespace-nowrap">Engagement</a>
+        <a href="index.html#faq" data-i18n="nav.faq" class="nav-link py-1 hover:text-obsidian transition-colors whitespace-nowrap">FAQ</a>
+      </nav>
+
+      <div class="flex items-center gap-3 sm:gap-4 flex-shrink-0">
+        <!-- Back to Overview Button (Preserved) -->
+        <a href="index.html#case-studies"
+          class="font-mono text-xs uppercase tracking-wider text-slateText hover:text-obsidian inline-flex items-center gap-1.5 transition-colors group mr-1 whitespace-nowrap flex-shrink-0">
+          <span class="group-hover:-translate-x-0.5 transition-transform">&larr;</span>
+          <span data-i18n="nav.back">Back to Overview</span>
+        </a>
+
+        <div class="h-4 w-[1px] bg-hairline hidden sm:block"></div>
+
+        <!-- Bilingual Toggle (EN / FR) -->
+        <div role="group" aria-label="Language switcher"
+          class="inline-flex items-center border border-hairline rounded-sm overflow-hidden font-mono text-[11px] shadow-sm">
+          <button type="button" id="btn-en" onclick="setLang('en')"
+            class="px-2.5 py-1.5 rounded-sm bg-obsidian text-white font-medium transition-all cursor-pointer">EN</button>
+          <button type="button" id="btn-fr" onclick="setLang('fr')"
+            class="px-2.5 py-1.5 rounded-sm text-slateText hover:text-obsidian transition-all cursor-pointer">FR</button>
+        </div>
+
+        <a href="index.html#contact"
+          class="hidden sm:inline-flex items-center gap-2 bg-obsidian text-white text-xs font-mono uppercase tracking-wider px-4 py-2.5 rounded-sm hover:bg-charcoal transition-colors whitespace-nowrap">
+          <span data-i18n="nav.inquire">Inquire &rarr;</span>
+        </a>
+
+        <button id="mobile-btn" type="button" aria-label="Menu"
+          class="lg:hidden p-2.5 border border-hairline rounded-sm text-obsidian">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-hairline px-6 py-6 space-y-4">
+      <div class="flex flex-col space-y-3 font-mono text-xs uppercase tracking-widest text-obsidian">
+        <a href="index.html#case-studies" data-i18n="nav.back" class="mobile-link py-2 border-b border-hairline font-semibold text-slateText">&larr; Back to Overview</a>
+        <a href="index.html#hero" data-i18n="nav.home" class="mobile-link py-2 border-b border-hairline">Home</a>
+        <a href="index.html#about" data-i18n="nav.about" class="mobile-link py-2 border-b border-hairline">About</a>
+        <a href="index.html#capabilities" data-i18n="nav.capabilities" class="mobile-link py-2 border-b border-hairline">01 / Capabilities</a>
+        <a href="index.html#services" data-i18n="nav.services" class="mobile-link py-2 border-b border-hairline">02 / Services</a>
+        <a href="index.html#approach" data-i18n="nav.approach" class="mobile-link py-2 border-b border-hairline">03 / Approach</a>
+        <a href="index.html#engagement" data-i18n="nav.engagement" class="mobile-link py-2 border-b border-hairline">04 / Engagement</a>
+        <a href="index.html#faq" data-i18n="nav.faq" class="mobile-link py-2 border-b border-hairline">04b / FAQ</a>
+        <a href="index.html#contact" data-i18n="nav.inquire" class="mobile-link py-2 font-semibold">05 / Start a Conversation &rarr;</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="py-16 sm:py-24 bg-alabaster/40 border-b border-hairline">
+      <div class="max-w-5xl mx-auto px-6 sm:px-10">
+        
+        <!-- Breadcrumb & Kicker -->
+        <div class="flex flex-wrap items-center gap-3 text-xs font-mono text-mutedGrey mb-6">
+          <a href="index.html" class="hover:text-obsidian" data-i18n="bc.home">Home</a>
+          <span>/</span>
+          <a href="index.html#case-studies" class="hover:text-obsidian" data-i18n="bc.studies">Case Studies</a>
+          <span>/</span>
+          <span class="text-obsidian font-semibold" data-i18n="bc.current">03 F&amp;B Brand</span>
+        </div>
+
+        <div class="inline-block font-mono text-[11px] uppercase tracking-widest text-obsidian px-3 py-1 bg-white border border-hairline rounded-sm mb-6" data-i18n="cs.tag">
+          03 // Digital Strategy &amp; Consultancy
+        </div>
+
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-obsidian leading-[1.1] mb-6" data-i18n="cs.title">
+          F&amp;B Brand — Omnichannel Digital Strategy &amp; Roadmap
+        </h1>
+
+        <p class="text-lg sm:text-xl text-slateText leading-relaxed max-w-3xl mb-12 font-normal" data-i18n="cs.subtitle">
+          How we architected a structured 6-month go-to-market digital roadmap for a growing artisanal culinary brand, aligning local search, visual storytelling, and reservation funnels.
+        </p>
+
+        <!-- Project Meta Strip -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-8 border-t border-hairline text-xs font-mono">
+          <div>
+            <div class="text-mutedGrey uppercase tracking-wider mb-1" data-i18n="meta.industryLabel">Industry</div>
+            <div class="font-semibold text-obsidian" data-i18n="meta.industryVal">Food &amp; Hospitality</div>
+          </div>
+          <div>
+            <div class="text-mutedGrey uppercase tracking-wider mb-1" data-i18n="meta.timelineLabel">Timeline</div>
+            <div class="font-semibold text-obsidian" data-i18n="meta.timelineVal">90 Days / 6mo Plan</div>
+          </div>
+          <div>
+            <div class="text-mutedGrey uppercase tracking-wider mb-1" data-i18n="meta.servicesLabel">Services</div>
+            <div class="font-semibold text-obsidian" data-i18n="meta.servicesVal">Strategy, Local SEO</div>
+          </div>
+          <div>
+            <div class="text-mutedGrey uppercase tracking-wider mb-1" data-i18n="meta.statusLabel">Engagement</div>
+            <div class="font-semibold text-obsidian" data-i18n="meta.statusVal">Consultancy &amp; Retainer</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Verified Metrics Bar -->
+    <section class="py-12 bg-obsidian text-white">
+      <div class="max-w-5xl mx-auto px-6 sm:px-10">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center sm:text-left">
+          <div class="border-l border-white/20 pl-4 sm:pl-6">
+            <div class="text-3xl sm:text-4xl font-semibold text-white tracking-tight">+65%</div>
+            <div class="font-mono text-[11px] uppercase tracking-wider text-white/50 mt-1" data-i18n="stat.traffic">Web &amp; Booking Traffic</div>
+          </div>
+          <div class="border-l border-white/20 pl-4 sm:pl-6">
+            <div class="text-3xl sm:text-4xl font-semibold text-white tracking-tight">90d</div>
+            <div class="font-mono text-[11px] uppercase tracking-wider text-white/50 mt-1" data-i18n="stat.launch">Time to Milestones</div>
+          </div>
+          <div class="border-l border-white/20 pl-4 sm:pl-6">
+            <div class="text-3xl sm:text-4xl font-semibold text-white tracking-tight">3</div>
+            <div class="font-mono text-[11px] uppercase tracking-wider text-white/50 mt-1" data-i18n="stat.loc">Locations Unified</div>
+          </div>
+          <div class="border-l border-white/20 pl-4 sm:pl-6">
+            <div class="text-3xl sm:text-4xl font-semibold text-white tracking-tight">4.8★</div>
+            <div class="font-mono text-[11px] uppercase tracking-wider text-white/50 mt-1" data-i18n="stat.rating">Local Search Rating</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content Sections -->
+    <section class="py-16 sm:py-24 bg-white">
+      <div class="max-w-4xl mx-auto px-6 sm:px-10 space-y-16">
+
+        <!-- 01 / The Challenge -->
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <span class="font-mono text-xs uppercase tracking-widest text-mutedGrey" data-i18n="ch.kicker">01 / The Challenge</span>
+            <span class="w-10 h-[1px] bg-hairline"></span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-semibold text-obsidian tracking-tight mb-4" data-i18n="ch.title">
+            Fragmented Customer Touchpoints Across Multiple Venues
+          </h2>
+          <div class="text-slateText text-base sm:text-lg leading-relaxed space-y-4" data-i18n="ch.body">
+            <p>
+              Operating across three physical boutique locations, the brand enjoyed a loyal in-person following, but suffered from disconnected digital discovery. Each location maintained uncoordinated Google Business profiles, broken menu links, and inconsistent brand photography.
+            </p>
+            <p>
+              Visitors searching for dining reservations or private event bookings frequently encountered outdated PDFs or ended up on third-party aggregator portals charging steep 20% booking commissions.
+            </p>
+          </div>
+        </div>
+
+        <!-- 02 / The Strategy -->
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <span class="font-mono text-xs uppercase tracking-widest text-mutedGrey" data-i18n="st.kicker">02 / The Strategy</span>
+            <span class="w-10 h-[1px] bg-hairline"></span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-semibold text-obsidian tracking-tight mb-4" data-i18n="st.title">
+            The 4-Stage Growth Framework
+          </h2>
+          <div class="text-slateText text-base sm:text-lg leading-relaxed space-y-4 mb-8" data-i18n="st.body">
+            <p>
+              JS MEDIA applied our proprietary four-stage framework to align every digital touchpoint:
+            </p>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div class="p-6 bg-alabaster border border-hairline rounded-sm">
+              <div class="font-mono text-xs text-mutedGrey uppercase mb-2" data-i18n="st.s1Kicker">Stage 01 / Understand</div>
+              <h3 class="font-semibold text-obsidian text-base mb-2" data-i18n="st.s1Title">Digital Audit &amp; Journey Mapping</h3>
+              <p class="text-sm text-slateText leading-relaxed" data-i18n="st.s1Body">Mapped how guests discovered each venue, diagnosing where high-intent diners dropped off between search and booking.</p>
+            </div>
+            <div class="p-6 bg-alabaster border border-hairline rounded-sm">
+              <div class="font-mono text-xs text-mutedGrey uppercase mb-2" data-i18n="st.s2Kicker">Stage 02 / Plan</div>
+              <h3 class="font-semibold text-obsidian text-base mb-2" data-i18n="st.s2Title">Channel Governance &amp; SEO Hierarchy</h3>
+              <p class="text-sm text-slateText leading-relaxed" data-i18n="st.s2Body">Structured location-specific landing pages and established a unified content calendar highlighting seasonal chef specials.</p>
+            </div>
+            <div class="p-6 bg-alabaster border border-hairline rounded-sm">
+              <div class="font-mono text-xs text-mutedGrey uppercase mb-2" data-i18n="st.s3Kicker">Stage 03 / Execute</div>
+              <h3 class="font-semibold text-obsidian text-base mb-2" data-i18n="st.s3Title">Google Maps &amp; Direct Funnels</h3>
+              <p class="text-sm text-slateText leading-relaxed" data-i18n="st.s3Body">Claimed, verified, and enriched all 3 Google Business profiles with high-resolution imagery and direct-to-table reservation links.</p>
+            </div>
+            <div class="p-6 bg-alabaster border border-hairline rounded-sm">
+              <div class="font-mono text-xs text-mutedGrey uppercase mb-2" data-i18n="st.s4Kicker">Stage 04 / Review</div>
+              <h3 class="font-semibold text-obsidian text-base mb-2" data-i18n="st.s4Title">Monthly Review &amp; Event Uplift</h3>
+              <p class="text-sm text-slateText leading-relaxed" data-i18n="st.s4Body">Conducted monthly reviews measuring booking volume, table turns, and search impressions per location.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 03 / The Execution -->
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <span class="font-mono text-xs uppercase tracking-widest text-mutedGrey" data-i18n="ex.kicker">03 / The Execution</span>
+            <span class="w-10 h-[1px] bg-hairline"></span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-semibold text-obsidian tracking-tight mb-4" data-i18n="ex.title">
+            Direct Bookings Over Costly Intermediaries
+          </h2>
+          <div class="text-slateText text-base sm:text-lg leading-relaxed space-y-4" data-i18n="ex.body">
+            <p>
+              We prioritized direct booking routes on Google Maps and Instagram bio links, routing diners directly to the venue's commission-free reservation system.
+            </p>
+            <p>
+              Simultaneously, we initiated an automated post-visit review sequence that boosted their verified Google reviews from 3.9★ to 4.8★ with over 320 genuine guest ratings across the three locations.
+            </p>
+          </div>
+        </div>
+
+        <!-- 04 / The Business Impact -->
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <span class="font-mono text-xs uppercase tracking-widest text-mutedGrey" data-i18n="im.kicker">04 / The Business Impact</span>
+            <span class="w-10 h-[1px] bg-hairline"></span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-semibold text-obsidian tracking-tight mb-4" data-i18n="im.title">
+            Autonomous Digital Growth
+          </h2>
+          <div class="text-slateText text-base sm:text-lg leading-relaxed space-y-4 mb-8" data-i18n="im.body">
+            <p>
+              Within 90 days of implementation, direct online booking traffic rose by 65%, significantly reducing reliance on 3rd-party delivery and booking portals and reclaiming thousands in annual margin.
+            </p>
+            <p>
+              The management team now operates from a clear, repeatable quarterly marketing playbook that scales effortlessly to future venue openings.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Bottom CTA Bar -->
+    <section class="py-20 bg-alabaster border-t border-hairline">
+      <div class="max-w-4xl mx-auto px-6 sm:px-10 text-center space-y-8">
+        <div class="inline-block font-mono text-xs uppercase tracking-widest text-mutedGrey" data-i18n="cta.kicker">Start Your Project</div>
+        <h2 class="text-3xl sm:text-4xl font-semibold text-obsidian tracking-tight" data-i18n="cta.title">
+          Need a unified digital strategy for your business?
+        </h2>
+        <p class="text-slateText text-base max-w-xl mx-auto" data-i18n="cta.subtitle">
+          Whether you need a complete market assessment or ongoing growth consultancy, JS MEDIA brings clarity to your brand's digital journey.
+        </p>
+        <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="index.html#contact" class="w-full sm:w-auto bg-obsidian text-white font-mono text-xs uppercase tracking-widest px-8 py-4 rounded-sm hover:bg-charcoal transition-all">
+            <span data-i18n="cta.btn">Start a Conversation &rarr;</span>
+          </a>
+          <a href="index.html#case-studies" class="w-full sm:w-auto border border-hairline bg-white text-obsidian font-mono text-xs uppercase tracking-widest px-8 py-4 rounded-sm hover:border-obsidian transition-colors">
+            <span data-i18n="cta.back">Other Case Studies</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Minimal Footer -->
+  <footer class="bg-white border-t border-hairline py-10">
+    <div class="max-w-7xl mx-auto px-6 sm:px-10 flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-xs text-slateText">
+      <a href="index.html">
+        <img src="assets/img/Logo.png" alt="JS MEDIA" class="h-10 w-auto object-contain" />
+      </a>
+      <div class="flex items-center gap-6">
+        <a href="https://www.linkedin.com/company/jsmedia-marketingagency/" target="_blank" rel="noopener noreferrer" class="hover:text-obsidian transition-colors inline-flex items-center gap-1">
+          <span>LinkedIn</span>
+          <span>&nearr;</span>
+        </a>
+        <a href="https://www.instagram.com/jsmedia.ng/" target="_blank" rel="noopener noreferrer" class="hover:text-obsidian transition-colors inline-flex items-center gap-1">
+          <span>Instagram</span>
+          <span>&nearr;</span>
+        </a>
+        <a href="privacy.html" class="hover:text-obsidian transition-colors">Privacy</a>
+        <a href="terms.html" class="hover:text-obsidian transition-colors">Terms</a>
+      </div>
+      <div>&copy; 2026 JS MEDIA. <span data-i18n="footer.tagline">DIGITAL MARKETING &amp; GROWTH AGENCY.</span></div>
+    </div>
+  </footer>
+
+  <!-- Bilingual Engine -->
+  <script>
+    const dict = {
+      en: {
+        'nav.home': 'Home',
+        'nav.about': 'About',
+        'nav.capabilities': 'Capabilities',
+        'nav.services': 'Services',
+        'nav.approach': 'Approach',
+        'nav.engagement': 'Engagement',
+        'nav.faq': 'FAQ',
+        'nav.back': 'Back to Overview',
+        'nav.inquire': 'Inquire →',
+        'bc.home': 'Home',
+        'bc.studies': 'Case Studies',
+        'bc.current': '03 F&B Brand',
+        'cs.tag': '03 // Digital Strategy & Consultancy',
+        'cs.title': 'F&B Brand — Omnichannel Digital Strategy & Roadmap',
+        'cs.subtitle': 'How we architected a structured 6-month go-to-market digital roadmap for a growing artisanal culinary brand, aligning local search, visual storytelling, and reservation funnels.',
+        'meta.industryLabel': 'Industry',
+        'meta.industryVal': 'Food & Hospitality',
+        'meta.timelineLabel': 'Timeline',
+        'meta.timelineVal': '90 Days / 6mo Plan',
+        'meta.servicesLabel': 'Services',
+        'meta.servicesVal': 'Strategy, Local SEO',
+        'meta.statusLabel': 'Engagement',
+        'meta.statusVal': 'Consultancy & Retainer',
+        'stat.traffic': 'Web & Booking Traffic',
+        'stat.launch': 'Time to Milestones',
+        'stat.loc': 'Locations Unified',
+        'stat.rating': 'Local Search Rating',
+        'ch.kicker': '01 / The Challenge',
+        'ch.title': 'Fragmented Customer Touchpoints Across Multiple Venues',
+        'ch.body': '<p>Operating across three physical boutique locations, the brand enjoyed a loyal in-person following, but suffered from disconnected digital discovery. Each location maintained uncoordinated Google Business profiles, broken menu links, and inconsistent brand photography.</p><p>Visitors searching for dining reservations or private event bookings frequently encountered outdated PDFs or ended up on third-party aggregator portals charging steep 20% booking commissions.</p>',
+        'st.kicker': '02 / The Strategy',
+        'st.title': 'The 4-Stage Growth Framework',
+        'st.body': '<p>JS MEDIA applied our proprietary four-stage framework to align every digital touchpoint:</p>',
+        'st.s1Kicker': 'Stage 01 / Understand',
+        'st.s1Title': 'Digital Audit & Journey Mapping',
+        'st.s1Body': 'Mapped how guests discovered each venue, diagnosing where high-intent diners dropped off between search and booking.',
+        'st.s2Kicker': 'Stage 02 / Plan',
+        'st.s2Title': 'Channel Governance & SEO Hierarchy',
+        'st.s2Body': 'Structured location-specific landing pages and established a unified content calendar highlighting seasonal chef specials.',
+        'st.s3Kicker': 'Stage 03 / Execute',
+        'st.s3Title': 'Google Maps & Direct Funnels',
+        'st.s3Body': 'Claimed, verified, and enriched all 3 Google Business profiles with high-resolution imagery and direct-to-table reservation links.',
+        'st.s4Kicker': 'Stage 04 / Review',
+        'st.s4Title': 'Monthly Review & Event Uplift',
+        'st.s4Body': 'Conducted monthly reviews measuring booking volume, table turns, and search impressions per location.',
+        'ex.kicker': '03 / The Execution',
+        'ex.title': 'Direct Bookings Over Costly Intermediaries',
+        'ex.body': '<p>We prioritized direct booking routes on Google Maps and Instagram bio links, routing diners directly to the venue\'s commission-free reservation system.</p><p>Simultaneously, we initiated an automated post-visit review sequence that boosted their verified Google reviews from 3.9★ to 4.8★ with over 320 genuine guest ratings across the three locations.</p>',
+        'im.kicker': '04 / The Business Impact',
+        'im.title': 'Autonomous Digital Growth',
+        'im.body': '<p>Within 90 days of implementation, direct online booking traffic rose by 65%, significantly reducing reliance on 3rd-party delivery and booking portals and reclaiming thousands in annual margin.</p><p>The management team now operates from a clear, repeatable quarterly marketing playbook that scales effortlessly to future venue openings.</p>',
+        'cta.kicker': 'Start Your Project',
+        'cta.title': 'Need a unified digital strategy for your business?',
+        'cta.subtitle': 'Whether you need a complete market assessment or ongoing growth consultancy, JS MEDIA brings clarity to your brand\'s digital journey.',
+        'cta.btn': 'Start a Conversation →',
+        'cta.back': 'Other Case Studies',
+        'footer.tagline': 'DIGITAL MARKETING & GROWTH AGENCY.'
+      },
+      fr: {
+        'nav.home': 'Accueil',
+        'nav.about': 'À Propos',
+        'nav.capabilities': 'Expertises',
+        'nav.services': 'Services',
+        'nav.approach': 'Approche',
+        'nav.engagement': 'Collaboration',
+        'nav.faq': 'FAQ',
+        'nav.back': 'Études de Cas',
+        'nav.inquire': 'Contact →',
+        'bc.home': 'Accueil',
+        'bc.studies': 'Études de Cas',
+        'bc.current': '03 Marque F&B',
+        'cs.tag': '03 // Stratégie Digitale & Conseil',
+        'cs.title': 'Marque F&B — Stratégie Digitale Omnicanale & Roadmap',
+        'cs.subtitle': 'Comment nous avons structuré un plan go-to-market sur 6 mois pour une marque de restauration artisanale en pleine expansion, alignant SEO local et réservations directes.',
+        'meta.industryLabel': 'Secteur',
+        'meta.industryVal': 'Restauration & Hôtellerie',
+        'meta.timelineLabel': 'Délai',
+        'meta.timelineVal': '90 Jours / Plan 6 Mois',
+        'meta.servicesLabel': 'Services',
+        'meta.servicesVal': 'Stratégie, SEO Local',
+        'meta.statusLabel': 'Collaboration',
+        'meta.statusVal': 'Conseil & Forfait',
+        'stat.traffic': 'Trafic Web & Réservations',
+        'stat.launch': 'Délai des Objectifs',
+        'stat.loc': 'Établissements Harmonisés',
+        'stat.rating': 'Note Avis Google',
+        'ch.kicker': '01 / Le Défi',
+        'ch.title': 'Points de Contact Fragmentés Entre Plusieurs Établissements',
+        'ch.body': '<p>Présente à travers trois établissements physiques distincts, la marque jouissait d\'une clientèle fidèle sur place, mais souffrait d\'une visibilité digitale décousue. Chaque adresse possédait une fiche Google Business mal renseignée, des menus obsolètes et des photos non harmonisées.</p><p>Les clients cherchant à réserver pour un dîner ou un événement privé tombaient sur des PDFs introuvables ou passaient par des plateformes tierces prélevant jusqu\'à 20% de commission par couvert.</p>',
+        'st.kicker': '02 / La Stratégie',
+        'st.title': 'La Méthode en 4 Étapes',
+        'st.body': '<p>JS MEDIA a déployé sa méthodologie propriétaire pour restructurer chaque point de contact :</p>',
+        'st.s1Kicker': 'Étape 01 / Comprendre',
+        'st.s1Title': 'Audit Digital & Cartographie des Parcours',
+        'st.s1Body': 'Cartographie fine du parcours de découverte des convives, identifiant les points d\'abandon avant réservation.',
+        'st.s2Kicker': 'Étape 02 / Planifier',
+        'st.s2Title': 'Gouvernance & Structure SEO Local',
+        'st.s2Body': 'Création de pages d\'atterrissage dédiées par lieu et calendrier de publication valorisant les créations des chefs.',
+        'st.s3Kicker': 'Étape 03 / Exécuter',
+        'st.s3Title': 'Google Maps & Tunnels Sans Commission',
+        'st.s3Body': 'Optimisation complète des 3 fiches Google Business avec visuels haute définition et liens de réservation directe.',
+        'st.s4Kicker': 'Étape 04 / Analyser',
+        'st.s4Title': 'Revues Mensuelles & Événements Privés',
+        'st.s4Body': 'Analyse mensuelle mesurant les réservations directes, le taux d\'occupation et les impressions de recherche.',
+        'ex.kicker': '03 / Le Déploiement',
+        'ex.title': 'Privilégier les Réservations Directes Sans Intermédiaires',
+        'ex.body': '<p>Nous avons canalisé le trafic depuis Google Maps et la biographie Instagram directement vers le moteur de réservation sans commission de la marque.</p><p>Parallèlement, nous avons automatisé une sollicitation post-visite qui a fait progresser la note moyenne sur Google de 3,9★ à 4,8★ avec plus de 320 avis clients authentiques sur les trois adresses.</p>',
+        'im.kicker': '04 / L\'Impact Commercial',
+        'im.title': 'Une Croissance Digitale Autonome & Rentable',
+        'im.body': '<p>En 90 jours de déploiement, les réservations directes en ligne ont progressé de 65%, réduisant significativement la dépendance aux plateformes de livraison et d\'agrégation payantes.</p><p>La direction dispose désormais d\'un manuel marketing trimestriel clair et reproductible, facilement applicable à de futures ouvertures de lieux.</p>',
+        'cta.kicker': 'Démarrer Votre Projet',
+        'cta.title': 'Besoin d\'une stratégie digitale unifiée pour votre entreprise ?',
+        'cta.subtitle': 'Étude de positionnement ou conseil continu, JS MEDIA apporte de la clarté à votre développement digital.',
+        'cta.btn': 'Démarrer un Projet →',
+        'cta.back': 'Autres Études de Cas',
+        'footer.tagline': 'AGENCE DE MARKETING DIGITAL & CROISSANCE.'
+      }
+    };
+
+    function setLang(lang) {
+      document.documentElement.lang = lang;
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const k = el.getAttribute('data-i18n');
+        if (dict[lang] && dict[lang][k]) {
+          el.innerHTML = dict[lang][k];
+        }
+      });
+      document.getElementById('btn-en').className = lang === 'en' ? 'px-2.5 py-1 rounded-sm bg-obsidian text-white font-medium' : 'px-2.5 py-1 rounded-sm text-slateText hover:text-obsidian';
+      document.getElementById('btn-fr').className = lang === 'fr' ? 'px-2.5 py-1 rounded-sm bg-obsidian text-white font-medium' : 'px-2.5 py-1 rounded-sm text-slateText hover:text-obsidian';
+      localStorage.setItem('jsm_lang', lang);
+    }
+
+    const saved = localStorage.getItem('jsm_lang') || 'en';
+    if (saved === 'fr') setLang('fr');
+
+    const mobileBtn = document.getElementById('mobile-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (mobileBtn && mobileMenu) {
+      mobileBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+  </script>
+</body>
+</html>

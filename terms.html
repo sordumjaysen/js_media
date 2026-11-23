@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service — JS MEDIA</title>
+  <link rel="icon" type="image/png" href="assets/img/Favicon.png" />
+  <meta name="description" content="Terms of Service and commercial engagement standards for JS MEDIA." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://jsmedia.agency/terms.html" />
+
+  <!-- Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            obsidian: '#09090B',
+            charcoal: '#18181B',
+            slateText: '#52525B',
+            mutedGrey: '#A1A1AA',
+            hairline: '#E4E4E7',
+            alabaster: '#FAFAFA',
+          },
+          letterSpacing: {
+            editorial: '-0.035em',
+            widest: '0.18em',
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    .nav-link {
+      position: relative;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #09090B;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .nav-link:hover::after {
+      transform-origin: left;
+      transform: scaleX(1);
+    }
+  </style>
+</head>
+
+<body class="bg-white text-obsidian font-sans antialiased min-h-screen flex flex-col justify-between">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-hairline">
+    <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center group flex-shrink-0" aria-label="JS MEDIA Home">
+        <img src="assets/img/Logo.png" alt="JS MEDIA" class="h-10 sm:h-11 w-auto object-contain transition-all duration-300 group-hover:scale-105" />
+      </a>
+
+      <!-- Unified Desktop Navigation -->
+      <nav class="hidden lg:flex items-center gap-5 xl:gap-8 text-xs font-mono uppercase tracking-widest text-slateText">
+        <a href="index.html#hero" data-i18n="nav.home" class="nav-link py-1 hover:text-obsidian transition-colors whitespace-nowrap">Home</a>
+        <a href="index.html#about" data-i18n="nav.about" class="nav-link py-1 hover:text-obsidian transition-colors whitespace-nowrap">About</a>
+        <a href="index.html#capabilities" data-i18n="nav.capabilities" class="nav-link py-1 hover:text-obsidian transition-colors whitespace-nowrap">Capabilities</a>
+        <a href="index.html#services" data-i18n="nav.services" class="nav-link py-1 hover:text-obsidian transition-colors whitespace-nowrap">Services</a>
+        <a href="index.html#approach" data-i18n="nav.approach" class="nav-link py-1 hover:text-obsidian transition-colors whitespace-nowrap">Approach</a>
+        <a href="index.html#engagement" data-i18n="nav.engagement" class="nav-link py-1 hover:text-obsidian transition-colors whitespace-nowrap">Engagement</a>
+        <a href="index.html#faq" data-i18n="nav.faq" class="nav-link py-1 hover:text-obsidian transition-colors whitespace-nowrap">FAQ</a>
+      </nav>
+
+      <div class="flex items-center gap-3 sm:gap-4 flex-shrink-0">
+        <!-- Bilingual Toggle (EN / FR) -->
+        <div role="group" aria-label="Language switcher"
+          class="inline-flex items-center border border-hairline rounded-sm overflow-hidden font-mono text-[11px] shadow-sm">
+          <button type="button" id="btn-en" onclick="setLang('en')"
+            class="px-2.5 py-1.5 rounded-sm bg-obsidian text-white font-medium transition-all cursor-pointer">EN</button>
+          <button type="button" id="btn-fr" onclick="setLang('fr')"
+            class="px-2.5 py-1.5 rounded-sm text-slateText hover:text-obsidian transition-all cursor-pointer">FR</button>
+        </div>
+
+        <a href="index.html#contact" class="hidden sm:inline-flex items-center gap-2 bg-obsidian text-white text-xs font-mono uppercase tracking-wider px-4 py-2.5 rounded-sm hover:bg-charcoal transition-colors whitespace-nowrap">
+          <span data-i18n="nav.inquire">Inquire &rarr;</span>
+        </a>
+
+        <button id="mobile-btn" type="button" aria-label="Menu" class="lg:hidden p-2.5 border border-hairline rounded-sm text-obsidian">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-hairline px-6 py-6 space-y-4">
+      <div class="flex flex-col space-y-3 font-mono text-xs uppercase tracking-widest text-obsidian">
+        <a href="index.html#hero" data-i18n="nav.home" class="mobile-link py-2 border-b border-hairline font-semibold">Home</a>
+        <a href="index.html#about" data-i18n="nav.about" class="mobile-link py-2 border-b border-hairline">About</a>
+        <a href="index.html#capabilities" data-i18n="nav.capabilities" class="mobile-link py-2 border-b border-hairline">01 / Capabilities</a>
+        <a href="index.html#services" data-i18n="nav.services" class="mobile-link py-2 border-b border-hairline">02 / Services</a>
+        <a href="index.html#approach" data-i18n="nav.approach" class="mobile-link py-2 border-b border-hairline">03 / Approach</a>
+        <a href="index.html#engagement" data-i18n="nav.engagement" class="mobile-link py-2 border-b border-hairline">04 / Engagement</a>
+        <a href="index.html#faq" data-i18n="nav.faq" class="mobile-link py-2 border-b border-hairline">04b / FAQ</a>
+        <a href="index.html#contact" data-i18n="nav.inquire" class="mobile-link py-2 font-semibold">05 / Start a Conversation &rarr;</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Legal Content -->
+  <main class="max-w-4xl mx-auto px-6 sm:px-10 py-16 sm:py-24 space-y-12">
+    <div>
+      <div class="font-mono text-xs uppercase tracking-widest text-mutedGrey mb-3" data-i18n="terms.kicker">LEGAL &amp; COMMERCIAL</div>
+      <h1 class="text-3xl sm:text-5xl font-bold tracking-editorial text-obsidian mb-4" data-i18n="terms.title">Terms of Service</h1>
+      <p class="text-xs font-mono text-slateText" data-i18n="terms.effective">Effective Date: November 20, 2026 &bull; Domain: jsmedia.agency</p>
+    </div>
+
+    <div class="space-y-10 text-sm sm:text-base text-slateText leading-relaxed border-t border-hairline pt-10">
+      
+      <!-- Section 1 -->
+      <section class="space-y-3">
+        <h2 class="text-xl font-semibold text-obsidian" data-i18n="terms.s1_title">1. Agreement to Terms</h2>
+        <p data-i18n="terms.s1_body">
+          By accessing or using the website of JS MEDIA (<a href="https://jsmedia.agency" class="text-obsidian underline">https://jsmedia.agency</a>) or submitting an inquiry through our digital channels, you agree to comply with and be bound by these Terms of Service. If you do not agree to these terms, please do not use this site or engage our services.
+        </p>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="space-y-3">
+        <h2 class="text-xl font-semibold text-obsidian" data-i18n="terms.s2_title">2. Agency Services &amp; Scope</h2>
+        <p data-i18n="terms.s2_p1">
+          JS MEDIA provides professional digital marketing, search visibility, paid advertising, content production, website design, and strategic consultancy services. All services are governed by formal statements of work (SOW) or project agreements executed directly between JS MEDIA and the client.
+        </p>
+        <p data-i18n="terms.s2_p2">
+          Website content, pricing estimates, and portfolio materials are presented for informational and consultative purposes and do not constitute an irrevocable binding offer until formal contractual confirmation.
+        </p>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="space-y-3">
+        <h2 class="text-xl font-semibold text-obsidian" data-i18n="terms.s3_title">3. Intellectual Property Rights</h2>
+        <p data-i18n="terms.s3_body">
+          All trademarks, logos, service marks, visual designs, copywriting, and proprietary methodologies displayed on this website are the intellectual property of JS MEDIA or its licensors. You may not reproduce, duplicate, copy, or exploit any portion of the site without our express prior written permission.
+        </p>
+      </section>
+
+      <!-- Section 4 -->
+      <section class="space-y-3">
+        <h2 class="text-xl font-semibold text-obsidian" data-i18n="terms.s4_title">4. Client Engagements &amp; Confidentiality</h2>
+        <p data-i18n="terms.s4_body">
+          We treat all client business information, commercial data, performance metrics, and proprietary strategies submitted during consultations or ongoing retainers with strict confidentiality. Non-Disclosure Agreements (NDAs) can be executed upon request prior to detailed strategic audits.
+        </p>
+      </section>
+
+      <!-- Section 5 -->
+      <section class="space-y-3">
+        <h2 class="text-xl font-semibold text-obsidian" data-i18n="terms.s5_title">5. Limitation of Liability</h2>
+        <p data-i18n="terms.s5_body">
+          While JS MEDIA applies industry-leading best practices to digital marketing, search optimization, and advertising campaigns, market conditions, third-party platform algorithms (e.g. Google, Meta, TikTok), and consumer behaviors fluctuate. Case studies and metrics shown on this website represent verified past outcomes and do not constitute a literal guarantee of identical future commercial performance.
+        </p>
+      </section>
+
+      <!-- Section 6 -->
+      <section class="space-y-3">
+        <h2 class="text-xl font-semibold text-obsidian" data-i18n="terms.s6_title">6. Governing Law &amp; Jurisdiction</h2>
+        <p data-i18n="terms.s6_body">
+          These Terms of Service and any contractual agreements arising from site usage shall be governed by and construed in accordance with applicable commercial laws.
+        </p>
+      </section>
+
+      <!-- Section 7 -->
+      <section class="space-y-3">
+        <h2 class="text-xl font-semibold text-obsidian" data-i18n="terms.s7_title">7. Contact Information</h2>
+        <p data-i18n="terms.s7_body">
+          For contractual notices, formal inquiries, or questions regarding these terms:
+        </p>
+        <div class="p-6 bg-alabaster border border-hairline rounded-sm font-mono text-xs space-y-1">
+          <div class="text-obsidian font-semibold" data-i18n="terms.box_org">JS MEDIA — Legal &amp; Contracts</div>
+          <div><span data-i18n="terms.box_email">Email: <a href="mailto:jaysensmedia@gmail.com" class="text-obsidian underline">jaysensmedia@gmail.com</a></span></div>
+          <div><span data-i18n="terms.box_web">Web: <a href="https://jsmedia.agency" class="text-obsidian underline">https://jsmedia.agency</a></span></div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Editorial Footer -->
+  <footer class="bg-white border-t border-hairline py-8">
+    <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14 flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-xs text-mutedGrey">
+      <div>&copy; 2026 JS MEDIA. <span data-i18n="footer.rights">All rights reserved. Digital Marketing &amp; Growth Agency.</span></div>
+      <div class="flex items-center gap-6">
+        <a href="https://www.linkedin.com/company/jsmedia-marketingagency/" target="_blank" rel="noopener noreferrer" class="hover:text-obsidian transition-colors inline-flex items-center gap-1">
+          <span>LinkedIn</span>
+          <span>&nearr;</span>
+        </a>
+        <a href="https://www.instagram.com/jsmedia.ng/" target="_blank" rel="noopener noreferrer" class="hover:text-obsidian transition-colors inline-flex items-center gap-1">
+          <span>Instagram</span>
+          <span>&nearr;</span>
+        </a>
+        <a href="privacy.html" data-i18n="footer.privacy" class="hover:text-obsidian transition-colors">Privacy Policy</a>
+        <a href="index.html" data-i18n="footer.home" class="hover:text-obsidian transition-colors">Home &rarr;</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const dict = {
+      en: {
+        'nav.home': 'Home',
+        'nav.about': 'About',
+        'nav.capabilities': 'Capabilities',
+        'nav.services': 'Services',
+        'nav.approach': 'Approach',
+        'nav.engagement': 'Engagement',
+        'nav.faq': 'FAQ',
+        'nav.return': 'Return Home',
+        'nav.inquire': 'Inquire →',
+        'terms.kicker': 'LEGAL & COMMERCIAL',
+        'terms.title': 'Terms of Service',
+        'terms.effective': 'Effective Date: November 20, 2026 • Domain: jsmedia.agency',
+        'terms.s1_title': '1. Agreement to Terms',
+        'terms.s1_body': 'By accessing or using the website of JS MEDIA (<a href="https://jsmedia.agency" class="text-obsidian underline">https://jsmedia.agency</a>) or submitting an inquiry through our digital channels, you agree to comply with and be bound by these Terms of Service. If you do not agree to these terms, please do not use this site or engage our services.',
+        'terms.s2_title': '2. Agency Services & Scope',
+        'terms.s2_p1': 'JS MEDIA provides professional digital marketing, search visibility, paid advertising, content production, website design, and strategic consultancy services. All services are governed by formal statements of work (SOW) or project agreements executed directly between JS MEDIA and the client.',
+        'terms.s2_p2': 'Website content, pricing estimates, and portfolio materials are presented for informational and consultative purposes and do not constitute an irrevocable binding offer until formal contractual confirmation.',
+        'terms.s3_title': '3. Intellectual Property Rights',
+        'terms.s3_body': 'All trademarks, logos, service marks, visual designs, copywriting, and proprietary methodologies displayed on this website are the intellectual property of JS MEDIA or its licensors. You may not reproduce, duplicate, copy, or exploit any portion of the site without our express prior written permission.',
+        'terms.s4_title': '4. Client Engagements & Confidentiality',
+        'terms.s4_body': 'We treat all client business information, commercial data, performance metrics, and proprietary strategies submitted during consultations or ongoing retainers with strict confidentiality. Non-Disclosure Agreements (NDAs) can be executed upon request prior to detailed strategic audits.',
+        'terms.s5_title': '5. Limitation of Liability',
+        'terms.s5_body': 'While JS MEDIA applies industry-leading best practices to digital marketing, search optimization, and advertising campaigns, market conditions, third-party platform algorithms (e.g. Google, Meta, TikTok), and consumer behaviors fluctuate. Case studies and metrics shown on this website represent verified past outcomes and do not constitute a literal guarantee of identical future commercial performance.',
+        'terms.s6_title': '6. Governing Law & Jurisdiction',
+        'terms.s6_body': 'These Terms of Service and any contractual agreements arising from site usage shall be governed by and construed in accordance with applicable commercial laws.',
+        'terms.s7_title': '7. Contact Information',
+        'terms.s7_body': 'For contractual notices, formal inquiries, or questions regarding these terms:',
+        'terms.box_org': 'JS MEDIA — Legal & Contracts',
+        'terms.box_email': 'Email: <a href="mailto:jaysensmedia@gmail.com" class="text-obsidian underline">jaysensmedia@gmail.com</a>',
+        'terms.box_web': 'Web: <a href="https://jsmedia.agency" class="text-obsidian underline">https://jsmedia.agency</a>',
+        'footer.rights': 'All rights reserved. Digital Marketing & Growth Agency.',
+        'footer.privacy': 'Privacy Policy',
+        'footer.home': 'Home →'
+      },
+      fr: {
+        'nav.home': 'Accueil',
+        'nav.about': 'À Propos',
+        'nav.capabilities': 'Expertises',
+        'nav.services': 'Services',
+        'nav.approach': 'Approche',
+        'nav.engagement': 'Collaboration',
+        'nav.faq': 'FAQ',
+        'nav.return': 'Retour à l\'Accueil',
+        'nav.inquire': 'Contact →',
+        'terms.kicker': 'JURIDIQUE & COMMERCIAL',
+        'terms.title': 'Conditions Générales de Vente',
+        'terms.effective': 'Date d\'Effet : 20 Novembre 2026 • Domaine : jsmedia.agency',
+        'terms.s1_title': '1. Acceptation des Conditions',
+        'terms.s1_body': 'En accédant au site web de JS MEDIA (<a href="https://jsmedia.agency" class="text-obsidian underline">https://jsmedia.agency</a>) ou en soumettant une demande par le biais de nos canaux numériques, vous acceptez d\'être lié par les présentes Conditions Générales. Si vous refusez ces conditions, veuillez ne pas utiliser ce site ni solliciter nos services.',
+        'terms.s2_title': '2. Périmètre des Prestations',
+        'terms.s2_p1': 'JS MEDIA propose des prestations d\'expertise en marketing digital, référencement naturel (SEO), acquisition publicitaire payante, création de contenu, conception de sites web et conseil stratégique. Toutes nos interventions sont encadrées par un devis formel, un cahier des charges (SOW) ou un contrat de prestation signé entre JS MEDIA et le client.',
+        'terms.s2_p2': 'Les contenus du site, estimations tarifaires et présentations de portfolio ont une valeur consultative et informative, et ne constituent pas une offre contractuelle irrévocable avant validation formelle d\'un accord commercial.',
+        'terms.s3_title': '3. Propriété Intellectuelle',
+        'terms.s3_body': 'Tous les logos, marques, chartes graphiques, créations visuelles, textes et méthodologies exclusives présentés sur ce site sont la propriété intellectuelle de JS MEDIA ou de ses concédants. Toute reproduction, copie ou exploitation sans notre autorisation écrite préalable est strictement interdite.',
+        'terms.s4_title': '4. Confidentialité & Engagements Clients',
+        'terms.s4_body': 'Nous traitons l\'ensemble des informations d\'entreprise, données financières, métriques de performance et stratégies commerciales transmises avec la plus stricte confidentialité. Un accord de confidentialité (NDA) peut être conclu sur simple demande avant la réalisation d\'audits stratégiques approfondis.',
+        'terms.s5_title': '5. Limitation de Responsabilité',
+        'terms.s5_body': 'Bien que JS MEDIA applique les meilleures pratiques de l\'industrie en marketing digital, acquisition et SEO, les dynamiques de marché, les algorithmes tiers (Google, Meta, TikTok) et les comportements d\'achat restent fluctuants. Les études de cas et indicateurs présentés sur le site reflètent des résultats vérifiés passés et ne sauraient constituer une garantie stricte de performances futures identiques.',
+        'terms.s6_title': '6. Droit Applicable & Litiges',
+        'terms.s6_body': 'Les présentes Conditions Générales ainsi que tout accord commercial découlant de l\'utilisation du site sont régis par le droit commercial en vigueur.',
+        'terms.s7_title': '7. Contact & Notifications Juridiques',
+        'terms.s7_body': 'Pour toute notification contractuelle, demande légale ou question relative aux présentes conditions :',
+        'terms.box_org': 'JS MEDIA — Juridique & Contrats',
+        'terms.box_email': 'Email : <a href="mailto:jaysensmedia@gmail.com" class="text-obsidian underline">jaysensmedia@gmail.com</a>',
+        'terms.box_web': 'Site web : <a href="https://jsmedia.agency" class="text-obsidian underline">https://jsmedia.agency</a>',
+        'footer.rights': 'Tous droits réservés. Agence de Marketing Digital & Croissance.',
+        'footer.privacy': 'Politique de Confidentialité',
+        'footer.home': 'Accueil →'
+      }
+    };
+
+    function setLang(lang) {
+      document.documentElement.lang = lang;
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const k = el.getAttribute('data-i18n');
+        if (dict[lang] && dict[lang][k]) {
+          el.innerHTML = dict[lang][k];
+        }
+      });
+      document.getElementById('btn-en').className = lang === 'en' ? 'px-2.5 py-1.5 rounded-sm bg-obsidian text-white font-medium transition-all cursor-pointer' : 'px-2.5 py-1.5 rounded-sm text-slateText hover:text-obsidian transition-all cursor-pointer';
+      document.getElementById('btn-fr').className = lang === 'fr' ? 'px-2.5 py-1.5 rounded-sm bg-obsidian text-white font-medium transition-all cursor-pointer' : 'px-2.5 py-1.5 rounded-sm text-slateText hover:text-obsidian transition-all cursor-pointer';
+      localStorage.setItem('jsm_lang', lang);
+    }
+
+    const saved = localStorage.getItem('jsm_lang') || 'en';
+    if (saved === 'fr') setLang('fr');
+
+    const mobileBtn = document.getElementById('mobile-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (mobileBtn && mobileMenu) {
+      mobileBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+  </script>
+</body>
+</html>

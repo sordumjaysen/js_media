@@ -55,7 +55,7 @@
     "email": "jaysensmedia@gmail.com",
     "sameAs": [
       "https://www.linkedin.com/company/jsmedia-marketingagency/",
-      "https://www.instagram.com/jsmedia.hg/"
+      "https://www.instagram.com/jsmedia.ng/"
     ],
     "priceRange": "$$",
     "areaServed": [
@@ -527,6 +527,7 @@
 
       <nav
         class="hidden md:flex items-center gap-8 lg:gap-10 text-xs font-mono uppercase tracking-widest text-slateText">
+        <a href="#hero" data-i18n="nav.home" class="nav-link py-1 hover:text-obsidian transition-colors">Home</a>
         <a href="#about" data-i18n="nav.about" class="nav-link py-1 hover:text-obsidian transition-colors">About</a>
         <a href="#capabilities" data-i18n="nav.capabilities"
           class="nav-link py-1 hover:text-obsidian transition-colors">Capabilities</a>
@@ -567,6 +568,7 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-hairline px-6 py-6 space-y-4">
       <div class="flex flex-col space-y-3 font-mono text-xs uppercase tracking-widest text-obsidian">
+        <a href="#hero" data-i18n="mob.home" class="mobile-link py-2 border-b border-hairline">Home</a>
         <a href="#about" data-i18n="mob.about" class="mobile-link py-2 border-b border-hairline">About</a>
         <a href="#capabilities" data-i18n="mob.capabilities" class="mobile-link py-2 border-b border-hairline">01 /
           Capabilities</a>
@@ -2589,6 +2591,7 @@
           <div data-i18n="footer.colNav" class="font-mono text-xs uppercase tracking-widest text-mutedGrey">Navigation
           </div>
           <ul class="space-y-2.5 text-xs font-mono uppercase tracking-wider text-slateText">
+            <li><a href="#hero" data-i18n="nav.home" class="hover:text-obsidian transition-colors">Home</a></li>
             <li><a href="#about" data-i18n="nav.about" class="hover:text-obsidian transition-colors">About</a></li>
             <li><a href="#capabilities" data-i18n="nav.capabilities"
                 class="hover:text-obsidian transition-colors">Capabilities</a></li>
@@ -2701,12 +2704,14 @@
       // 0. Bilingual Dictionary (English & French)
       const translations = {
         en: {
+          'nav.home': 'Home',
           'nav.about': 'About',
           'nav.capabilities': 'Capabilities',
           'nav.services': 'Services',
           'nav.approach': 'Approach',
           'nav.engagement': 'Engagement',
           'nav.inquire': 'Inquire',
+          'mob.home': 'Home',
           'mob.about': 'About',
           'mob.capabilities': '01 / Capabilities',
           'mob.services': '02 / Services',
@@ -2933,12 +2938,14 @@
           'web.t': 'Website Design, Development & Management'
         },
         fr: {
+          'nav.home': 'Accueil',
           'nav.about': 'À Propos',
           'nav.capabilities': 'Expertises',
           'nav.services': 'Services',
           'nav.approach': 'Approche',
           'nav.engagement': 'Collaboration',
           'nav.inquire': 'Contact',
+          'mob.home': 'Accueil',
           'mob.about': 'À Propos',
           'mob.capabilities': '01 / Expertises',
           'mob.services': '02 / Services',

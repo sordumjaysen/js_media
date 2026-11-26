@@ -115,6 +115,14 @@
             "name": "Digital Strategy & Consultancy",
             "description": "Audits, competitor analysis, market research, brand positioning, and performance analysis."
           }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Customer Support Setup (WhatsApp Quick-Start)",
+            "description": "WhatsApp Business setup, quick replies library, customer FAQ, escalation flow, and operational staff guide."
+          }
         }
       ]
     }
@@ -332,15 +340,46 @@
     }
 
     .hover-lift-dark {
-      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease, background-color 0.35s ease;
+      transition: transform 0.55s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.55s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease, background-color 0.4s ease;
       will-change: transform, box-shadow;
     }
 
     .hover-lift-dark:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(255, 255, 255, 0.2);
+      transform: translateY(-8px);
+      box-shadow: 0 30px 55px -14px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.22);
       border-color: rgba(255, 255, 255, 0.35);
       background-color: #27272A;
+    }
+
+    .cs-card .cs-arrow {
+      display: inline-block;
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .cs-card:hover .cs-arrow {
+      transform: translateX(5px);
+    }
+
+    .cs-card .cs-read-row {
+      transition: color 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .cs-card:hover .cs-read-row {
+      color: rgba(255, 255, 255, 1);
+    }
+      will-change: transform, box-shadow;
+      backface-visibility: hidden;
+    }
+
+    .cs-card-bg {
+      will-change: transform, opacity;
+      backface-visibility: hidden;
+      transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .cs-card:hover .cs-card-bg {
+      opacity: 0.45;
+      transform: scale(1.07);
     }
 
     /* Button Magnetic Lift & Arrow Glide */
@@ -1494,7 +1533,7 @@
     </section>
 
     <!-- ===================================================================== -->
-    <!-- 02 // SEVEN CORE SERVICES (CLEAN INTERACTIVE INDEX + PREVIEW)          -->
+    <!-- 02 // EIGHT CORE SERVICES (CLEAN INTERACTIVE INDEX + PREVIEW)         -->
     <!-- ===================================================================== -->
     <section id="services" class="py-24 lg:py-32 bg-alabaster border-b border-hairline">
       <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14">
@@ -1504,7 +1543,7 @@
             <div data-i18n="srv.kicker" class="font-mono text-xs uppercase tracking-widest text-mutedGrey mb-3">02 //
               SERVICES</div>
             <h2 data-i18n="srv.title" class="text-3xl sm:text-5xl font-semibold tracking-editorial text-obsidian">
-              Seven Core Services.
+              Eight Core Services.
             </h2>
           </div>
           <p data-i18n="srv.subtitle" class="text-sm text-slateText max-w-xs">
@@ -1601,7 +1640,7 @@
 
             <!-- 03 -->
             <div class="dept-row border-b border-hairline transition-colors" data-service-idx="2"
-              data-img="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80">
+              data-img="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&h=1200&q=80">
               <button type="button"
                 class="dept-trigger w-full py-7 px-5 sm:px-7 flex items-center justify-between text-left hover:bg-alabaster transition-colors cursor-pointer group">
                 <div class="flex items-center gap-6">
@@ -1642,7 +1681,7 @@
 
             <!-- 04 -->
             <div class="dept-row border-b border-hairline transition-colors" data-service-idx="3"
-              data-img="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=900&q=80">
+              data-img="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=900&h=1200&q=80">
               <button type="button"
                 class="dept-trigger w-full py-7 px-5 sm:px-7 flex items-center justify-between text-left hover:bg-alabaster transition-colors cursor-pointer group">
                 <div class="flex items-center gap-6">
@@ -1762,7 +1801,7 @@
 
             <!-- 07 -->
             <div class="dept-row border-b border-hairline transition-colors" data-service-idx="6"
-              data-img="https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&w=1200&q=80">
+              data-img="https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&w=900&h=1200&q=80">
               <button type="button"
                 class="dept-trigger w-full py-7 px-5 sm:px-7 flex items-center justify-between text-left hover:bg-alabaster transition-colors cursor-pointer group">
                 <div class="flex items-center gap-6">
@@ -1816,6 +1855,56 @@
               </div>
             </div>
 
+            <!-- 08 -->
+            <div class="dept-row border-b border-hairline transition-colors" data-service-idx="7"
+              data-img="assets/img/Customer Support Setup.jpg">
+              <button type="button"
+                class="dept-trigger w-full py-7 px-5 sm:px-7 flex items-center justify-between text-left hover:bg-alabaster transition-colors cursor-pointer group">
+                <div class="flex items-center gap-6">
+                  <span class="dept-num font-mono text-xs text-mutedGrey transition-all duration-300">08</span>
+                  <h3 data-i18n="srv.s8.title"
+                    class="dept-title text-xl sm:text-2xl font-semibold tracking-tight text-obsidian transition-transform duration-300">
+                    Customer Support Setup</h3>
+                </div>
+                <span
+                  class="dept-plus font-mono text-lg text-obsidian transition-transform duration-300 inline-block">+</span>
+              </button>
+              <div class="dept-body">
+                <div class="dept-inner">
+                  <div class="px-5 sm:px-7 pb-7 pt-1 pl-14 sm:pl-16 space-y-4">
+                    <p data-i18n="srv.s8.desc" class="text-sm text-slateText max-w-2xl leading-relaxed">
+                      We configure WhatsApp Business and structured customer inquiry systems so your team can handle
+                      leads and customer conversations with consistency.
+                    </p>
+                    <div class="flex flex-wrap items-center justify-between gap-4">
+                      <div class="flex flex-wrap gap-2">
+                        <span data-i18n="srv.s8.t1"
+                          class="service-tag px-3.5 py-1.5 bg-alabaster border border-hairline text-xs text-obsidian rounded-sm cursor-pointer">WhatsApp
+                          Business Setup</span>
+                        <span data-i18n="srv.s8.t2"
+                          class="service-tag px-3.5 py-1.5 bg-alabaster border border-hairline text-xs text-obsidian rounded-sm cursor-pointer">Quick
+                          Replies Library</span>
+                        <span data-i18n="srv.s8.t3"
+                          class="service-tag px-3.5 py-1.5 bg-alabaster border border-hairline text-xs text-obsidian rounded-sm cursor-pointer">Customer
+                          FAQ</span>
+                        <span data-i18n="srv.s8.t4"
+                          class="service-tag px-3.5 py-1.5 bg-alabaster border border-hairline text-xs text-obsidian rounded-sm cursor-pointer">Escalation
+                          Flow</span>
+                        <span data-i18n="srv.s8.t5"
+                          class="service-tag px-3.5 py-1.5 bg-alabaster border border-hairline text-xs text-obsidian rounded-sm cursor-pointer">Staff
+                          Guide</span>
+                      </div>
+                      <button type="button" onclick="quickInquire('support')"
+                        class="font-mono text-[11px] uppercase tracking-wider text-obsidian border-b border-obsidian pb-0.5 btn-magnetic inline-flex items-center gap-1.5 hover:opacity-80">
+                        <span data-i18n="srv.inquireBtn">Inquire About This Service</span>
+                        <span class="btn-arrow">&rarr;</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
 
           <!-- Dynamic B&W Service Preview Frame (4 Cols) -->
@@ -1823,7 +1912,7 @@
             <div class="bw-frame relative aspect-[3/4] rounded-sm overflow-hidden border border-hairline bg-white reveal-right">
               <img id="dept-preview-img" src="assets/img/Social Media Managements.png" alt="Service visual preview"
                 onerror="this.src='https://placehold.co/800x1000/09090B/FFFFFF?text=JS+MEDIA'"
-                class="bw-editorial absolute inset-0 w-full h-full object-contain" />
+                class="bw-editorial absolute inset-0 w-full h-full object-cover" />
               <div
                 class="absolute bottom-4 left-4 bg-obsidian/90 px-3 py-1.5 rounded-sm font-mono text-[10px] uppercase tracking-widest text-white">
                 <span id="dept-preview-caption">01 // SOCIAL MEDIA</span>
@@ -1864,7 +1953,7 @@
             style="min-height:420px;">
             <div class="absolute inset-0 z-0">
               <img src="assets/img/Social Media Managements.png" alt="Social Media Case Study"
-                class="w-full h-full object-cover opacity-30 group-hover:opacity-45 group-hover:scale-105 transition-all duration-700"
+                class="cs-card-bg w-full h-full object-cover opacity-30"
                 onerror="this.style.display='none'" />
               <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/70 to-obsidian/20"></div>
             </div>
@@ -1894,9 +1983,9 @@
                   </div>
                 </div>
                 <div
-                  class="flex items-center gap-2 font-mono text-[11px] uppercase tracking-wider text-white/50 group-hover:text-white transition-colors duration-300">
+                  class="cs-read-row flex items-center gap-2 font-mono text-[11px] uppercase tracking-wider text-white/50 group-hover:text-white">
                   <span data-i18n="cs.readMore">Read Study</span>
-                  <span class="group-hover:translate-x-1 transition-transform duration-300">&rarr;</span>
+                  <span class="cs-arrow">&rarr;</span>
                 </div>
               </div>
             </div>
@@ -1908,7 +1997,7 @@
             style="min-height:420px; transition-delay:0.1s">
             <div class="absolute inset-0 z-0">
               <img src="assets/img/Digital Advertising & Marketing.jpg" alt="Advertising Case Study"
-                class="w-full h-full object-cover opacity-30 group-hover:opacity-45 group-hover:scale-105 transition-all duration-700"
+                class="cs-card-bg w-full h-full object-cover opacity-30"
                 onerror="this.style.display='none'" />
               <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/70 to-obsidian/20"></div>
             </div>
@@ -1939,9 +2028,9 @@
                   </div>
                 </div>
                 <div
-                  class="flex items-center gap-2 font-mono text-[11px] uppercase tracking-wider text-white/50 group-hover:text-white transition-colors duration-300">
+                  class="cs-read-row flex items-center gap-2 font-mono text-[11px] uppercase tracking-wider text-white/50 group-hover:text-white">
                   <span data-i18n="cs.readMore">Read Study</span>
-                  <span class="group-hover:translate-x-1 transition-transform duration-300">&rarr;</span>
+                  <span class="cs-arrow">&rarr;</span>
                 </div>
               </div>
             </div>
@@ -1953,7 +2042,7 @@
             style="min-height:420px; transition-delay:0.2s">
             <div class="absolute inset-0 z-0">
               <img src="assets/img/Digital Strategy and Consultancy.jpg" alt="Strategy Case Study"
-                class="w-full h-full object-cover opacity-30 group-hover:opacity-45 group-hover:scale-105 transition-all duration-700"
+                class="cs-card-bg w-full h-full object-cover opacity-30"
                 onerror="this.style.display='none'" />
               <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/70 to-obsidian/20"></div>
             </div>
@@ -1983,9 +2072,9 @@
                   </div>
                 </div>
                 <div
-                  class="flex items-center gap-2 font-mono text-[11px] uppercase tracking-wider text-white/50 group-hover:text-white transition-colors duration-300">
+                  class="cs-read-row flex items-center gap-2 font-mono text-[11px] uppercase tracking-wider text-white/50 group-hover:text-white">
                   <span data-i18n="cs.readMore">Read Study</span>
-                  <span class="group-hover:translate-x-1 transition-transform duration-300">&rarr;</span>
+                  <span class="cs-arrow">&rarr;</span>
                 </div>
               </div>
             </div>
@@ -1997,7 +2086,7 @@
             style="min-height:420px; transition-delay:0.3s">
             <div class="absolute inset-0 z-0">
               <img src="assets/img/Digital Content Production.jpg" alt="B2B Case Study"
-                class="w-full h-full object-cover opacity-30 group-hover:opacity-45 group-hover:scale-105 transition-all duration-700"
+                class="cs-card-bg w-full h-full object-cover opacity-30"
                 onerror="this.style.display='none'" />
               <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/70 to-obsidian/20"></div>
             </div>
@@ -2027,9 +2116,9 @@
                   </div>
                 </div>
                 <div
-                  class="flex items-center gap-2 font-mono text-[11px] uppercase tracking-wider text-white/50 group-hover:text-white transition-colors duration-300">
+                  class="cs-read-row flex items-center gap-2 font-mono text-[11px] uppercase tracking-wider text-white/50 group-hover:text-white">
                   <span data-i18n="cs.readMore">Read Study</span>
-                  <span class="group-hover:translate-x-1 transition-transform duration-300">&rarr;</span>
+                  <span class="cs-arrow">&rarr;</span>
                 </div>
               </div>
             </div>
@@ -2249,7 +2338,7 @@
                 <div class="faq-inner">
                   <div class="px-6 pb-6 pt-3 text-sm text-slateText leading-relaxed border-t border-hairline/60">
                     <p data-i18n="faq.a1">
-                      Each of our seven services can be engaged independently (e.g. solely SEO, paid advertising, social
+                      Each of our eight services can be engaged independently (e.g. solely SEO, paid advertising, social
                       media management, or website design) or combined into a unified growth programme tailored to your
                       business objectives.
                     </p>
@@ -2379,6 +2468,32 @@
               </div>
             </div>
 
+            <!-- FAQ Item 07 -->
+            <div class="faq-item border border-hairline rounded-sm bg-alabaster/30 transition-colors">
+              <button type="button"
+                class="faq-trigger w-full px-6 py-5 flex items-center justify-between text-left gap-4 cursor-pointer">
+                <div class="flex items-center gap-4">
+                  <span class="font-mono text-xs text-mutedGrey">07</span>
+                  <span data-i18n="faq.q7" class="text-base sm:text-lg font-semibold text-obsidian">Do you offer customer
+                    support or WhatsApp Business setup?</span>
+                </div>
+                <span class="faq-icon text-xl text-obsidian font-mono leading-none select-none">+</span>
+              </button>
+              <div class="faq-body">
+                <div class="faq-inner">
+                  <div class="px-6 pb-6 pt-3 text-sm text-slateText leading-relaxed border-t border-hairline/60">
+                    <p data-i18n="faq.a7">
+                      Yes. We offer a dedicated Customer Support Setup (WhatsApp Quick-Start) as a defined project sprint.
+                      We set up WhatsApp Business properly, configure quick replies, write a customer FAQ, build an
+                      escalation flow, and provide an operational staff guide so your internal team can manage inquiries
+                      with consistency. Daily managed responses (answering chats on your behalf) are held separately to
+                      ensure dedicated response times.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
 
         </div>
@@ -2483,6 +2598,10 @@
                     <button type="button" data-dept="web" data-i18n="form.sWeb"
                       class="dept-btn px-3.5 py-2 text-xs border border-hairline bg-alabaster text-slateText hover:border-obsidian rounded-sm transition-colors">
                       Website Design &amp; Dev
+                    </button>
+                    <button type="button" data-dept="support" data-i18n="form.sSupport"
+                      class="dept-btn px-3.5 py-2 text-xs border border-hairline bg-alabaster text-slateText hover:border-obsidian rounded-sm transition-colors">
+                      Customer Support Setup
                     </button>
                   </div>
                 </div>
@@ -2607,7 +2726,7 @@
           </ul>
         </div>
 
-        <!-- Col 3: 7 Core Services (3 cols) -->
+        <!-- Col 3: 8 Core Services (3 cols) -->
         <div class="lg:col-span-3 space-y-4">
           <div data-i18n="footer.colServices" class="font-mono text-xs uppercase tracking-widest text-mutedGrey">Core
             Services</div>
@@ -2626,6 +2745,8 @@
                 &amp; Consultancy</a></li>
             <li><a href="#services" class="hover:text-obsidian transition-colors" data-i18n="web.t">Website Design,
                 Development &amp; Management</a></li>
+            <li><a href="#services" class="hover:text-obsidian transition-colors" data-i18n="support.t">Customer Support
+                Setup</a></li>
           </ul>
         </div>
 
@@ -2797,7 +2918,7 @@
           'cs.c4.m1': 'Organic Sessions',
           'cs.c4.m2': 'Keyword Rankings',
           'srv.kicker': '02 // SERVICES',
-          'srv.title': 'Seven Core Services.',
+          'srv.title': 'Eight Core Services.',
           'srv.subtitle': 'Engage independently or combine into a unified growth programme.',
           'srv.inquireBtn': 'Inquire About This Service →',
           'srv.s1.title': 'Social Media Management',
@@ -2838,6 +2959,13 @@
           'srv.s7.t5': 'Domain & Hosting Setup',
           'srv.s7.t6': 'Maintenance & Support',
           'srv.s7.t7': 'Performance Optimisation',
+          'srv.s8.title': 'Customer Support Setup',
+          'srv.s8.desc': 'We configure WhatsApp Business and structured customer inquiry systems so your team can handle leads and customer conversations with consistency.',
+          'srv.s8.t1': 'WhatsApp Business Setup',
+          'srv.s8.t2': 'Quick Replies Library',
+          'srv.s8.t3': 'Customer FAQ',
+          'srv.s8.t4': 'Escalation Flow',
+          'srv.s8.t5': 'Staff Guide',
           'app.kicker': '03 // WORKING APPROACH',
           'app.title': 'Four-Stage Execution.',
           'app.s1.title': 'Understand',
@@ -2869,7 +2997,7 @@
           'faq.ctaPrompt': 'Have a specific question about your project?',
           'faq.ctaBtn': 'Start a Conversation',
           'faq.q1': 'Can we hire JS Media for a single service, or must we book a full package?',
-          'faq.a1': 'Each of our seven services can be engaged independently (e.g. solely SEO, paid advertising, social media management, or website design) or combined into a unified growth programme tailored to your business objectives.',
+          'faq.a1': 'Each of our eight services can be engaged independently (e.g. solely SEO, paid advertising, social media management, or website design) or combined into a unified growth programme tailored to your business objectives.',
           'faq.q2': 'How do your engagement models work (Projects vs. Retainers vs. Consultancy)?',
           'faq.a2': 'We offer three clear models: Project-Based for defined one-off deliverables with set timelines (such as audits or campaign launches); Monthly Retainers for continuous management and ongoing growth; and Consultancy for high-level strategy reviews and market assessments.',
           'faq.q3': 'What is your process once we begin working together?',
@@ -2880,6 +3008,8 @@
           'faq.a5': 'We provide regular, transparent reporting focused on actionable commercial metrics that impact your business—such as qualified leads, customer acquisition cost, organic reach, and return on ad spend—rather than superficial vanity numbers.',
           'faq.q6': 'How quickly can an engagement start?',
           'faq.a6': 'Following an initial discovery discussion and mutual sign-off on the scope and deliverables, onboarding and campaign setup typically commence within 48 to 72 hours.',
+          'faq.q7': 'Do you offer customer support or WhatsApp Business setup?',
+          'faq.a7': 'Yes. We offer a dedicated Customer Support Setup (WhatsApp Quick-Start) as a defined project sprint. We set up WhatsApp Business properly, configure quick replies, write a customer FAQ, build an escalation flow, and provide an operational staff guide so your internal team can manage inquiries with consistency. Daily managed responses (answering chats on your behalf) are held separately to ensure dedicated response times.',
           'sticky.text': 'Ready to turn attention into customers?',
           'sticky.btn': 'Start a Conversation',
           'cookie.kicker': 'Privacy & Cookies',
@@ -2902,6 +3032,7 @@
           'form.sProd': 'Content Production',
           'form.sStrat': 'Strategy & Consultancy',
           'form.sWeb': 'Website Design & Dev',
+          'form.sSupport': 'Customer Support Setup',
           'form.phName': 'Your Name *',
           'form.phEmail': 'Work Email *',
           'form.phBrief': 'Project objectives *',
@@ -2935,7 +3066,8 @@
           'copy.t': 'Content Development & Copywriting',
           'prod.t': 'Digital Content Production',
           'strat.t': 'Digital Strategy & Consultancy',
-          'web.t': 'Website Design, Development & Management'
+          'web.t': 'Website Design, Development & Management',
+          'support.t': 'Customer Support Setup'
         },
         fr: {
           'nav.home': 'Accueil',
@@ -3031,7 +3163,7 @@
           'cs.c4.m1': 'Sessions Organiques',
           'cs.c4.m2': 'Classements Mots-Clés',
           'srv.kicker': '02 // SERVICES',
-          'srv.title': 'Sept Services Clés.',
+          'srv.title': 'Huit Services Clés.',
           'srv.subtitle': 'Mobilisables séparément ou combinés dans un programme global.',
           'srv.inquireBtn': 'Demander ce Service →',
           'srv.s1.title': 'Gestion des Réseaux Sociaux',
@@ -3072,6 +3204,13 @@
           'srv.s7.t5': 'Hébergement & Domaines',
           'srv.s7.t6': 'Maintenance & Support',
           'srv.s7.t7': 'Optimisation des Performances',
+          'srv.s8.title': 'Configuration Support Client',
+          'srv.s8.desc': 'Nous configurons WhatsApp Business et des systèmes structurés de gestion des demandes clients afin que votre équipe traite prospects et échanges avec constance.',
+          'srv.s8.t1': 'Configuration WhatsApp Business',
+          'srv.s8.t2': 'Bibliothèque de Réponses Rapides',
+          'srv.s8.t3': 'FAQ Client',
+          'srv.s8.t4': 'Flux d\'Escalade',
+          'srv.s8.t5': 'Guide Opérationnel du Personnel',
           'app.kicker': '03 // APPROCHE DE TRAVAIL',
           'app.title': 'Exécution en Quatre Étapes.',
           'app.s1.title': 'Comprendre',
@@ -3103,7 +3242,7 @@
           'faq.ctaPrompt': 'Une question spécifique concernant votre projet ?',
           'faq.ctaBtn': 'Démarrer un Projet',
           'faq.q1': 'Pouvons-nous engager JS Media pour un seul service ou faut-il un pack complet ?',
-          'faq.a1': 'Chacun de nos sept services peut être mobilisé indépendamment (par ex. uniquement le SEO, la publicité payante, les réseaux sociaux ou la création de site web) ou combiné au sein d\'un programme de croissance unifié selon vos objectifs.',
+          'faq.a1': 'Chacun de nos huit services peut être mobilisé indépendamment (par ex. uniquement le SEO, la publicité payante, les réseaux sociaux ou la création de site web) ou combiné au sein d\'un programme de croissance unifié selon vos objectifs.',
           'faq.q2': 'Comment fonctionnent vos modes de collaboration (Projet, Retainer, Conseil) ?',
           'faq.a2': 'Nous proposons trois formules flexibles : Au Projet pour des livrables ponctuels avec un calendrier précis (audits, lancements de campagnes) ; Retainer Mensuel pour un accompagnement continu ; et Conseil pour des études stratégiques et des analyses de positionnement.',
           'faq.q3': 'Quelle est votre méthode de travail une fois le projet lancé ?',
@@ -3114,6 +3253,8 @@
           'faq.a5': 'Nous fournissons des rapports transparents et réguliers axés sur des indicateurs commerciaux réels (leads qualifiés, coût d\'acquisition, portée organique, retour sur investissement publicitaire) plutôt que sur des métriques superficielles.',
           'faq.q6': 'Sous quel délai pouvons-nous démarrer ?',
           'faq.a6': 'Après notre premier échange et la validation conjointe du périmètre et des livrables, le déploiement et la mise en place débutent généralement sous 48 à 72 heures.',
+          'faq.q7': 'Proposez-vous la configuration du support client ou l\'installation de WhatsApp Business ?',
+          'faq.a7': 'Oui. Nous proposons un projet à périmètre défini : Configuration du Support Client (WhatsApp Quick-Start). Nous configurons votre profil WhatsApp Business, créons une bibliothèque de réponses rapides, rédigeons une FAQ client, établissons un flux d\'escalade et fournissons un guide opérationnel pour votre personnel afin que votre équipe puisse gérer les échanges en toute autonomie. La gestion quotidienne déléguée des messages (répondre aux clients à votre place) est traitée séparément pour garantir un niveau de qualité et de réactivité irréprochable.',
           'sticky.text': 'Prêt à transformer l\'attention en clients ?',
           'sticky.btn': 'Démarrer un Projet',
           'cookie.kicker': 'Confidentialité & Cookies',
@@ -3136,6 +3277,7 @@
           'form.sProd': 'Production de Contenu',
           'form.sStrat': 'Stratégie & Conseil',
           'form.sWeb': 'Création & Gestion Web',
+          'form.sSupport': 'Configuration Support Client',
           'form.phName': 'Votre Nom *',
           'form.phEmail': 'Email Professionnel *',
           'form.phBrief': 'Objectifs du projet *',
@@ -3169,7 +3311,8 @@
           'copy.t': 'Création de Contenu & Copywriting',
           'prod.t': 'Production de Contenu Digital',
           'strat.t': 'Stratégie Digitale & Conseil',
-          'web.t': 'Conception, Développement & Gestion Web'
+          'web.t': 'Conception, Développement & Gestion Web',
+          'support.t': 'Configuration Support Client'
         }
       };
 
@@ -3181,7 +3324,8 @@
           '04 // EDITORIAL COPY',
           '05 // VISUAL PRODUCTION',
           '06 // GROWTH STRATEGY',
-          '07 // WEB DESIGN & DEV'
+          '07 // WEB DESIGN & DEV',
+          '08 // CUSTOMER SUPPORT'
         ],
         fr: [
           '01 // RÉSEAUX SOCIAUX',
@@ -3190,7 +3334,8 @@
           '04 // RÉDACTION & CONTENU',
           '05 // PRODUCTION VISUELLE',
           '06 // STRATÉGIE CROISSANCE',
-          '07 // SITES WEB & DIGITAL'
+          '07 // SITES WEB & DIGITAL',
+          '08 // SUPPORT CLIENT'
         ]
       };
 
@@ -3207,7 +3352,8 @@
           copy: 'Content Development & Copywriting',
           prod: 'Digital Content Production',
           strat: 'Digital Strategy & Consultancy',
-          web: 'Website Design, Development & Management'
+          web: 'Website Design, Development & Management',
+          support: 'Customer Support Setup'
         },
         fr: {
           smm: 'Gestion des Réseaux Sociaux',
@@ -3216,7 +3362,8 @@
           copy: 'Création de Contenu & Copywriting',
           prod: 'Production de Contenu Digital',
           strat: 'Stratégie Digitale & Conseil',
-          web: 'Conception, Développement & Gestion de Sites Web'
+          web: 'Conception, Développement & Gestion de Sites Web',
+          support: 'Configuration Support Client'
         }
       };
 
